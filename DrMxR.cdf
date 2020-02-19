@@ -23,10 +23,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[      1088,         20]
-NotebookDataLength[     70175,       1619]
-NotebookOptionsPosition[     69852,       1604]
-NotebookOutlinePosition[     70189,       1619]
-CellTagsIndexPosition[     70146,       1616]
+NotebookDataLength[     71821,       1668]
+NotebookOptionsPosition[     71029,       1643]
+NotebookOutlinePosition[     71366,       1658]
+CellTagsIndexPosition[     71323,       1655]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -35,12 +35,18 @@ Notebook[{
 Cell[CellGroupData[{
 Cell["DrMxR  ", "Title",
  CellChangeTimes->{{3.791116520431237*^9, 3.79111656282701*^9}, {
-  3.791117368249481*^9, 3.79111736916218*^9}},
- TextAlignment->Center,ExpressionUUID->"dea076a2-ca19-42a0-91a6-e9053665d30d"],
+  3.791117368249481*^9, 
+  3.79111736916218*^9}},ExpressionUUID->"dea076a2-ca19-42a0-91a6-\
+e9053665d30d"],
 
-Cell["Prateek Verma, R. Guy Reeves and Chaitanya S. Gokhale", "Author",
- CellChangeTimes->{{3.7911167575156918`*^9, 3.791116773962865*^9}},
- TextAlignment->Center,ExpressionUUID->"1c29d2ba-8f74-49d2-b06e-f5b232ac5944"],
+Cell["\<\
+Prateek Verma, R. Guy Reeves and Chaitanya S. Gokhale
+Affiliations*\
+\>", "Author",
+ CellChangeTimes->{{3.7911167575156918`*^9, 3.791116773962865*^9}, {
+  3.79112140839957*^9, 
+  3.791121413003335*^9}},ExpressionUUID->"1c29d2ba-8f74-49d2-b06e-\
+f5b232ac5944"],
 
 Cell["\<\
 Synthetic gene drive technologies aim to spread transgenic constructs into \
@@ -50,28 +56,28 @@ construction, and differential selection pressured they impose in the varied \
 ecological situations they encounter. The extraordinary diversity of \
 conceivable drive mechanisms and the range of selective parameters they may \
 encounter makes it very difficult to convey their relative predicted \
-properties.The sheer number of published manuscripts in this field, \
+properties. The sheer number of published manuscripts in this field, \
 experimental and theoretical, is a testament to the possibilities presented \
 by this technology. We evaluate and condense the essential synthetic drive \
 mechanisms from a variety of studies and present a unified mathematical \
 paradigm (and a user - friendly tool DrMxR) describing the properties of a \
-wide variety of single construct gene drives (non - suppression). Within this \
+wide variety of single construct gene drives (non-suppression). Within this \
 common framework, we have been able to recapitulate key published results \
-derived using bespoke modelling frameworks.Because a unified framework is \
+derived using bespoke modelling frameworks. Because a unified framework is \
 employed, it is also possible to seamlessly explore the consequences of \
 combining multiple drive approaches within a single construct. We provide a \
 method for analytically assessing the measure of invasiveness of a drive \
-construct.As opposed to typical studies of synthetic drives, we explore the \
+construct. As opposed to typical studies of synthetic drives, we explore the \
 resilience of such drives in a spatially explicit manner advancing the \
-connection between realistic spatial dynamics and typical well - mixed \
-populations.Besides a scientific advance, our results and the tools provided \
+connection between realistic spatial dynamics and typical well-mixed \
+populations. Besides a scientific advance, our results and the tools provided \
 an intuitive and objective way for regulators, scientists and NGOs to \
 evaluate the properties and robustness of proposed and future gene drive \
 approaches.\
 \>", "Abstract",
  CellChangeTimes->{{3.791119314384894*^9, 3.79111934912035*^9}, {
-  3.791119429761929*^9, 3.791119443901498*^9}},
- TextAlignment->Center,ExpressionUUID->"4cf1338a-504d-4853-b06f-342749e74766"],
+   3.791119429761929*^9, 3.791119443901498*^9}, 3.7911209012562723`*^9},
+ TextJustification->1.,ExpressionUUID->"4cf1338a-504d-4853-b06f-342749e74766"],
 
 Cell["\<\
 Drive MixeR is  a tool which is able to mix and match a number of \
@@ -87,10 +93,20 @@ below.\
   3.791119494377863*^9}},ExpressionUUID->"457fa212-d808-4c3e-b6df-\
 45e7da5d5c3a"],
 
+Cell[CellGroupData[{
+
 Cell["Fertility selection", "Subsection",
  CellChangeTimes->{{3.791119190022883*^9, 3.7911191952957573`*^9}, 
    3.791119241438943*^9},ExpressionUUID->"5418b7f2-c09a-4f65-a4d0-\
 32851c24a19a"],
+
+Cell["Describe parameters and eqs", "Text",
+ CellChangeTimes->{{3.7911214193259363`*^9, 
+  3.791121444307242*^9}},ExpressionUUID->"783c956c-bd1a-472a-ae92-\
+7cad8a12f35d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell["Distortion", "Subsection",
  CellChangeTimes->{{3.791119190022883*^9, 3.7911191952957573`*^9}, {
@@ -98,11 +114,25 @@ Cell["Distortion", "Subsection",
   3.791119247983468*^9}},ExpressionUUID->"47a92d32-33f6-4269-a1b5-\
 ed66bf523ec3"],
 
+Cell["Describe parameters and eqs", "Text",
+ CellChangeTimes->{{3.791121426547513*^9, 
+  3.791121447820456*^9}},ExpressionUUID->"d6ce7b7d-c04c-42c1-9083-\
+e505af57946e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
 Cell["Viability selection", "Subsection",
  CellChangeTimes->{{3.791119190022883*^9, 3.7911191952957573`*^9}, {
   3.791119244035676*^9, 
   3.79111925353544*^9}},ExpressionUUID->"555daf31-fae7-4a62-a03a-\
 6539b8db6590"],
+
+Cell["Describe parameters and eqs", "Text",
+ CellChangeTimes->{{3.791121431989909*^9, 
+  3.791121448900299*^9}},ExpressionUUID->"3b4d47ab-707b-4e38-bebf-\
+c8850657c3a5"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -110,6 +140,15 @@ Cell["DrMxR", "Chapter",
  CellChangeTimes->{{3.791119216793105*^9, 
   3.791119235009972*^9}},ExpressionUUID->"8c02ae75-3ef6-46e6-a2eb-\
 f84f5cade347"],
+
+Cell["\<\
+For a range of options, the user can observe the resulting dynamics of the \
+wildtype WW, wildtype-drive heterozygote WD and the drive homozyogote DD \
+genotypes. The vertices of the triangle.....\
+\>", "Text",
+ CellChangeTimes->{{3.791121003365778*^9, 
+  3.791121074835823*^9}},ExpressionUUID->"ee92aad3-ae63-4a5e-8c73-\
+62f2a9c1c32a"],
 
 Cell[CellGroupData[{
 
@@ -1238,17 +1277,18 @@ $CellContext`b}]]; $CellContext`leftri = Graphics[{
            Blank[]], 
           Pattern[$CellContext`h22, 
            
-           Blank[]]] := $CellContext`h11 $CellContext`ffww $CellContext`ffww \
-$CellContext`xww $CellContext`xww + (1 - $CellContext`p) (1 - $CellContext`e/
-           2) $CellContext`h12 $CellContext`ffww $CellContext`ffwd \
-$CellContext`xww $CellContext`xwd[$CellContext`xww, $CellContext`xdd] + (
-           1 - $CellContext`d) (1 - $CellContext`e/2) (
-           1 - $CellContext`p) $CellContext`h12 $CellContext`ffww \
-$CellContext`ffwd $CellContext`xww $CellContext`xwd[$CellContext`xww, \
-$CellContext`xdd] + (
-           1 - $CellContext`d) (
-            1 - $CellContext`p)^2 $CellContext`h22 $CellContext`ffwd \
-$CellContext`ffwd $CellContext`xwd[$CellContext`xww, $CellContext`xdd] \
+           Blank[]]] := ((($CellContext`h11 $CellContext`ffww) \
+$CellContext`ffww) $CellContext`xww) $CellContext`xww + ((((((
+                1 - $CellContext`p) (1 - $CellContext`e/
+                2)) $CellContext`h12) $CellContext`ffww) $CellContext`ffwd) \
+$CellContext`xww) $CellContext`xwd[$CellContext`xww, $CellContext`xdd] + \
+(((((((1 - $CellContext`d) (1 - $CellContext`e/2)) (
+                1 - $CellContext`p)) $CellContext`h12) $CellContext`ffww) \
+$CellContext`ffwd) $CellContext`xww) $CellContext`xwd[$CellContext`xww, \
+$CellContext`xdd] + ((((((
+                1 - $CellContext`d) (
+                 1 - $CellContext`p)^2) $CellContext`h22) $CellContext`ffwd) \
+$CellContext`ffwd) $CellContext`xwd[$CellContext`xww, $CellContext`xdd]) \
 $CellContext`xwd[$CellContext`xww, $CellContext`xdd]; $CellContext`fdd[
           Pattern[$CellContext`xww, 
            Blank[]], 
@@ -1270,12 +1310,12 @@ $CellContext`xwd[$CellContext`xww, $CellContext`xdd]; $CellContext`fdd[
            Blank[]], 
           Pattern[$CellContext`h33, 
            Blank[]]] := (
-          1 - $CellContext`s) ($CellContext`h33 $CellContext`ffdd \
-$CellContext`ffdd $CellContext`xdd $CellContext`xdd + 
-          2 $CellContext`p $CellContext`h23 $CellContext`ffdd \
-$CellContext`ffwd $CellContext`xdd $CellContext`xwd[$CellContext`xww, \
-$CellContext`xdd] + $CellContext`p^2 $CellContext`h22 $CellContext`ffwd \
-$CellContext`ffwd $CellContext`xwd[$CellContext`xww, $CellContext`xdd] \
+          1 - $CellContext`s) (((($CellContext`h33 $CellContext`ffdd) \
+$CellContext`ffdd) $CellContext`xdd) $CellContext`xdd + (((((
+                2 $CellContext`p) $CellContext`h23) $CellContext`ffdd) \
+$CellContext`ffwd) $CellContext`xdd) $CellContext`xwd[$CellContext`xww, \
+$CellContext`xdd] + (((($CellContext`p^2 $CellContext`h22) $CellContext`ffwd) \
+$CellContext`ffwd) $CellContext`xwd[$CellContext`xww, $CellContext`xdd]) \
 $CellContext`xwd[$CellContext`xww, $CellContext`xdd]); $CellContext`fwd[
           Pattern[$CellContext`xww, 
            Blank[]], 
@@ -1304,20 +1344,19 @@ $CellContext`xwd[$CellContext`xww, $CellContext`xdd]); $CellContext`fwd[
           Pattern[$CellContext`h22, 
            Blank[]], 
           Pattern[$CellContext`h23, 
-           Blank[]]] := (1 - $CellContext`h $CellContext`s) (
-          2 $CellContext`p (
-            1 - $CellContext`p) $CellContext`h22 $CellContext`ffwd \
-$CellContext`ffwd $CellContext`xwd[$CellContext`xww, $CellContext`xdd] \
-$CellContext`xwd[$CellContext`xww, $CellContext`xdd] + 
-          2 (1 - $CellContext`p) $CellContext`h23 $CellContext`ffdd \
-$CellContext`ffwd $CellContext`xdd $CellContext`xwd[$CellContext`xww, \
-$CellContext`xdd] + 
-          2 (1 - $CellContext`e/2) (1 - $CellContext`g/
-            2) $CellContext`h12 $CellContext`p $CellContext`ffww \
-$CellContext`ffwd $CellContext`xww $CellContext`xwd[$CellContext`xww, \
-$CellContext`xdd] + ((2 - $CellContext`e) ((2 - $CellContext`g)/
-             2)) $CellContext`h13 $CellContext`ffdd $CellContext`ffww \
-$CellContext`xdd $CellContext`xww); $CellContext`ftot[
+           Blank[]]] := (
+          1 - $CellContext`h $CellContext`s) (((((((2 $CellContext`p) (
+                 1 - $CellContext`p)) $CellContext`h22) $CellContext`ffwd) \
+$CellContext`ffwd) $CellContext`xwd[$CellContext`xww, $CellContext`xdd]) \
+$CellContext`xwd[$CellContext`xww, $CellContext`xdd] + (((((
+                2 (1 - $CellContext`p)) $CellContext`h23) $CellContext`ffdd) \
+$CellContext`ffwd) $CellContext`xdd) $CellContext`xwd[$CellContext`xww, \
+$CellContext`xdd] + (((((((2 (1 - $CellContext`e/2)) (1 - $CellContext`g/
+                  2)) $CellContext`h12) $CellContext`p) $CellContext`ffww) \
+$CellContext`ffwd) $CellContext`xww) $CellContext`xwd[$CellContext`xww, \
+$CellContext`xdd] + ((((((2 - $CellContext`e) ((2 - $CellContext`g)/
+                 2)) $CellContext`h13) $CellContext`ffdd) $CellContext`ffww) \
+$CellContext`xdd) $CellContext`xww); $CellContext`ftot[
           Pattern[$CellContext`xww, 
            Blank[]], 
           Pattern[$CellContext`xdd, 
@@ -1584,8 +1623,8 @@ $CellContext`h22, $CellContext`h23, $CellContext`h33]; $CellContext`\
         Triangle[{{$CellContext`x1, $CellContext`y1}, {$CellContext`x2, \
 $CellContext`y2}, {$CellContext`x3, $CellContext`y3}}]; \
 $CellContext`HWparabola1 = 
-        Plot[Sqrt[3] $CellContext`x (1 - $CellContext`x), {$CellContext`x, 0, 
-           1}, PlotStyle -> Black]; Null}; Typeset`initDone$$ = True),
+        Plot[(Sqrt[3] $CellContext`x) (1 - $CellContext`x), {$CellContext`x, 
+           0, 1}, PlotStyle -> Black]; Null}; Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
     UnsavedVariables:>{Typeset`initDone$$},
@@ -1619,18 +1658,28 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[1510, 35, 216, 3, 98, "Title",ExpressionUUID->"dea076a2-ca19-42a0-91a6-e9053665d30d"],
-Cell[1729, 40, 218, 2, 31, "Author",ExpressionUUID->"1c29d2ba-8f74-49d2-b06e-f5b232ac5944"],
-Cell[1950, 44, 2052, 29, 269, "Abstract",ExpressionUUID->"4cf1338a-504d-4853-b06f-342749e74766"],
-Cell[4005, 75, 647, 12, 58, "Text",ExpressionUUID->"457fa212-d808-4c3e-b6df-45e7da5d5c3a"],
-Cell[4655, 89, 192, 3, 54, "Subsection",ExpressionUUID->"5418b7f2-c09a-4f65-a4d0-32851c24a19a"],
-Cell[4850, 94, 208, 4, 38, "Subsection",ExpressionUUID->"47a92d32-33f6-4269-a1b5-ed66bf523ec3"],
-Cell[5061, 100, 217, 4, 38, "Subsection",ExpressionUUID->"555daf31-fae7-4a62-a03a-6539b8db6590"],
+Cell[1510, 35, 197, 4, 98, "Title",ExpressionUUID->"dea076a2-ca19-42a0-91a6-e9053665d30d"],
+Cell[1710, 41, 269, 7, 57, "Author",ExpressionUUID->"1c29d2ba-8f74-49d2-b06e-f5b232ac5944"],
+Cell[1982, 50, 2077, 29, 269, "Abstract",ExpressionUUID->"4cf1338a-504d-4853-b06f-342749e74766"],
+Cell[4062, 81, 647, 12, 58, "Text",ExpressionUUID->"457fa212-d808-4c3e-b6df-45e7da5d5c3a"],
 Cell[CellGroupData[{
-Cell[5303, 108, 150, 3, 58, "Chapter",ExpressionUUID->"8c02ae75-3ef6-46e6-a2eb-f84f5cade347"],
+Cell[4734, 97, 192, 3, 54, "Subsection",ExpressionUUID->"5418b7f2-c09a-4f65-a4d0-32851c24a19a"],
+Cell[4929, 102, 171, 3, 35, "Text",ExpressionUUID->"783c956c-bd1a-472a-ae92-7cad8a12f35d"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[5478, 115, 36920, 870, 1922, "Input",ExpressionUUID->"35e83a99-9137-4b8f-8129-e5c0411d2df2"],
-Cell[42401, 987, 27414, 612, 578, "Output",ExpressionUUID->"bb06e768-66fc-4451-a4c0-3a3996d4ff0c"]
+Cell[5137, 110, 208, 4, 54, "Subsection",ExpressionUUID->"47a92d32-33f6-4269-a1b5-ed66bf523ec3"],
+Cell[5348, 116, 169, 3, 35, "Text",ExpressionUUID->"d6ce7b7d-c04c-42c1-9083-e505af57946e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5554, 124, 217, 4, 54, "Subsection",ExpressionUUID->"555daf31-fae7-4a62-a03a-6539b8db6590"],
+Cell[5774, 130, 169, 3, 35, "Text",ExpressionUUID->"3b4d47ab-707b-4e38-bebf-c8850657c3a5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5980, 138, 150, 3, 69, "Chapter",ExpressionUUID->"8c02ae75-3ef6-46e6-a2eb-f84f5cade347"],
+Cell[6133, 143, 346, 7, 35, "Text",ExpressionUUID->"ee92aad3-ae63-4a5e-8c73-62f2a9c1c32a"],
+Cell[CellGroupData[{
+Cell[6504, 154, 36920, 870, 1922, "Input",ExpressionUUID->"35e83a99-9137-4b8f-8129-e5c0411d2df2"],
+Cell[43427, 1026, 27565, 612, 578, "Output",ExpressionUUID->"bb06e768-66fc-4451-a4c0-3a3996d4ff0c"]
 }, {2}]]
 }, Open  ]]
 }, Open  ]]
@@ -1638,4 +1687,4 @@ Cell[42401, 987, 27414, 612, 578, "Output",ExpressionUUID->"bb06e768-66fc-4451-a
 ]
 *)
 
-(* NotebookSignature KvT#Qz#sxYPv2AKWx#bNoIwj *)
+(* NotebookSignature aw0rsCtzz#I1oC1ogMW1JOz0 *)
