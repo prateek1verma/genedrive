@@ -23,16 +23,96 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[      1088,         20]
-NotebookDataLength[     65854,       1544]
-NotebookOptionsPosition[     66357,       1541]
-NotebookOutlinePosition[     66694,       1556]
-CellTagsIndexPosition[     66651,       1553]
+NotebookDataLength[     70175,       1619]
+NotebookOptionsPosition[     69852,       1604]
+NotebookOutlinePosition[     70189,       1619]
+CellTagsIndexPosition[     70146,       1616]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
+Cell["DrMxR  ", "Title",
+ CellChangeTimes->{{3.791116520431237*^9, 3.79111656282701*^9}, {
+  3.791117368249481*^9, 3.79111736916218*^9}},
+ TextAlignment->Center,ExpressionUUID->"dea076a2-ca19-42a0-91a6-e9053665d30d"],
+
+Cell["Prateek Verma, R. Guy Reeves and Chaitanya S. Gokhale", "Author",
+ CellChangeTimes->{{3.7911167575156918`*^9, 3.791116773962865*^9}},
+ TextAlignment->Center,ExpressionUUID->"1c29d2ba-8f74-49d2-b06e-f5b232ac5944"],
+
+Cell["\<\
+Synthetic gene drive technologies aim to spread transgenic constructs into \
+wild populations even when they impose organismal fitness disadvantages. The \
+properties of gene drive constructs are diverse and depend on their molecular \
+construction, and differential selection pressured they impose in the varied \
+ecological situations they encounter. The extraordinary diversity of \
+conceivable drive mechanisms and the range of selective parameters they may \
+encounter makes it very difficult to convey their relative predicted \
+properties.The sheer number of published manuscripts in this field, \
+experimental and theoretical, is a testament to the possibilities presented \
+by this technology. We evaluate and condense the essential synthetic drive \
+mechanisms from a variety of studies and present a unified mathematical \
+paradigm (and a user - friendly tool DrMxR) describing the properties of a \
+wide variety of single construct gene drives (non - suppression). Within this \
+common framework, we have been able to recapitulate key published results \
+derived using bespoke modelling frameworks.Because a unified framework is \
+employed, it is also possible to seamlessly explore the consequences of \
+combining multiple drive approaches within a single construct. We provide a \
+method for analytically assessing the measure of invasiveness of a drive \
+construct.As opposed to typical studies of synthetic drives, we explore the \
+resilience of such drives in a spatially explicit manner advancing the \
+connection between realistic spatial dynamics and typical well - mixed \
+populations.Besides a scientific advance, our results and the tools provided \
+an intuitive and objective way for regulators, scientists and NGOs to \
+evaluate the properties and robustness of proposed and future gene drive \
+approaches.\
+\>", "Abstract",
+ CellChangeTimes->{{3.791119314384894*^9, 3.79111934912035*^9}, {
+  3.791119429761929*^9, 3.791119443901498*^9}},
+ TextAlignment->Center,ExpressionUUID->"4cf1338a-504d-4853-b06f-342749e74766"],
+
+Cell["\<\
+Drive MixeR is  a tool which is able to mix and match a number of \
+single-locus replacement gene drive scenarios. The user can control three \
+different features of the drive - Fertility selection, Distortion and \
+Viability selection. We describe the properties of each of these features \
+below.\
+\>", "Text",
+ CellChangeTimes->{{3.7911165783942223`*^9, 3.791116675051197*^9}, {
+  3.7911173716194077`*^9, 3.791117398392687*^9}, {3.791119113544321*^9, 
+  3.791119134847721*^9}, {3.791119174081149*^9, 3.791119187032516*^9}, {
+  3.7911194559920053`*^9, 
+  3.791119494377863*^9}},ExpressionUUID->"457fa212-d808-4c3e-b6df-\
+45e7da5d5c3a"],
+
+Cell["Fertility selection", "Subsection",
+ CellChangeTimes->{{3.791119190022883*^9, 3.7911191952957573`*^9}, 
+   3.791119241438943*^9},ExpressionUUID->"5418b7f2-c09a-4f65-a4d0-\
+32851c24a19a"],
+
+Cell["Distortion", "Subsection",
+ CellChangeTimes->{{3.791119190022883*^9, 3.7911191952957573`*^9}, {
+  3.79111924273041*^9, 
+  3.791119247983468*^9}},ExpressionUUID->"47a92d32-33f6-4269-a1b5-\
+ed66bf523ec3"],
+
+Cell["Viability selection", "Subsection",
+ CellChangeTimes->{{3.791119190022883*^9, 3.7911191952957573`*^9}, {
+  3.791119244035676*^9, 
+  3.79111925353544*^9}},ExpressionUUID->"555daf31-fae7-4a62-a03a-\
+6539b8db6590"],
+
+Cell[CellGroupData[{
+
+Cell["DrMxR", "Chapter",
+ CellChangeTimes->{{3.791119216793105*^9, 
+  3.791119235009972*^9}},ExpressionUUID->"8c02ae75-3ef6-46e6-a2eb-\
+f84f5cade347"],
+
+Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{"Manipulate", "[", 
   RowBox[{
@@ -166,7 +246,7 @@ Cell[BoxData[
         RowBox[{"FontFamily", "\[Rule]", "\"\<Palatino-Roman\>\""}]}], 
        "}"}]}]}], "\[IndentingNewLine]", "]"}], ",", 
    RowBox[{"Style", "[", 
-    RowBox[{"\"\<Fertility Selection\>\"", ",", "12", ",", "Bold"}], "]"}], 
+    RowBox[{"\"\<Fertility Selection\>\"", ",", "16", ",", "Bold"}], "]"}], 
    ",", "\[IndentingNewLine]", 
    RowBox[{"{", 
     RowBox[{
@@ -174,8 +254,8 @@ Cell[BoxData[
       RowBox[{"h11", ",", "1", ",", 
        RowBox[{"Style", "[", 
         RowBox[{
-        "\"\<WWxWW fertility, \!\(\*SubscriptBox[\(h\), \(11\)]\)\>\"", ",", 
-         "11"}], "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], ",", 
+        "\"\<WWxWW, \!\(\*SubscriptBox[\(h\), \(11\)]\)\>\"", ",", "11"}], 
+        "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], ",", 
    "\[IndentingNewLine]", 
    RowBox[{"{", 
     RowBox[{
@@ -183,8 +263,8 @@ Cell[BoxData[
       RowBox[{"h12", ",", "1", ",", 
        RowBox[{"Style", "[", 
         RowBox[{
-        "\"\<WWxWD fertility, \!\(\*SubscriptBox[\(h\), \(12\)]\)\>\"", ",", 
-         "11"}], "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], ",", 
+        "\"\<WWxWD, \!\(\*SubscriptBox[\(h\), \(12\)]\)\>\"", ",", "11"}], 
+        "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], ",", 
    "\[IndentingNewLine]", 
    RowBox[{"{", 
     RowBox[{
@@ -192,8 +272,8 @@ Cell[BoxData[
       RowBox[{"h13", ",", "1", ",", 
        RowBox[{"Style", "[", 
         RowBox[{
-        "\"\<WWxDD fertility, \!\(\*SubscriptBox[\(h\), \(13\)]\)\>\"", ",", 
-         "11"}], "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], ",", 
+        "\"\<WWxDD, \!\(\*SubscriptBox[\(h\), \(13\)]\)\>\"", ",", "11"}], 
+        "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], ",", 
    "\[IndentingNewLine]", 
    RowBox[{"{", 
     RowBox[{
@@ -201,8 +281,8 @@ Cell[BoxData[
       RowBox[{"h22", ",", "1", ",", 
        RowBox[{"Style", "[", 
         RowBox[{
-        "\"\<WDxWD fertility, \!\(\*SubscriptBox[\(h\), \(22\)]\)\>\"", ",", 
-         "11"}], "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], ",", 
+        "\"\<WDxWD, \!\(\*SubscriptBox[\(h\), \(22\)]\)\>\"", ",", "11"}], 
+        "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], ",", 
    "\[IndentingNewLine]", 
    RowBox[{"{", 
     RowBox[{
@@ -210,8 +290,8 @@ Cell[BoxData[
       RowBox[{"h23", ",", "1", ",", 
        RowBox[{"Style", "[", 
         RowBox[{
-        "\"\<WDxDD fertility, \!\(\*SubscriptBox[\(h\), \(23\)]\)\>\"", ",", 
-         "11"}], "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], ",", 
+        "\"\<WDxDD, \!\(\*SubscriptBox[\(h\), \(23\)]\)\>\"", ",", "11"}], 
+        "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], ",", 
    "\[IndentingNewLine]", 
    RowBox[{"{", 
     RowBox[{
@@ -219,11 +299,10 @@ Cell[BoxData[
       RowBox[{"h33", ",", "1", ",", 
        RowBox[{"Style", "[", 
         RowBox[{
-        "\"\<DDxDD fertility, \!\(\*SubscriptBox[\(h\), \(33\)]\)\>\"", ",", 
-         "11"}], "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], ",", 
-   "Delimiter", ",", 
+        "\"\<DDxDD, \!\(\*SubscriptBox[\(h\), \(33\)]\)\>\"", ",", "11"}], 
+        "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], ",", "Delimiter", ",", 
    RowBox[{"Style", "[", 
-    RowBox[{"\"\<Distortion\>\"", ",", "12", ",", "Bold"}], "]"}], ",", 
+    RowBox[{"\"\<Distortion\>\"", ",", "16", ",", "Bold"}], "]"}], ",", 
    "\[IndentingNewLine]", 
    RowBox[{"{", 
     RowBox[{
@@ -232,10 +311,9 @@ Cell[BoxData[
        RowBox[{"1", "/", "2"}], ",", 
        RowBox[{"Style", "[", 
         RowBox[{"\"\<Drive efficiency, p\>\"", ",", "11"}], "]"}]}], "}"}], 
-     ",", 
-     RowBox[{"1", "/", "2"}], ",", "1"}], "}"}], ",", "Delimiter", ",", 
+     ",", "0.5", ",", "1"}], "}"}], ",", "Delimiter", ",", 
    RowBox[{"Style", "[", 
-    RowBox[{"\"\<Viability Selection\>\"", ",", "12", ",", "Bold"}], "]"}], 
+    RowBox[{"\"\<Viability Selection\>\"", ",", "16", ",", "Bold"}], "]"}], 
    ",", "\[IndentingNewLine]", 
    RowBox[{"{", 
     RowBox[{
@@ -277,20 +355,18 @@ Cell[BoxData[
       RowBox[{"s", ",", "0", ",", 
        RowBox[{"Style", "[", 
         RowBox[{"\"\<Selection coefficient, s\>\"", ",", "11"}], "]"}]}], 
-      "}"}], ",", "0", ",", "1"}], "}"}], ",", 
+      "}"}], ",", "0", ",", "1"}], "}"}], ",", "\[IndentingNewLine]", 
    RowBox[{"Style", "[", 
-    RowBox[{"\"\<Medea drive\>\"", ",", "11", ",", "Bold"}], "]"}], ",", 
-   "\[IndentingNewLine]", 
+    RowBox[{"\"\<Specific drive efficiencies\>\"", ",", "11", ",", "Bold"}], 
+    "]"}], ",", "\[IndentingNewLine]", 
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{"d", ",", "0", ",", 
        RowBox[{"Style", "[", 
         RowBox[{
-        "\"\<Drive efficiency, \!\(\*SubscriptBox[\(d\), \(m\)]\)\>\"", ",", 
-         "11"}], "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], ",", 
-   RowBox[{"Style", "[", 
-    RowBox[{"\"\<Inverse Medea\>\"", ",", "11", ",", "Bold"}], "]"}], ",", 
+        "\"\<Medea, \!\(\*SubscriptBox[\(d\), \(m\)]\)\>\"", ",", "11"}], 
+        "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], ",", 
    "\[IndentingNewLine]", 
    RowBox[{"{", 
     RowBox[{
@@ -298,10 +374,8 @@ Cell[BoxData[
       RowBox[{"g", ",", "0", ",", 
        RowBox[{"Style", "[", 
         RowBox[{
-        "\"\<Drive efficiency, \!\(\*SubscriptBox[\(d\), \(im\)]\)\>\"", ",", 
+        "\"\<Inverse Medea, \!\(\*SubscriptBox[\(d\), \(im\)]\)\>\"", ",", 
          "11"}], "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], ",", 
-   RowBox[{"Style", "[", 
-    RowBox[{"\"\<Semele\>\"", ",", "11", ",", "Bold"}], "]"}], ",", 
    "\[IndentingNewLine]", 
    RowBox[{"{", 
     RowBox[{
@@ -309,8 +383,8 @@ Cell[BoxData[
       RowBox[{"e", ",", "0", ",", 
        RowBox[{"Style", "[", 
         RowBox[{
-        "\"\<Drive efficiency, \!\(\*SubscriptBox[\(d\), \(s\)]\)\>\"", ",", 
-         "11"}], "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], ",", 
+        "\"\<Semele, \!\(\*SubscriptBox[\(d\), \(s\)]\)\>\"", ",", "11"}], 
+        "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], ",", 
    RowBox[{"Initialization", "\[RuleDelayed]", 
     RowBox[{"{", "\[IndentingNewLine]", 
      RowBox[{
@@ -656,7 +730,7 @@ Cell[BoxData[
           "xww", ",", "xdd", ",", "ffww", ",", "ffwd", ",", "ffdd", ",", "p", 
            ",", "d", ",", "h", ",", "s", ",", "e", ",", "g", ",", "h11", ",", 
            "h12", ",", "h13", ",", "h22", ",", "h23", ",", "h33"}], 
-          "]"}]}]}]}], ";", " ", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+          "]"}]}]}]}], ";", " ", "\[IndentingNewLine]", 
       RowBox[{"(*", " ", 
        RowBox[{"Coordinates", " ", "of", " ", "S3", " ", "triangle"}], " ", 
        "*)"}], "\[IndentingNewLine]", 
@@ -665,11 +739,10 @@ Cell[BoxData[
       RowBox[{"x3", " ", "=", " ", "0.5"}], ";", " ", 
       RowBox[{"y3", " ", "=", " ", 
        RowBox[{
-        RowBox[{"Sqrt", "[", "3", "]"}], "/", "2."}]}], ";", 
+        RowBox[{"Sqrt", "[", "3", "]"}], "/", "2"}]}], ";", 
       "\[IndentingNewLine]", 
       RowBox[{"x2", " ", "=", " ", "1"}], ";", " ", 
       RowBox[{"y2", " ", "=", " ", "0"}], ";", "\[IndentingNewLine]", 
-      "\[IndentingNewLine]", 
       RowBox[{"(*", " ", 
        RowBox[{
        "Transforamtion", " ", "from", " ", "barycentric", " ", "to", " ", 
@@ -826,7 +899,7 @@ Cell[BoxData[
            RowBox[{"x2", ",", "y2"}], "}"}], ",", 
           RowBox[{"{", 
            RowBox[{"x3", ",", "y3"}], "}"}]}], "}"}], "]"}]}], ";", 
-      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      "\[IndentingNewLine]", 
       RowBox[{"HWparabola1", "=", 
        RowBox[{"Plot", "[", 
         RowBox[{
@@ -905,8 +978,12 @@ Cell[BoxData[
    3.791028507690817*^9, 3.7910285089528713`*^9}, 3.791051499192129*^9, {
    3.791053352717731*^9, 3.791053360716393*^9}, {3.791053424123616*^9, 
    3.791053436324293*^9}, {3.791053481759224*^9, 3.791053516678504*^9}, {
-   3.791054678226418*^9, 3.79105468242391*^9}},
- CellLabel->"In[27]:=",ExpressionUUID->"35e83a99-9137-4b8f-8129-e5c0411d2df2"],
+   3.791054678226418*^9, 3.79105468242391*^9}, {3.791117034106195*^9, 
+   3.7911170408877573`*^9}, {3.791117182320167*^9, 3.791117193694912*^9}, {
+   3.791118524851893*^9, 3.7911185306756077`*^9}, {3.7911186237677107`*^9, 
+   3.791118652459361*^9}, {3.791118689023116*^9, 3.791118743397456*^9}, {
+   3.791118797946059*^9, 3.791118806749848*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"35e83a99-9137-4b8f-8129-e5c0411d2df2"],
 
 Cell[BoxData[
  TagBox[
@@ -921,34 +998,27 @@ Cell[BoxData[
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[
-       Style["Fertility Selection", 12, Bold]], 
+       Style["Fertility Selection", 16, Bold]], 
       Manipulate`Dump`ThisIsNotAControl}, {{
        Hold[$CellContext`h11$$], 1, 
-       Style["WWxWW fertility, \!\(\*SubscriptBox[\(h\), \(11\)]\)", 11]}, 0, 
-      1}, {{
+       Style["WWxWW, \!\(\*SubscriptBox[\(h\), \(11\)]\)", 11]}, 0, 1}, {{
        Hold[$CellContext`h12$$], 1, 
-       Style["WWxWD fertility, \!\(\*SubscriptBox[\(h\), \(12\)]\)", 11]}, 0, 
-      1}, {{
+       Style["WWxWD, \!\(\*SubscriptBox[\(h\), \(12\)]\)", 11]}, 0, 1}, {{
        Hold[$CellContext`h13$$], 1, 
-       Style["WWxDD fertility, \!\(\*SubscriptBox[\(h\), \(13\)]\)", 11]}, 0, 
-      1}, {{
+       Style["WWxDD, \!\(\*SubscriptBox[\(h\), \(13\)]\)", 11]}, 0, 1}, {{
        Hold[$CellContext`h22$$], 1, 
-       Style["WDxWD fertility, \!\(\*SubscriptBox[\(h\), \(22\)]\)", 11]}, 0, 
-      1}, {{
+       Style["WDxWD, \!\(\*SubscriptBox[\(h\), \(22\)]\)", 11]}, 0, 1}, {{
        Hold[$CellContext`h23$$], 1, 
-       Style["WDxDD fertility, \!\(\*SubscriptBox[\(h\), \(23\)]\)", 11]}, 0, 
-      1}, {{
+       Style["WDxDD, \!\(\*SubscriptBox[\(h\), \(23\)]\)", 11]}, 0, 1}, {{
        Hold[$CellContext`h33$$], 1, 
-       Style["DDxDD fertility, \!\(\*SubscriptBox[\(h\), \(33\)]\)", 11]}, 0, 
-      1}, {
+       Style["DDxDD, \!\(\*SubscriptBox[\(h\), \(33\)]\)", 11]}, 0, 1}, {
       Hold[
-       Style["Distortion", 12, Bold]], Manipulate`Dump`ThisIsNotAControl}, {{
+       Style["Distortion", 16, Bold]], Manipulate`Dump`ThisIsNotAControl}, {{
        Hold[$CellContext`p$$], 
        Rational[1, 2], 
-       Style["Drive efficiency, p", 11]}, 
-      Rational[1, 2], 1}, {
+       Style["Drive efficiency, p", 11]}, 0.5, 1}, {
       Hold[
-       Style["Viability Selection", 12, Bold]], 
+       Style["Viability Selection", 16, Bold]], 
       Manipulate`Dump`ThisIsNotAControl}, {{
        Hold[$CellContext`ffww$$], 1, 
        Style["Wildtype fitness, \!\(\*SubscriptBox[\(f\), \(WW\)]\)", 11]}, 0,
@@ -966,28 +1036,22 @@ Cell[BoxData[
        Hold[$CellContext`s$$], 0, 
        Style["Selection coefficient, s", 11]}, 0, 1}, {
       Hold[
-       Style["Medea drive", 11, Bold]], Manipulate`Dump`ThisIsNotAControl}, {{
-      
-       Hold[$CellContext`d$$], 0, 
-       Style["Drive efficiency, \!\(\*SubscriptBox[\(d\), \(m\)]\)", 11]}, 0, 
-      1}, {
-      Hold[
-       Style["Inverse Medea", 11, Bold]], 
+       Style["Specific drive efficiencies", 11, Bold]], 
       Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`d$$], 0, 
+       Style["Medea, \!\(\*SubscriptBox[\(d\), \(m\)]\)", 11]}, 0, 1}, {{
        Hold[$CellContext`g$$], 0, 
-       Style["Drive efficiency, \!\(\*SubscriptBox[\(d\), \(im\)]\)", 11]}, 0,
-       1}, {
-      Hold[
-       Style["Semele", 11, Bold]], Manipulate`Dump`ThisIsNotAControl}, {{
+       Style["Inverse Medea, \!\(\*SubscriptBox[\(d\), \(im\)]\)", 11]}, 0, 
+      1}, {{
        Hold[$CellContext`e$$], 0, 
-       Style["Drive efficiency, \!\(\*SubscriptBox[\(d\), \(s\)]\)", 11]}, 0, 
-      1}}, Typeset`size$$ = {600., {296., 304.}}, Typeset`update$$ = 0, 
+       Style["Semele, \!\(\*SubscriptBox[\(d\), \(s\)]\)", 11]}, 0, 1}}, 
+    Typeset`size$$ = {400., {198., 202.}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`h11$585466$$ = 0, $CellContext`h12$585467$$ = 
-    0, $CellContext`h13$585468$$ = 0, $CellContext`h22$585469$$ = 
-    0, $CellContext`h23$585470$$ = 0, $CellContext`h33$585471$$ = 
-    0, $CellContext`p$585472$$ = 0, $CellContext`ffww$585473$$ = 
-    0, $CellContext`ffwd$585474$$ = 0, $CellContext`ffdd$585475$$ = 0}, 
+    False, $CellContext`h11$132483$$ = 0, $CellContext`h12$132484$$ = 
+    0, $CellContext`h13$132485$$ = 0, $CellContext`h22$132486$$ = 
+    0, $CellContext`h23$132487$$ = 0, $CellContext`h33$132488$$ = 
+    0, $CellContext`p$132489$$ = 0, $CellContext`ffww$132490$$ = 
+    0, $CellContext`ffwd$132491$$ = 0, $CellContext`ffdd$132492$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`d$$ = 0, $CellContext`e$$ = 
@@ -997,16 +1061,16 @@ Cell[BoxData[
         1, $CellContext`h22$$ = 1, $CellContext`h23$$ = 1, $CellContext`h33$$ = 
         1, $CellContext`p$$ = Rational[1, 2], $CellContext`s$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`h11$$, $CellContext`h11$585466$$, 0], 
-        Hold[$CellContext`h12$$, $CellContext`h12$585467$$, 0], 
-        Hold[$CellContext`h13$$, $CellContext`h13$585468$$, 0], 
-        Hold[$CellContext`h22$$, $CellContext`h22$585469$$, 0], 
-        Hold[$CellContext`h23$$, $CellContext`h23$585470$$, 0], 
-        Hold[$CellContext`h33$$, $CellContext`h33$585471$$, 0], 
-        Hold[$CellContext`p$$, $CellContext`p$585472$$, 0], 
-        Hold[$CellContext`ffww$$, $CellContext`ffww$585473$$, 0], 
-        Hold[$CellContext`ffwd$$, $CellContext`ffwd$585474$$, 0], 
-        Hold[$CellContext`ffdd$$, $CellContext`ffdd$585475$$, 0]}, 
+        Hold[$CellContext`h11$$, $CellContext`h11$132483$$, 0], 
+        Hold[$CellContext`h12$$, $CellContext`h12$132484$$, 0], 
+        Hold[$CellContext`h13$$, $CellContext`h13$132485$$, 0], 
+        Hold[$CellContext`h22$$, $CellContext`h22$132486$$, 0], 
+        Hold[$CellContext`h23$$, $CellContext`h23$132487$$, 0], 
+        Hold[$CellContext`h33$$, $CellContext`h33$132488$$, 0], 
+        Hold[$CellContext`p$$, $CellContext`p$132489$$, 0], 
+        Hold[$CellContext`ffww$$, $CellContext`ffww$132490$$, 0], 
+        Hold[$CellContext`ffwd$$, $CellContext`ffwd$132491$$, 0], 
+        Hold[$CellContext`ffdd$$, $CellContext`ffdd$132492$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1067,24 +1131,23 @@ $CellContext`h23$$, $CellContext`h33$$] == 0, $CellContext`xcart <
           Inset[
            Style["WD", 18], {0.5, 0.9}]}, 
         BaseStyle -> {10, FontFamily -> "Palatino-Roman"}], "Specifications" :> {
-        Style["Fertility Selection", 12, Bold], {{$CellContext`h11$$, 1, 
-          Style["WWxWW fertility, \!\(\*SubscriptBox[\(h\), \(11\)]\)", 11]}, 
-         0, 1}, {{$CellContext`h12$$, 1, 
-          Style["WWxWD fertility, \!\(\*SubscriptBox[\(h\), \(12\)]\)", 11]}, 
-         0, 1}, {{$CellContext`h13$$, 1, 
-          Style["WWxDD fertility, \!\(\*SubscriptBox[\(h\), \(13\)]\)", 11]}, 
-         0, 1}, {{$CellContext`h22$$, 1, 
-          Style["WDxWD fertility, \!\(\*SubscriptBox[\(h\), \(22\)]\)", 11]}, 
-         0, 1}, {{$CellContext`h23$$, 1, 
-          Style["WDxDD fertility, \!\(\*SubscriptBox[\(h\), \(23\)]\)", 11]}, 
-         0, 1}, {{$CellContext`h33$$, 1, 
-          Style["DDxDD fertility, \!\(\*SubscriptBox[\(h\), \(33\)]\)", 11]}, 
-         0, 1}, Delimiter, 
-        Style["Distortion", 12, Bold], {{$CellContext`p$$, 
+        Style["Fertility Selection", 16, Bold], {{$CellContext`h11$$, 1, 
+          Style["WWxWW, \!\(\*SubscriptBox[\(h\), \(11\)]\)", 11]}, 0, 
+         1}, {{$CellContext`h12$$, 1, 
+          Style["WWxWD, \!\(\*SubscriptBox[\(h\), \(12\)]\)", 11]}, 0, 
+         1}, {{$CellContext`h13$$, 1, 
+          Style["WWxDD, \!\(\*SubscriptBox[\(h\), \(13\)]\)", 11]}, 0, 
+         1}, {{$CellContext`h22$$, 1, 
+          Style["WDxWD, \!\(\*SubscriptBox[\(h\), \(22\)]\)", 11]}, 0, 
+         1}, {{$CellContext`h23$$, 1, 
+          Style["WDxDD, \!\(\*SubscriptBox[\(h\), \(23\)]\)", 11]}, 0, 
+         1}, {{$CellContext`h33$$, 1, 
+          Style["DDxDD, \!\(\*SubscriptBox[\(h\), \(33\)]\)", 11]}, 0, 1}, 
+        Delimiter, 
+        Style["Distortion", 16, Bold], {{$CellContext`p$$, 
           Rational[1, 2], 
-          Style["Drive efficiency, p", 11]}, 
-         Rational[1, 2], 1}, Delimiter, 
-        Style["Viability Selection", 12, Bold], {{$CellContext`ffww$$, 1, 
+          Style["Drive efficiency, p", 11]}, 0.5, 1}, Delimiter, 
+        Style["Viability Selection", 16, Bold], {{$CellContext`ffww$$, 1, 
           Style["Wildtype fitness, \!\(\*SubscriptBox[\(f\), \(WW\)]\)", 11]},
           0, 1}, {{$CellContext`ffwd$$, 1, 
           Style[
@@ -1096,16 +1159,14 @@ $CellContext`h23$$, $CellContext`h33$$] == 0, $CellContext`xcart <
           Style["Dominance coefficient, h", 11]}, 0, 
          2}, {{$CellContext`s$$, 0, 
           Style["Selection coefficient, s", 11]}, 0, 1}, 
-        Style["Medea drive", 11, Bold], {{$CellContext`d$$, 0, 
-          Style["Drive efficiency, \!\(\*SubscriptBox[\(d\), \(m\)]\)", 11]}, 
-         0, 1}, 
-        Style["Inverse Medea", 11, Bold], {{$CellContext`g$$, 0, 
-          Style["Drive efficiency, \!\(\*SubscriptBox[\(d\), \(im\)]\)", 11]},
-          0, 1}, 
-        Style["Semele", 11, Bold], {{$CellContext`e$$, 0, 
-          Style["Drive efficiency, \!\(\*SubscriptBox[\(d\), \(s\)]\)", 11]}, 
-         0, 1}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{1223., {340., 348.}},
+        Style["Specific drive efficiencies", 11, Bold], {{$CellContext`d$$, 0, 
+          Style["Medea, \!\(\*SubscriptBox[\(d\), \(m\)]\)", 11]}, 0, 
+         1}, {{$CellContext`g$$, 0, 
+          Style["Inverse Medea, \!\(\*SubscriptBox[\(d\), \(im\)]\)", 11]}, 0,
+          1}, {{$CellContext`e$$, 0, 
+          Style["Semele, \!\(\*SubscriptBox[\(d\), \(s\)]\)", 11]}, 0, 1}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{822., {277., 282.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1252,7 +1313,6 @@ $CellContext`xwd[$CellContext`xww, $CellContext`xdd] +
 $CellContext`ffwd $CellContext`xdd $CellContext`xwd[$CellContext`xww, \
 $CellContext`xdd] + 
           2 (1 - $CellContext`e/2) (1 - $CellContext`g/
-            
             2) $CellContext`h12 $CellContext`p $CellContext`ffww \
 $CellContext`ffwd $CellContext`xww $CellContext`xwd[$CellContext`xww, \
 $CellContext`xdd] + ((2 - $CellContext`e) ((2 - $CellContext`g)/
@@ -1388,7 +1448,7 @@ $CellContext`d, $CellContext`h, $CellContext`s, $CellContext`e, \
 $CellContext`g, $CellContext`h11, $CellContext`h12, $CellContext`h13, \
 $CellContext`h22, $CellContext`h23, $CellContext`h33]; $CellContext`x1 = 
         0; $CellContext`y1 = 0; $CellContext`x3 = 0.5; $CellContext`y3 = 
-        Sqrt[3]/2.; $CellContext`x2 = 1; $CellContext`y2 = 
+        Sqrt[3]/2; $CellContext`x2 = 1; $CellContext`y2 = 
         0; $CellContext`xncart[
           Pattern[$CellContext`x, 
            Blank[]], 
@@ -1535,8 +1595,11 @@ $CellContext`HWparabola1 =
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{
   3.791054611343812*^9, 3.7910547064209538`*^9, 3.7910550064605627`*^9, {
-   3.7910610086773977`*^9, 3.791061023490241*^9}, 3.79106415421541*^9},
- CellLabel->"Out[27]=",ExpressionUUID->"b72ab2f0-eb59-4287-ac4d-c2ffb478a151"]
+   3.7910610086773977`*^9, 3.791061023490241*^9}, 3.79106415421541*^9, 
+   3.791118531439577*^9, 3.791118745330577*^9, 3.7911188167569103`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"bb06e768-66fc-4451-a4c0-3a3996d4ff0c"]
+}, {2}]]
+}, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1399, 705},
@@ -1556,11 +1619,23 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[1510, 35, 36977, 873, 3612, "Input",ExpressionUUID->"35e83a99-9137-4b8f-8129-e5c0411d2df2"],
-Cell[38490, 910, 27851, 628, 750, "Output",ExpressionUUID->"b72ab2f0-eb59-4287-ac4d-c2ffb478a151"]
+Cell[1510, 35, 216, 3, 98, "Title",ExpressionUUID->"dea076a2-ca19-42a0-91a6-e9053665d30d"],
+Cell[1729, 40, 218, 2, 31, "Author",ExpressionUUID->"1c29d2ba-8f74-49d2-b06e-f5b232ac5944"],
+Cell[1950, 44, 2052, 29, 269, "Abstract",ExpressionUUID->"4cf1338a-504d-4853-b06f-342749e74766"],
+Cell[4005, 75, 647, 12, 58, "Text",ExpressionUUID->"457fa212-d808-4c3e-b6df-45e7da5d5c3a"],
+Cell[4655, 89, 192, 3, 54, "Subsection",ExpressionUUID->"5418b7f2-c09a-4f65-a4d0-32851c24a19a"],
+Cell[4850, 94, 208, 4, 38, "Subsection",ExpressionUUID->"47a92d32-33f6-4269-a1b5-ed66bf523ec3"],
+Cell[5061, 100, 217, 4, 38, "Subsection",ExpressionUUID->"555daf31-fae7-4a62-a03a-6539b8db6590"],
+Cell[CellGroupData[{
+Cell[5303, 108, 150, 3, 58, "Chapter",ExpressionUUID->"8c02ae75-3ef6-46e6-a2eb-f84f5cade347"],
+Cell[CellGroupData[{
+Cell[5478, 115, 36920, 870, 1922, "Input",ExpressionUUID->"35e83a99-9137-4b8f-8129-e5c0411d2df2"],
+Cell[42401, 987, 27414, 612, 578, "Output",ExpressionUUID->"bb06e768-66fc-4451-a4c0-3a3996d4ff0c"]
+}, {2}]]
+}, Open  ]]
 }, Open  ]]
 }
 ]
 *)
 
-(* NotebookSignature 5wDRFzCLW6VXlAK4yveP0GK1 *)
+(* NotebookSignature KvT#Qz#sxYPv2AKWx#bNoIwj *)
