@@ -23,10 +23,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[      1088,         20]
-NotebookDataLength[     58331,       1399]
-NotebookOptionsPosition[     57699,       1376]
-NotebookOutlinePosition[     58037,       1391]
-CellTagsIndexPosition[     57994,       1388]
+NotebookDataLength[     58423,       1400]
+NotebookOptionsPosition[     57791,       1377]
+NotebookOutlinePosition[     58129,       1392]
+CellTagsIndexPosition[     58086,       1389]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -166,10 +166,10 @@ Cell[BoxData[
           RowBox[{"PlotLabel", "\[Rule]", 
            RowBox[{"Style", "[", 
             RowBox[{"\"\<Gene Drive Dynamics\>\"", ",", "\"\<Subtitle\>\""}], 
-            "]"}]}]}], "]"}], ",", "\[IndentingNewLine]", "leftri", ",", 
-        "\[IndentingNewLine]", "rightri", ",", "\[IndentingNewLine]", "downl",
-         ",", "Tri", ",", "HWparabola1", ",", "fpplot"}], "}"}], ",", 
-      "\[IndentingNewLine]", 
+            "]"}]}]}], "]"}], ",", "HWparabola1", ",", "fpplot", ",", 
+        "\[IndentingNewLine]", "leftri", ",", "\[IndentingNewLine]", 
+        "rightri", ",", "\[IndentingNewLine]", "downl", ",", "Tri"}], "}"}], 
+      ",", "\[IndentingNewLine]", 
       RowBox[{"AspectRatio", "\[Rule]", "Automatic"}], ",", 
       "\[IndentingNewLine]", 
       RowBox[{"ImageSize", "\[Rule]", 
@@ -792,8 +792,9 @@ Cell[BoxData[
    3.791719099060334*^9}, {3.791719170207919*^9, 3.7917191893107977`*^9}, {
    3.7917193037425537`*^9, 3.7917193303468018`*^9}, {3.7917193639712*^9, 
    3.791719389185803*^9}, {3.791719421602879*^9, 3.791719443853201*^9}, {
-   3.7917194833714647`*^9, 3.7917194850036592`*^9}},
- CellLabel->"In[13]:=",ExpressionUUID->"5a8cfc92-a3e5-4c12-a89c-72f90df28112"],
+   3.7917194833714647`*^9, 3.7917194850036592`*^9}, {3.7917196799703217`*^9, 
+   3.79171971524435*^9}},
+ CellLabel->"In[16]:=",ExpressionUUID->"5a8cfc92-a3e5-4c12-a89c-72f90df28112"],
 
 Cell[BoxData[
  TagBox[
@@ -846,11 +847,11 @@ Cell[BoxData[
          1, $CellContext`e$$ = 0, $CellContext`g$$ = 0}]], 
       Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = {
     600., {296., 304.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = False, $CellContext`ffww$37127$$ = 
-    0, $CellContext`ffwd$37128$$ = 0, $CellContext`ffdd$37129$$ = 
-    0, $CellContext`p$37130$$ = 0, $CellContext`\[Omega]$37131$$ = 
-    0, $CellContext`\[Nu]$37132$$ = 0, $CellContext`d$37133$$ = 
-    0, $CellContext`g$37134$$ = 0, $CellContext`e$37135$$ = 0}, 
+    Typeset`skipInitDone$$ = False, $CellContext`ffww$49754$$ = 
+    0, $CellContext`ffwd$49755$$ = 0, $CellContext`ffdd$49756$$ = 
+    0, $CellContext`p$49757$$ = 0, $CellContext`\[Omega]$49758$$ = 
+    0, $CellContext`\[Nu]$49759$$ = 0, $CellContext`d$49760$$ = 
+    0, $CellContext`g$49761$$ = 0, $CellContext`e$49762$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`d$$ = 0, $CellContext`e$$ = 
@@ -858,15 +859,15 @@ Cell[BoxData[
         1, $CellContext`ffww$$ = 1, $CellContext`g$$ = 0, $CellContext`p$$ = 
         0.5, $CellContext`\[Nu]$$ = 1, $CellContext`\[Omega]$$ = 1}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`ffww$$, $CellContext`ffww$37127$$, 0], 
-        Hold[$CellContext`ffwd$$, $CellContext`ffwd$37128$$, 0], 
-        Hold[$CellContext`ffdd$$, $CellContext`ffdd$37129$$, 0], 
-        Hold[$CellContext`p$$, $CellContext`p$37130$$, 0], 
-        Hold[$CellContext`\[Omega]$$, $CellContext`\[Omega]$37131$$, 0], 
-        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$37132$$, 0], 
-        Hold[$CellContext`d$$, $CellContext`d$37133$$, 0], 
-        Hold[$CellContext`g$$, $CellContext`g$37134$$, 0], 
-        Hold[$CellContext`e$$, $CellContext`e$37135$$, 0]}, 
+        Hold[$CellContext`ffww$$, $CellContext`ffww$49754$$, 0], 
+        Hold[$CellContext`ffwd$$, $CellContext`ffwd$49755$$, 0], 
+        Hold[$CellContext`ffdd$$, $CellContext`ffdd$49756$$, 0], 
+        Hold[$CellContext`p$$, $CellContext`p$49757$$, 0], 
+        Hold[$CellContext`\[Omega]$$, $CellContext`\[Omega]$49758$$, 0], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$49759$$, 0], 
+        Hold[$CellContext`d$$, $CellContext`d$49760$$, 0], 
+        Hold[$CellContext`g$$, $CellContext`g$49761$$, 0], 
+        Hold[$CellContext`e$$, $CellContext`e$49762$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -893,10 +894,9 @@ $CellContext`p$$, $CellContext`d$$, $CellContext`\[Omega]$$, $CellContext`\
              LegendLabel -> "Relative speed"], {0.85, 0.7}], Mesh -> None, 
           Frame -> None, PlotLabel -> 
           Style["Gene Drive Dynamics", 
-            "Subtitle"]], $CellContext`leftri, $CellContext`rightri, \
-$CellContext`downl, $CellContext`Tri, $CellContext`HWparabola1, \
-$CellContext`fpplot}, AspectRatio -> Automatic, ImageSize -> {400, 400}, 
-        Epilog -> {
+            "Subtitle"]], $CellContext`HWparabola1, $CellContext`fpplot, \
+$CellContext`leftri, $CellContext`rightri, $CellContext`downl, \
+$CellContext`Tri}, AspectRatio -> Automatic, ImageSize -> {400, 400}, Epilog -> {
           Inset[
            Style["DD", 18], {1., -0.05}], 
           Inset[
@@ -1267,8 +1267,9 @@ $CellContext`fpplot =
    3.791705188436129*^9, 3.791705212769548*^9}, 3.791705276067774*^9, 
    3.7917187773938923`*^9, 3.791718900872036*^9, 3.7917189983781652`*^9, 
    3.791719099843923*^9, {3.791719172826922*^9, 3.7917191908498497`*^9}, 
-   3.791719330868475*^9, 3.791719364790452*^9, 3.791719485553996*^9},
- CellLabel->"Out[13]=",ExpressionUUID->"2adb53a5-d6c8-4009-93e3-2500bc6fe601"]
+   3.791719330868475*^9, 3.791719364790452*^9, 3.791719485553996*^9, {
+   3.791719687951641*^9, 3.791719716299295*^9}},
+ CellLabel->"Out[16]=",ExpressionUUID->"0e2a2fd8-9d5a-4268-9f13-d984268c39cf"]
 }, {2}]],
 
 Cell[CellGroupData[{
@@ -1395,22 +1396,22 @@ Cell[1510, 35, 258, 4, 146, "Title",ExpressionUUID->"dea076a2-ca19-42a0-91a6-e90
 Cell[1771, 41, 1764, 50, 205, "Author",ExpressionUUID->"1c29d2ba-8f74-49d2-b06e-f5b232ac5944"],
 Cell[3538, 93, 1160, 17, 336, "Abstract",ExpressionUUID->"4cf1338a-504d-4853-b06f-342749e74766"],
 Cell[CellGroupData[{
-Cell[4723, 114, 27782, 681, 3097, "Input",ExpressionUUID->"5a8cfc92-a3e5-4c12-a89c-72f90df28112"],
-Cell[32508, 797, 21770, 473, 716, "Output",ExpressionUUID->"2adb53a5-d6c8-4009-93e3-2500bc6fe601"]
+Cell[4723, 114, 27833, 682, 3096, "Input",ExpressionUUID->"5a8cfc92-a3e5-4c12-a89c-72f90df28112"],
+Cell[32559, 798, 21811, 473, 750, "Output",ExpressionUUID->"0e2a2fd8-9d5a-4268-9f13-d984268c39cf"]
 }, {2}]],
 Cell[CellGroupData[{
-Cell[54312, 1275, 165, 3, 101, "Section",ExpressionUUID->"0ace0f20-69f4-46df-85d3-8a7260263411"],
+Cell[54404, 1276, 165, 3, 101, "Section",ExpressionUUID->"0ace0f20-69f4-46df-85d3-8a7260263411"],
 Cell[CellGroupData[{
-Cell[54502, 1282, 192, 3, 81, "Subsection",ExpressionUUID->"da372b89-21e6-49ba-9573-a4ef37bf56bb"],
-Cell[54697, 1287, 983, 26, 54, "Text",ExpressionUUID->"2482534d-1a89-4eae-bfed-c6f8c584eb06"]
+Cell[54594, 1283, 192, 3, 81, "Subsection",ExpressionUUID->"da372b89-21e6-49ba-9573-a4ef37bf56bb"],
+Cell[54789, 1288, 983, 26, 54, "Text",ExpressionUUID->"2482534d-1a89-4eae-bfed-c6f8c584eb06"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[55717, 1318, 208, 4, 81, "Subsection",ExpressionUUID->"136d52ef-f73e-4f2b-bda0-60e4c6db23d9"],
-Cell[55928, 1324, 432, 10, 53, "Text",ExpressionUUID->"b55c17ba-9420-4c22-8a85-fc6fbe096fe4"]
+Cell[55809, 1319, 208, 4, 81, "Subsection",ExpressionUUID->"136d52ef-f73e-4f2b-bda0-60e4c6db23d9"],
+Cell[56020, 1325, 432, 10, 53, "Text",ExpressionUUID->"b55c17ba-9420-4c22-8a85-fc6fbe096fe4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[56397, 1339, 217, 4, 81, "Subsection",ExpressionUUID->"79acdad1-5113-4a4e-981d-1e075a39a44c"],
-Cell[56617, 1345, 1042, 26, 89, "Text",ExpressionUUID->"18a3dd79-ca9b-4df1-8cc6-3569b467ee77"]
+Cell[56489, 1340, 217, 4, 81, "Subsection",ExpressionUUID->"79acdad1-5113-4a4e-981d-1e075a39a44c"],
+Cell[56709, 1346, 1042, 26, 89, "Text",ExpressionUUID->"18a3dd79-ca9b-4df1-8cc6-3569b467ee77"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -1418,4 +1419,4 @@ Cell[56617, 1345, 1042, 26, 89, "Text",ExpressionUUID->"18a3dd79-ca9b-4df1-8cc6-
 ]
 *)
 
-(* NotebookSignature 4wDL#YqkwgliYCKwbjhppFmc *)
+(* NotebookSignature exDranHhVIzPiDKloZS0W7b1 *)
