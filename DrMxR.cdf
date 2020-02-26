@@ -23,10 +23,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[      1088,         20]
-NotebookDataLength[     56212,       1328]
-NotebookOptionsPosition[     55356,       1301]
-NotebookOutlinePosition[     55694,       1316]
-CellTagsIndexPosition[     55651,       1313]
+NotebookDataLength[     58331,       1399]
+NotebookOptionsPosition[     57699,       1376]
+NotebookOutlinePosition[     58037,       1391]
+CellTagsIndexPosition[     57994,       1388]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -43,26 +43,22 @@ Cell[TextData[{
  "Prateek ",
  Cell[BoxData[
   FormBox[
-   SuperscriptBox["Verma", "1"], TraditionalForm]],
-  FormatType->"TraditionalForm",ExpressionUUID->
+   SuperscriptBox["Verma", "1"], TraditionalForm]],ExpressionUUID->
   "1aba553f-c6de-45a1-bd68-170b3ad82845"],
  ", R. Guy ",
  Cell[BoxData[
   FormBox[
-   SuperscriptBox["Reeves", "2"], TraditionalForm]],
-  FormatType->"TraditionalForm",ExpressionUUID->
+   SuperscriptBox["Reeves", "2"], TraditionalForm]],ExpressionUUID->
   "fc041c43-73d2-443c-b4cd-93ad17228671"],
  " and Chaitanya S. ",
  Cell[BoxData[
   FormBox[
-   SuperscriptBox["Gokhale", "1"], TraditionalForm]],
-  FormatType->"TraditionalForm",ExpressionUUID->
+   SuperscriptBox["Gokhale", "1"], TraditionalForm]],ExpressionUUID->
   "0ea1030b-b526-4cfa-b379-b48608a8a42e"],
  "\n",
  Cell[BoxData[
   FormBox[
-   SuperscriptBox["", "1"], TraditionalForm]],
-  FormatType->"TraditionalForm",ExpressionUUID->
+   SuperscriptBox["", "1"], TraditionalForm]],ExpressionUUID->
   "5c26c8ab-e124-4bf6-83a0-a75dc615293e"],
  "Research Group for Theoretical Models of Eco-evolutionary Dynamics, \
 Department of Evolutionary Theory, Max Planck Institute for Evolutionary \
@@ -71,14 +67,12 @@ Biology, Pl",
   FormBox[
    OverscriptBox[
     StyleBox["o",
-     FontSlant->"Plain"], ".."], TraditionalForm]],
-  FormatType->"TraditionalForm",ExpressionUUID->
+     FontSlant->"Plain"], ".."], TraditionalForm]],ExpressionUUID->
   "dde8cbff-01f0-4c79-a1d6-eb5099bd5a7c"],
  "n, Germany\n",
  Cell[BoxData[
   FormBox[
-   SuperscriptBox["", "2"], TraditionalForm]],
-  FormatType->"TraditionalForm",ExpressionUUID->
+   SuperscriptBox["", "2"], TraditionalForm]],ExpressionUUID->
   "c598b162-b3e7-42d4-98f4-2b1f0396fb2a"],
  "Department of Evolutionary Genetics, Max Planck Institute for Evolutionary \
 Biology, Pl",
@@ -98,45 +92,6 @@ Biology, Pl",
 f5b232ac5944"],
 
 Cell["\<\
-Synthetic gene drive technologies aim to spread transgenic constructs into \
-wild populations even when they impose organismal fitness disadvantages. The \
-properties of gene drive constructs are diverse and depend on their molecular \
-construction, and differential selection pressured they impose in the varied \
-ecological situations they encounter. The extraordinary diversity of \
-conceivable drive mechanisms and the range of selective parameters they may \
-encounter makes it very difficult to convey their relative predicted \
-properties. The sheer number of published manuscripts in this field, \
-experimental and theoretical, is a testament to the possibilities presented \
-by this technology. We evaluate and condense the essential synthetic drive \
-mechanisms from a variety of studies and present a unified mathematical \
-paradigm (and a user - friendly tool DrMxR) describing the properties of a \
-wide variety of single construct gene drives (non-suppression). Within this \
-common framework, we have been able to recapitulate key published results \
-derived using bespoke modelling frameworks. Because a unified framework is \
-employed, it is also possible to seamlessly explore the consequences of \
-combining multiple drive approaches within a single construct. We provide a \
-method for analytically assessing the measure of invasiveness of a drive \
-construct. As opposed to typical studies of synthetic drives, we explore the \
-resilience of such drives in a spatially explicit manner advancing the \
-connection between realistic spatial dynamics and typical well-mixed \
-populations. Besides a scientific advance, our results and the tools provided \
-an intuitive and objective way for regulators, scientists and NGOs to \
-evaluate the properties and robustness of proposed and future gene drive \
-approaches.\
-\>", "Abstract",
- CellChangeTimes->{{3.791119314384894*^9, 3.79111934912035*^9}, {
-   3.791119429761929*^9, 3.791119443901498*^9}, 3.7911209012562723`*^9},
- TextJustification->1.,ExpressionUUID->"4cf1338a-504d-4853-b06f-342749e74766"],
-
-Cell[CellGroupData[{
-
-Cell["DrMxR (Drive Mixer)", "Chapter",
- CellChangeTimes->{{3.791119216793105*^9, 3.791119235009972*^9}, {
-  3.79170215610037*^9, 
-  3.7917021600486927`*^9}},ExpressionUUID->"8c02ae75-3ef6-46e6-a2eb-\
-f84f5cade347"],
-
-Cell["\<\
 Drive MixeR is  a tool which is able to mix and match a number of \
 single-locus replacement gene drive scenarios. The user can control three \
 different features of the drive - Fertility selection, Distortion and \
@@ -149,16 +104,16 @@ potentially exist. Their relative abundance is proportional to the distance \
 from the vertices. The black parabola curve represents Hardy-Weinberg \
 equilibrium. The white open point represent the position of the fixed points. \
 Colours exhibit speed of the dynamics inside de Finetti plots. \
-\>", "Text",
- CellChangeTimes->{{3.791121003365778*^9, 3.791121074835823*^9}, {
-  3.791705349134706*^9, 3.791705409953493*^9}, {3.791706812752717*^9, 
-  3.791706814311483*^9}},ExpressionUUID->"ee92aad3-ae63-4a5e-8c73-\
-62f2a9c1c32a"],
+\>", "Abstract",
+ CellChangeTimes->{{3.791119314384894*^9, 3.79111934912035*^9}, {
+   3.791119429761929*^9, 3.791119443901498*^9}, 3.7911209012562723`*^9, 
+   3.791719572422121*^9},
+ TextJustification->1.,ExpressionUUID->"4cf1338a-504d-4853-b06f-342749e74766"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{"Manipulate", "[", 
    RowBox[{
     RowBox[{"Show", "[", 
@@ -213,43 +168,8 @@ Cell[BoxData[
             RowBox[{"\"\<Gene Drive Dynamics\>\"", ",", "\"\<Subtitle\>\""}], 
             "]"}]}]}], "]"}], ",", "\[IndentingNewLine]", "leftri", ",", 
         "\[IndentingNewLine]", "rightri", ",", "\[IndentingNewLine]", "downl",
-         ",", "Tri", ",", "HWparabola1", ",", 
-        RowBox[{
-         RowBox[{"sol1", " ", "=", " ", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{"xcart", ",", "ycart"}], "}"}], "/.", 
-           RowBox[{"Chop", "[", 
-            RowBox[{"Quiet", "[", 
-             RowBox[{"NSolve", "[", " ", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{
-                  RowBox[{"xdotcart", "[", 
-                   RowBox[{
-                   "xcart", ",", "ycart", ",", "ffww", ",", "ffwd", ",", 
-                    "ffdd", ",", "p", ",", "d", ",", "\[Omega]", ",", "\[Nu]",
-                     ",", "e", ",", "g"}], "]"}], "\[Equal]", "0"}], ",", 
-                 RowBox[{
-                  RowBox[{"ydotcart", "[", 
-                   RowBox[{
-                   "xcart", ",", "ycart", ",", "ffww", ",", "ffwd", ",", 
-                    "ffdd", ",", "p", ",", "d", ",", "\[Omega]", ",", "\[Nu]",
-                     ",", "e", ",", "g"}], "]"}], "\[Equal]", "0"}], ",", 
-                 RowBox[{"xcart", "<", "0.999"}], ",", 
-                 RowBox[{"xcart", ">", "0.0001"}], ",", 
-                 RowBox[{"ycart", ">", "0.0001"}]}], "}"}], ",", 
-               RowBox[{"{", 
-                RowBox[{"xcart", ",", "ycart"}], "}"}]}], "]"}], "]"}], 
-            "]"}]}]}], ";", 
-         RowBox[{"ListPlot", "[", 
-          RowBox[{"sol1", ",", 
-           RowBox[{"PlotMarkers", "\[Rule]", 
-            RowBox[{"{", 
-             RowBox[{"\"\<OpenMarkers\>\"", ",", "10"}], "}"}]}], ",", 
-           RowBox[{"PlotStyle", "\[Rule]", "Black"}]}], "]"}]}]}], "}"}], ",",
-       "\[IndentingNewLine]", 
+         ",", "Tri", ",", "HWparabola1", ",", "fpplot"}], "}"}], ",", 
+      "\[IndentingNewLine]", 
       RowBox[{"AspectRatio", "\[Rule]", "Automatic"}], ",", 
       "\[IndentingNewLine]", 
       RowBox[{"ImageSize", "\[Rule]", 
@@ -387,8 +307,101 @@ Cell[BoxData[
         RowBox[{"e", "=", "0"}], ",", 
         RowBox[{"g", "=", "0"}]}], "}"}]}], "]"}], ",", 
     RowBox[{"Initialization", "\[RuleDelayed]", 
-     RowBox[{"{", "\[IndentingNewLine]", "\n", 
+     RowBox[{"{", "\[IndentingNewLine]", 
       RowBox[{
+       RowBox[{"Tri", "=", 
+        RowBox[{"Graphics", "[", 
+         RowBox[{"Line", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "0"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"0.5", ",", 
+              FractionBox[
+               RowBox[{"\[Sqrt]", "3"}], "2"]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0"}], "}"}]}], "}"}], "]"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"leftri", "=", 
+        RowBox[{"Graphics", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"GrayLevel", "[", "1", "]"}], ",", 
+           RowBox[{"Polygon", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"-", "0.08`"}], ",", 
+                RowBox[{"-", "0.04`"}]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"-", "0.08`"}], ",", "0.95`"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"0.5`", ",", "0.95`"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"0.5", ",", 
+                FractionBox[
+                 RowBox[{"\[Sqrt]", "3"}], "2"]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"0", ",", "0"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"-", "0.08`"}], ",", 
+                RowBox[{"-", "0.04`"}]}], "}"}]}], "}"}], "]"}]}], "}"}], 
+         "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"rightri", "=", 
+        RowBox[{"Graphics", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"GrayLevel", "[", "1", "]"}], ",", 
+           RowBox[{"Polygon", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"0.5`", ",", "0.95`"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"1.095`", ",", "0.95`"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"1.095`", ",", 
+                RowBox[{"-", "0.04`"}]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"1", ",", "0"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"0.5", ",", 
+                FractionBox[
+                 RowBox[{"\[Sqrt]", "3"}], "2"]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"0.5`", ",", "0.95`"}], "}"}]}], "}"}], "]"}]}], "}"}],
+          "]"}]}], ";", 
+       RowBox[{"downl", "=", 
+        RowBox[{"Graphics", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"GrayLevel", "[", "1", "]"}], ",", 
+           RowBox[{"Polygon", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"-", "0.08`"}], ",", 
+                RowBox[{"-", "0.04`"}]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"1.08`", ",", 
+                RowBox[{"-", "0.04`"}]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"1.08`", ",", "0"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"-", "0.04`"}], ",", "0"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"-", "0.08`"}], ",", 
+                RowBox[{"-", "0.04`"}]}], "}"}]}], "}"}], "]"}]}], "}"}], 
+         "]"}]}], ";", "\n", 
        RowBox[{
         RowBox[{"xwd", "[", 
          RowBox[{"xww_", ",", "xdd_"}], "]"}], " ", ":=", " ", 
@@ -722,6 +735,42 @@ Cell[BoxData[
             RowBox[{"1", "-", "x"}], ")"}]}], ",", 
           RowBox[{"{", 
            RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", "Black"}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"sol1", " ", "=", " ", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"xcart", ",", "ycart"}], "}"}], "/.", 
+         RowBox[{"Chop", "[", 
+          RowBox[{"Quiet", "[", 
+           RowBox[{"NSolve", "[", " ", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"xdotcart", "[", 
+                 RowBox[{
+                 "xcart", ",", "ycart", ",", "ffww", ",", "ffwd", ",", "ffdd",
+                   ",", "p", ",", "d", ",", "\[Omega]", ",", "\[Nu]", ",", 
+                  "e", ",", "g"}], "]"}], "\[Equal]", "0"}], ",", 
+               RowBox[{
+                RowBox[{"ydotcart", "[", 
+                 RowBox[{
+                 "xcart", ",", "ycart", ",", "ffww", ",", "ffwd", ",", "ffdd",
+                   ",", "p", ",", "d", ",", "\[Omega]", ",", "\[Nu]", ",", 
+                  "e", ",", "g"}], "]"}], "\[Equal]", "0"}], ",", 
+               RowBox[{"xcart", "<", "0.999"}], ",", 
+               RowBox[{"xcart", ">", "0.0001"}], ",", 
+               RowBox[{"ycart", ">", "0.0001"}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"xcart", ",", "ycart"}], "}"}]}], "]"}], "]"}], 
+          "]"}]}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"fpplot", "=", 
+        RowBox[{"ListPlot", "[", 
+         RowBox[{"sol1", ",", 
+          RowBox[{"PlotMarkers", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"\"\<OpenMarkers\>\"", ",", "10"}], "}"}]}], ",", 
           RowBox[{"PlotStyle", "\[Rule]", "Black"}]}], "]"}]}], ";"}], 
       "\[IndentingNewLine]", "}"}]}], ",", 
     RowBox[{"AppearanceElements", "\[Rule]", "\"\<ResetButton\>\""}]}], "]"}],
@@ -737,8 +786,14 @@ Cell[BoxData[
    3.7917046955438004`*^9}, {3.791704741621657*^9, 3.791704753095085*^9}, {
    3.7917048558691893`*^9, 3.791704864830914*^9}, {3.791704909171904*^9, 
    3.791704932601136*^9}, {3.791705185926836*^9, 3.791705212110861*^9}, {
-   3.791705245380991*^9, 3.7917052695536203`*^9}},
- CellLabel->"In[20]:=",ExpressionUUID->"5a8cfc92-a3e5-4c12-a89c-72f90df28112"],
+   3.791705245380991*^9, 3.7917052695536203`*^9}, {3.79171875782327*^9, 
+   3.791718774008513*^9}, 3.791718821783567*^9, {3.7917189530004387`*^9, 
+   3.7917189755091*^9}, 3.791719027980404*^9, {3.791719095367798*^9, 
+   3.791719099060334*^9}, {3.791719170207919*^9, 3.7917191893107977`*^9}, {
+   3.7917193037425537`*^9, 3.7917193303468018`*^9}, {3.7917193639712*^9, 
+   3.791719389185803*^9}, {3.791719421602879*^9, 3.791719443853201*^9}, {
+   3.7917194833714647`*^9, 3.7917194850036592`*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"5a8cfc92-a3e5-4c12-a89c-72f90df28112"],
 
 Cell[BoxData[
  TagBox[
@@ -791,11 +846,11 @@ Cell[BoxData[
          1, $CellContext`e$$ = 0, $CellContext`g$$ = 0}]], 
       Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = {
     600., {296., 304.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = False, $CellContext`ffww$207406$$ = 
-    0, $CellContext`ffwd$207407$$ = 0, $CellContext`ffdd$207408$$ = 
-    0, $CellContext`p$207409$$ = 0, $CellContext`\[Omega]$207410$$ = 
-    0, $CellContext`\[Nu]$207411$$ = 0, $CellContext`d$207412$$ = 
-    0, $CellContext`g$207413$$ = 0, $CellContext`e$207414$$ = 0}, 
+    Typeset`skipInitDone$$ = False, $CellContext`ffww$37127$$ = 
+    0, $CellContext`ffwd$37128$$ = 0, $CellContext`ffdd$37129$$ = 
+    0, $CellContext`p$37130$$ = 0, $CellContext`\[Omega]$37131$$ = 
+    0, $CellContext`\[Nu]$37132$$ = 0, $CellContext`d$37133$$ = 
+    0, $CellContext`g$37134$$ = 0, $CellContext`e$37135$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`d$$ = 0, $CellContext`e$$ = 
@@ -803,15 +858,15 @@ Cell[BoxData[
         1, $CellContext`ffww$$ = 1, $CellContext`g$$ = 0, $CellContext`p$$ = 
         0.5, $CellContext`\[Nu]$$ = 1, $CellContext`\[Omega]$$ = 1}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`ffww$$, $CellContext`ffww$207406$$, 0], 
-        Hold[$CellContext`ffwd$$, $CellContext`ffwd$207407$$, 0], 
-        Hold[$CellContext`ffdd$$, $CellContext`ffdd$207408$$, 0], 
-        Hold[$CellContext`p$$, $CellContext`p$207409$$, 0], 
-        Hold[$CellContext`\[Omega]$$, $CellContext`\[Omega]$207410$$, 0], 
-        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$207411$$, 0], 
-        Hold[$CellContext`d$$, $CellContext`d$207412$$, 0], 
-        Hold[$CellContext`g$$, $CellContext`g$207413$$, 0], 
-        Hold[$CellContext`e$$, $CellContext`e$207414$$, 0]}, 
+        Hold[$CellContext`ffww$$, $CellContext`ffww$37127$$, 0], 
+        Hold[$CellContext`ffwd$$, $CellContext`ffwd$37128$$, 0], 
+        Hold[$CellContext`ffdd$$, $CellContext`ffdd$37129$$, 0], 
+        Hold[$CellContext`p$$, $CellContext`p$37130$$, 0], 
+        Hold[$CellContext`\[Omega]$$, $CellContext`\[Omega]$37131$$, 0], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$37132$$, 0], 
+        Hold[$CellContext`d$$, $CellContext`d$37133$$, 0], 
+        Hold[$CellContext`g$$, $CellContext`g$37134$$, 0], 
+        Hold[$CellContext`e$$, $CellContext`e$37135$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -840,25 +895,8 @@ $CellContext`p$$, $CellContext`d$$, $CellContext`\[Omega]$$, $CellContext`\
           Style["Gene Drive Dynamics", 
             "Subtitle"]], $CellContext`leftri, $CellContext`rightri, \
 $CellContext`downl, $CellContext`Tri, $CellContext`HWparabola1, \
-$CellContext`sol1 = ReplaceAll[{$CellContext`xcart, $CellContext`ycart}, 
-            Chop[
-             Quiet[
-              
-              NSolve[{$CellContext`xdotcart[$CellContext`xcart, \
-$CellContext`ycart, $CellContext`ffww$$, $CellContext`ffwd$$, \
-$CellContext`ffdd$$, $CellContext`p$$, $CellContext`d$$, \
-$CellContext`\[Omega]$$, $CellContext`\[Nu]$$, $CellContext`e$$, \
-$CellContext`g$$] == 
-                0, $CellContext`ydotcart[$CellContext`xcart, \
-$CellContext`ycart, $CellContext`ffww$$, $CellContext`ffwd$$, \
-$CellContext`ffdd$$, $CellContext`p$$, $CellContext`d$$, \
-$CellContext`\[Omega]$$, $CellContext`\[Nu]$$, $CellContext`e$$, \
-$CellContext`g$$] == 0, $CellContext`xcart < 0.999, $CellContext`xcart > 
-                0.0001, $CellContext`ycart > 
-                0.0001}, {$CellContext`xcart, $CellContext`ycart}]]]]; 
-         ListPlot[$CellContext`sol1, PlotMarkers -> {"OpenMarkers", 10}, 
-           PlotStyle -> Black]}, AspectRatio -> Automatic, 
-        ImageSize -> {400, 400}, Epilog -> {
+$CellContext`fpplot}, AspectRatio -> Automatic, ImageSize -> {400, 400}, 
+        Epilog -> {
           Inset[
            Style["DD", 18], {1., -0.05}], 
           Inset[
@@ -897,7 +935,24 @@ $CellContext`g$$] == 0, $CellContext`xcart < 0.999, $CellContext`xcart >
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
-    Initialization:>({$CellContext`xwd[
+    Initialization:>({$CellContext`Tri = Graphics[
+          
+          Line[{{0, 0}, {1, 0}, {0.5, Sqrt[3]/2}, {0, 
+            0}}]]; $CellContext`leftri = Graphics[{
+           GrayLevel[1], 
+           
+           Polygon[{{-0.08, -0.04}, {-0.08, 0.95}, {0.5, 0.95}, {
+             0.5, Sqrt[3]/2}, {0, 
+             0}, {-0.08, -0.04}}]}]; $CellContext`rightri = Graphics[{
+           GrayLevel[1], 
+           
+           Polygon[{{0.5, 0.95}, {1.095, 0.95}, {1.095, -0.04}, {1, 0}, {
+             0.5, Sqrt[3]/2}, {0.5, 0.95}}]}]; $CellContext`downl = 
+        Graphics[{
+           GrayLevel[1], 
+           
+           Polygon[{{-0.08, -0.04}, {1.08, -0.04}, {
+             1.08, 0}, {-0.04, 0}, {-0.08, -0.04}}]}]; $CellContext`xwd[
           Pattern[$CellContext`xww, 
            Blank[]], 
           Pattern[$CellContext`xdd, 
@@ -946,7 +1001,6 @@ $CellContext`xwd[$CellContext`xww, $CellContext`xdd]; $CellContext`fdd[
            
            Blank[]]] := $CellContext`\[Nu]$$ ($CellContext`ffdd$ \
 $CellContext`ffdd$ $CellContext`xdd$ $CellContext`xdd$ + 
-          
           2 $CellContext`p$ $CellContext`ffdd$ $CellContext`ffwd$ \
 $CellContext`xdd$ $CellContext`xwd[$CellContext`xww$, $CellContext`xdd$] + \
 $CellContext`p$^2 $CellContext`ffwd$ $CellContext`ffwd$ \
@@ -1178,7 +1232,26 @@ $CellContext`g]; $CellContext`\[ScriptCapitalD] =
 $CellContext`y2}, {$CellContext`x3, $CellContext`y3}}]; \
 $CellContext`HWparabola1 = 
         Plot[Sqrt[3] $CellContext`x (1 - $CellContext`x), {$CellContext`x, 0, 
-           1}, PlotStyle -> Black]; Null}; Typeset`initDone$$ = True),
+           1}, PlotStyle -> Black]; $CellContext`sol1 = 
+        ReplaceAll[{$CellContext`xcart, $CellContext`ycart}, 
+          Chop[
+           Quiet[
+            
+            NSolve[{$CellContext`xdotcart[$CellContext`xcart, \
+$CellContext`ycart, $CellContext`ffww$$, $CellContext`ffwd$$, \
+$CellContext`ffdd$$, $CellContext`p$$, $CellContext`d$$, \
+$CellContext`\[Omega]$$, $CellContext`\[Nu]$$, $CellContext`e$$, \
+$CellContext`g$$] == 
+              0, $CellContext`ydotcart[$CellContext`xcart, \
+$CellContext`ycart, $CellContext`ffww$$, $CellContext`ffwd$$, \
+$CellContext`ffdd$$, $CellContext`p$$, $CellContext`d$$, \
+$CellContext`\[Omega]$$, $CellContext`\[Nu]$$, $CellContext`e$$, \
+$CellContext`g$$] == 0, $CellContext`xcart < 0.999, $CellContext`xcart > 
+              0.0001, $CellContext`ycart > 
+              0.0001}, {$CellContext`xcart, $CellContext`ycart}]]]]; \
+$CellContext`fpplot = 
+        ListPlot[$CellContext`sol1, PlotMarkers -> {"OpenMarkers", 10}, 
+          PlotStyle -> Black]; Null}; Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
     UnsavedVariables:>{Typeset`initDone$$},
@@ -1191,8 +1264,11 @@ $CellContext`HWparabola1 =
    3.791703547893835*^9, 3.7917036601895857`*^9, 3.791703974439509*^9, {
    3.7917042464073887`*^9, 3.7917042664402857`*^9}, 3.791704501436509*^9, 
    3.791704777286314*^9, 3.791704870403974*^9, 3.791704933776767*^9, {
-   3.791705188436129*^9, 3.791705212769548*^9}, 3.791705276067774*^9},
- CellLabel->"Out[20]=",ExpressionUUID->"45c7efff-e4a1-42df-bfcd-aec2f69740a9"]
+   3.791705188436129*^9, 3.791705212769548*^9}, 3.791705276067774*^9, 
+   3.7917187773938923`*^9, 3.791718900872036*^9, 3.7917189983781652`*^9, 
+   3.791719099843923*^9, {3.791719172826922*^9, 3.7917191908498497`*^9}, 
+   3.791719330868475*^9, 3.791719364790452*^9, 3.791719485553996*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"2adb53a5-d6c8-4009-93e3-2500bc6fe601"]
 }, {2}]],
 
 Cell[CellGroupData[{
@@ -1297,7 +1373,6 @@ Cell[TextData[{
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
-}, Open  ]]
 },
 WindowSize->{1399, 705},
 WindowMargins->{{19, Automatic}, {Automatic, 18}},
@@ -1317,29 +1392,25 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[1510, 35, 258, 4, 146, "Title",ExpressionUUID->"dea076a2-ca19-42a0-91a6-e9053665d30d"],
-Cell[1771, 41, 1962, 56, 205, "Author",ExpressionUUID->"1c29d2ba-8f74-49d2-b06e-f5b232ac5944"],
-Cell[3736, 99, 2077, 29, 612, "Abstract",ExpressionUUID->"4cf1338a-504d-4853-b06f-342749e74766"],
+Cell[1771, 41, 1764, 50, 205, "Author",ExpressionUUID->"1c29d2ba-8f74-49d2-b06e-f5b232ac5944"],
+Cell[3538, 93, 1160, 17, 336, "Abstract",ExpressionUUID->"4cf1338a-504d-4853-b06f-342749e74766"],
 Cell[CellGroupData[{
-Cell[5838, 132, 214, 4, 103, "Chapter",ExpressionUUID->"8c02ae75-3ef6-46e6-a2eb-f84f5cade347"],
-Cell[6055, 138, 1133, 17, 260, "Text",ExpressionUUID->"ee92aad3-ae63-4a5e-8c73-62f2a9c1c32a"],
-Cell[CellGroupData[{
-Cell[7213, 159, 23867, 581, 2589, "Input",ExpressionUUID->"5a8cfc92-a3e5-4c12-a89c-72f90df28112"],
-Cell[31083, 742, 20840, 452, 716, "Output",ExpressionUUID->"45c7efff-e4a1-42df-bfcd-aec2f69740a9"]
+Cell[4723, 114, 27782, 681, 3097, "Input",ExpressionUUID->"5a8cfc92-a3e5-4c12-a89c-72f90df28112"],
+Cell[32508, 797, 21770, 473, 716, "Output",ExpressionUUID->"2adb53a5-d6c8-4009-93e3-2500bc6fe601"]
 }, {2}]],
 Cell[CellGroupData[{
-Cell[51957, 1199, 165, 3, 101, "Section",ExpressionUUID->"0ace0f20-69f4-46df-85d3-8a7260263411"],
+Cell[54312, 1275, 165, 3, 101, "Section",ExpressionUUID->"0ace0f20-69f4-46df-85d3-8a7260263411"],
 Cell[CellGroupData[{
-Cell[52147, 1206, 192, 3, 81, "Subsection",ExpressionUUID->"da372b89-21e6-49ba-9573-a4ef37bf56bb"],
-Cell[52342, 1211, 983, 26, 54, "Text",ExpressionUUID->"2482534d-1a89-4eae-bfed-c6f8c584eb06"]
+Cell[54502, 1282, 192, 3, 81, "Subsection",ExpressionUUID->"da372b89-21e6-49ba-9573-a4ef37bf56bb"],
+Cell[54697, 1287, 983, 26, 54, "Text",ExpressionUUID->"2482534d-1a89-4eae-bfed-c6f8c584eb06"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[53362, 1242, 208, 4, 81, "Subsection",ExpressionUUID->"136d52ef-f73e-4f2b-bda0-60e4c6db23d9"],
-Cell[53573, 1248, 432, 10, 53, "Text",ExpressionUUID->"b55c17ba-9420-4c22-8a85-fc6fbe096fe4"]
+Cell[55717, 1318, 208, 4, 81, "Subsection",ExpressionUUID->"136d52ef-f73e-4f2b-bda0-60e4c6db23d9"],
+Cell[55928, 1324, 432, 10, 53, "Text",ExpressionUUID->"b55c17ba-9420-4c22-8a85-fc6fbe096fe4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[54042, 1263, 217, 4, 81, "Subsection",ExpressionUUID->"79acdad1-5113-4a4e-981d-1e075a39a44c"],
-Cell[54262, 1269, 1042, 26, 89, "Text",ExpressionUUID->"18a3dd79-ca9b-4df1-8cc6-3569b467ee77"]
-}, Open  ]]
+Cell[56397, 1339, 217, 4, 81, "Subsection",ExpressionUUID->"79acdad1-5113-4a4e-981d-1e075a39a44c"],
+Cell[56617, 1345, 1042, 26, 89, "Text",ExpressionUUID->"18a3dd79-ca9b-4df1-8cc6-3569b467ee77"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -1347,4 +1418,4 @@ Cell[54262, 1269, 1042, 26, 89, "Text",ExpressionUUID->"18a3dd79-ca9b-4df1-8cc6-
 ]
 *)
 
-(* NotebookSignature yxTV2PbvrsnSCD1wpPu4jjej *)
+(* NotebookSignature 4wDL#YqkwgliYCKwbjhppFmc *)
