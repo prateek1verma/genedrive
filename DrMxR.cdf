@@ -23,10 +23,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[      1088,         20]
-NotebookDataLength[     59728,       1424]
-NotebookOptionsPosition[     59095,       1401]
-NotebookOutlinePosition[     59434,       1416]
-CellTagsIndexPosition[     59391,       1413]
+NotebookDataLength[     59936,       1426]
+NotebookOptionsPosition[     59306,       1403]
+NotebookOutlinePosition[     59642,       1418]
+CellTagsIndexPosition[     59599,       1415]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -808,7 +808,7 @@ Cell[BoxData[
    3.791728350676157*^9}, {3.79172844128697*^9, 3.791728604015275*^9}, {
    3.791728695983326*^9, 3.791728778978095*^9}, 3.791728829848173*^9, {
    3.791792144469738*^9, 3.791792163025546*^9}},
- CellLabel->"In[2]:=",ExpressionUUID->"5a8cfc92-a3e5-4c12-a89c-72f90df28112"],
+ CellLabel->"In[3]:=",ExpressionUUID->"5a8cfc92-a3e5-4c12-a89c-72f90df28112"],
 
 Cell[BoxData[
  TagBox[
@@ -862,11 +862,11 @@ Cell[BoxData[
         RGBColor[0.85, 0.85, 0.85], Appearance -> "FramedPalette"]], 
       Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = {
     600., {296., 304.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = False, $CellContext`ffww$12677$$ = 
-    0, $CellContext`ffwd$12678$$ = 0, $CellContext`ffdd$12679$$ = 
-    0, $CellContext`p$12680$$ = 0, $CellContext`\[Omega]$12681$$ = 
-    0, $CellContext`\[Nu]$12682$$ = 0, $CellContext`d$12683$$ = 
-    0, $CellContext`g$12684$$ = 0, $CellContext`e$12685$$ = 0}, 
+    Typeset`skipInitDone$$ = False, $CellContext`ffww$21928$$ = 
+    0, $CellContext`ffwd$21929$$ = 0, $CellContext`ffdd$21930$$ = 
+    0, $CellContext`p$21931$$ = 0, $CellContext`\[Omega]$21932$$ = 
+    0, $CellContext`\[Nu]$21933$$ = 0, $CellContext`d$21934$$ = 
+    0, $CellContext`g$21935$$ = 0, $CellContext`e$21936$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`d$$ = 0, $CellContext`e$$ = 
@@ -874,15 +874,15 @@ Cell[BoxData[
         1, $CellContext`ffww$$ = 1, $CellContext`g$$ = 0, $CellContext`p$$ = 
         0.5, $CellContext`\[Nu]$$ = 1, $CellContext`\[Omega]$$ = 1}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`ffww$$, $CellContext`ffww$12677$$, 0], 
-        Hold[$CellContext`ffwd$$, $CellContext`ffwd$12678$$, 0], 
-        Hold[$CellContext`ffdd$$, $CellContext`ffdd$12679$$, 0], 
-        Hold[$CellContext`p$$, $CellContext`p$12680$$, 0], 
-        Hold[$CellContext`\[Omega]$$, $CellContext`\[Omega]$12681$$, 0], 
-        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$12682$$, 0], 
-        Hold[$CellContext`d$$, $CellContext`d$12683$$, 0], 
-        Hold[$CellContext`g$$, $CellContext`g$12684$$, 0], 
-        Hold[$CellContext`e$$, $CellContext`e$12685$$, 0]}, 
+        Hold[$CellContext`ffww$$, $CellContext`ffww$21928$$, 0], 
+        Hold[$CellContext`ffwd$$, $CellContext`ffwd$21929$$, 0], 
+        Hold[$CellContext`ffdd$$, $CellContext`ffdd$21930$$, 0], 
+        Hold[$CellContext`p$$, $CellContext`p$21931$$, 0], 
+        Hold[$CellContext`\[Omega]$$, $CellContext`\[Omega]$21932$$, 0], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$21933$$, 0], 
+        Hold[$CellContext`d$$, $CellContext`d$21934$$, 0], 
+        Hold[$CellContext`g$$, $CellContext`g$21935$$, 0], 
+        Hold[$CellContext`e$$, $CellContext`e$21936$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1009,16 +1009,17 @@ $CellContext`g$$] == 0, $CellContext`xcart < 0.999, $CellContext`xcart >
            Blank[]], 
           Pattern[$CellContext`e, 
            
-           Blank[]]] := $CellContext`ffww $CellContext`ffww $CellContext`xww \
-$CellContext`xww + (1 - $CellContext`p) (1 - $CellContext`e/
-           2) $CellContext`ffww $CellContext`ffwd $CellContext`xww \
-$CellContext`xwd[$CellContext`xww, $CellContext`xdd] + (1 - $CellContext`d) (
-           1 - $CellContext`e/2) (
-           1 - $CellContext`p) $CellContext`ffww $CellContext`ffwd \
-$CellContext`xww $CellContext`xwd[$CellContext`xww, $CellContext`xdd] + (
-           1 - $CellContext`d) (
-            1 - $CellContext`p)^2 $CellContext`ffwd $CellContext`ffwd \
-$CellContext`xwd[$CellContext`xww, $CellContext`xdd] \
+           Blank[]]] := (($CellContext`ffww $CellContext`ffww) \
+$CellContext`xww) $CellContext`xww + (((((1 - $CellContext`p) (
+               1 - $CellContext`e/
+               2)) $CellContext`ffww) $CellContext`ffwd) $CellContext`xww) \
+$CellContext`xwd[$CellContext`xww, $CellContext`xdd] + ((((((
+                1 - $CellContext`d) (1 - $CellContext`e/2)) (
+               1 - $CellContext`p)) $CellContext`ffww) $CellContext`ffwd) \
+$CellContext`xww) $CellContext`xwd[$CellContext`xww, $CellContext`xdd] + (((((
+               1 - $CellContext`d) (
+                1 - $CellContext`p)^2) $CellContext`ffwd) $CellContext`ffwd) \
+$CellContext`xwd[$CellContext`xww, $CellContext`xdd]) \
 $CellContext`xwd[$CellContext`xww, $CellContext`xdd]; $CellContext`fdd[
           Pattern[$CellContext`xww$, 
            Blank[]], 
@@ -1034,12 +1035,12 @@ $CellContext`xwd[$CellContext`xww, $CellContext`xdd]; $CellContext`fdd[
            Blank[]], 
           Pattern[$CellContext`s$, 
            
-           Blank[]]] := $CellContext`\[Nu]$$ ($CellContext`ffdd$ \
-$CellContext`ffdd$ $CellContext`xdd$ $CellContext`xdd$ + 
-          2 $CellContext`p$ $CellContext`ffdd$ $CellContext`ffwd$ \
-$CellContext`xdd$ $CellContext`xwd[$CellContext`xww$, $CellContext`xdd$] + \
-$CellContext`p$^2 $CellContext`ffwd$ $CellContext`ffwd$ \
-$CellContext`xwd[$CellContext`xww$, $CellContext`xdd$] \
+           Blank[]]] := $CellContext`\[Nu]$$ ((($CellContext`ffdd$ \
+$CellContext`ffdd$) $CellContext`xdd$) $CellContext`xdd$ + ((((
+               2 $CellContext`p$) $CellContext`ffdd$) $CellContext`ffwd$) \
+$CellContext`xdd$) $CellContext`xwd[$CellContext`xww$, $CellContext`xdd$] + \
+((($CellContext`p$^2 $CellContext`ffwd$) $CellContext`ffwd$) \
+$CellContext`xwd[$CellContext`xww$, $CellContext`xdd$]) \
 $CellContext`xwd[$CellContext`xww$, $CellContext`xdd$]); $CellContext`fwd[
           Pattern[$CellContext`xww, 
            Blank[]], 
@@ -1060,18 +1061,18 @@ $CellContext`xwd[$CellContext`xww$, $CellContext`xdd$]); $CellContext`fwd[
           Pattern[$CellContext`e, 
            Blank[]], 
           Pattern[$CellContext`g, 
-           Blank[]]] := $CellContext`\[Omega] (
-          2 $CellContext`p (
-            1 - $CellContext`p) $CellContext`ffwd $CellContext`ffwd \
-$CellContext`xwd[$CellContext`xww, $CellContext`xdd] \
-$CellContext`xwd[$CellContext`xww, $CellContext`xdd] + 
-          2 (1 - $CellContext`p) $CellContext`ffdd $CellContext`ffwd \
-$CellContext`xdd $CellContext`xwd[$CellContext`xww, $CellContext`xdd] + 
-          2 (1 - $CellContext`e/2) (1 - $CellContext`g/
-            2) $CellContext`p $CellContext`ffww $CellContext`ffwd \
-$CellContext`xww $CellContext`xwd[$CellContext`xww, $CellContext`xdd] + ((
-             2 - $CellContext`e) ((2 - $CellContext`g)/
-             2)) $CellContext`ffdd $CellContext`ffww $CellContext`xdd \
+           
+           Blank[]]] := $CellContext`\[Omega] ((((((2 $CellContext`p) (
+                1 - $CellContext`p)) $CellContext`ffwd) $CellContext`ffwd) \
+$CellContext`xwd[$CellContext`xww, $CellContext`xdd]) \
+$CellContext`xwd[$CellContext`xww, $CellContext`xdd] + ((((
+               2 (1 - $CellContext`p)) $CellContext`ffdd) $CellContext`ffwd) \
+$CellContext`xdd) $CellContext`xwd[$CellContext`xww, $CellContext`xdd] + \
+((((((2 (1 - $CellContext`e/2)) (1 - $CellContext`g/
+                 2)) $CellContext`p) $CellContext`ffww) $CellContext`ffwd) \
+$CellContext`xww) $CellContext`xwd[$CellContext`xww, $CellContext`xdd] + (((((
+                2 - $CellContext`e) ((2 - $CellContext`g)/
+                2)) $CellContext`ffdd) $CellContext`ffww) $CellContext`xdd) \
 $CellContext`xww); $CellContext`ftot[
           Pattern[$CellContext`xww, 
            Blank[]], 
@@ -1266,8 +1267,8 @@ $CellContext`g]; $CellContext`\[ScriptCapitalD] =
         Triangle[{{$CellContext`x1, $CellContext`y1}, {$CellContext`x2, \
 $CellContext`y2}, {$CellContext`x3, $CellContext`y3}}]; \
 $CellContext`HWparabola1 = 
-        Plot[Sqrt[3] $CellContext`x (1 - $CellContext`x), {$CellContext`x, 0, 
-           1}, PlotStyle -> Black]; Null}; Typeset`initDone$$ = True),
+        Plot[(Sqrt[3] $CellContext`x) (1 - $CellContext`x), {$CellContext`x, 
+           0, 1}, PlotStyle -> Black]; Null}; Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
     UnsavedVariables:>{Typeset`initDone$$},
@@ -1292,8 +1293,9 @@ $CellContext`HWparabola1 =
    3.791728320247587*^9}, 3.791728351696232*^9, {3.79172844948246*^9, 
    3.7917284762110977`*^9}, {3.791728515470428*^9, 3.791728605104521*^9}, 
    3.791728713558676*^9, 3.791728781115394*^9, 3.791728833304327*^9, 
-   3.791792113674181*^9, 3.791792164808331*^9},
- CellLabel->"Out[2]=",ExpressionUUID->"095dc583-f1b2-46f1-a01b-e88a43e82de0"]
+   3.791792113674181*^9, 3.791792164808331*^9, 3.79179238502964*^9, {
+   3.791792426273389*^9, 3.791792430154337*^9}},
+ CellLabel->"Out[3]=",ExpressionUUID->"8fd3a278-2121-4ca7-8964-c07e917443a4"]
 }, {2}]],
 
 Cell[CellGroupData[{
@@ -1400,7 +1402,7 @@ Cell[TextData[{
 }, Open  ]]
 },
 WindowSize->{1399, 705},
-WindowMargins->{{-32, Automatic}, {Automatic, 13}},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
 FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1421,21 +1423,21 @@ Cell[1771, 41, 1764, 50, 205, "Author",ExpressionUUID->"1c29d2ba-8f74-49d2-b06e-
 Cell[3538, 93, 1160, 17, 336, "Abstract",ExpressionUUID->"4cf1338a-504d-4853-b06f-342749e74766"],
 Cell[CellGroupData[{
 Cell[4723, 114, 28468, 696, 2910, "Input",ExpressionUUID->"5a8cfc92-a3e5-4c12-a89c-72f90df28112"],
-Cell[33194, 812, 22480, 483, 750, "Output",ExpressionUUID->"095dc583-f1b2-46f1-a01b-e88a43e82de0"]
+Cell[33194, 812, 22691, 485, 716, "Output",ExpressionUUID->"8fd3a278-2121-4ca7-8964-c07e917443a4"]
 }, {2}]],
 Cell[CellGroupData[{
-Cell[55708, 1300, 165, 3, 101, "Section",ExpressionUUID->"0ace0f20-69f4-46df-85d3-8a7260263411"],
+Cell[55919, 1302, 165, 3, 101, "Section",ExpressionUUID->"0ace0f20-69f4-46df-85d3-8a7260263411"],
 Cell[CellGroupData[{
-Cell[55898, 1307, 192, 3, 81, "Subsection",ExpressionUUID->"da372b89-21e6-49ba-9573-a4ef37bf56bb"],
-Cell[56093, 1312, 983, 26, 54, "Text",ExpressionUUID->"2482534d-1a89-4eae-bfed-c6f8c584eb06"]
+Cell[56109, 1309, 192, 3, 81, "Subsection",ExpressionUUID->"da372b89-21e6-49ba-9573-a4ef37bf56bb"],
+Cell[56304, 1314, 983, 26, 54, "Text",ExpressionUUID->"2482534d-1a89-4eae-bfed-c6f8c584eb06"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[57113, 1343, 208, 4, 81, "Subsection",ExpressionUUID->"136d52ef-f73e-4f2b-bda0-60e4c6db23d9"],
-Cell[57324, 1349, 432, 10, 53, "Text",ExpressionUUID->"b55c17ba-9420-4c22-8a85-fc6fbe096fe4"]
+Cell[57324, 1345, 208, 4, 81, "Subsection",ExpressionUUID->"136d52ef-f73e-4f2b-bda0-60e4c6db23d9"],
+Cell[57535, 1351, 432, 10, 53, "Text",ExpressionUUID->"b55c17ba-9420-4c22-8a85-fc6fbe096fe4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[57793, 1364, 217, 4, 81, "Subsection",ExpressionUUID->"79acdad1-5113-4a4e-981d-1e075a39a44c"],
-Cell[58013, 1370, 1042, 26, 89, "Text",ExpressionUUID->"18a3dd79-ca9b-4df1-8cc6-3569b467ee77"]
+Cell[58004, 1366, 217, 4, 81, "Subsection",ExpressionUUID->"79acdad1-5113-4a4e-981d-1e075a39a44c"],
+Cell[58224, 1372, 1042, 26, 89, "Text",ExpressionUUID->"18a3dd79-ca9b-4df1-8cc6-3569b467ee77"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -1443,4 +1445,4 @@ Cell[58013, 1370, 1042, 26, 89, "Text",ExpressionUUID->"18a3dd79-ca9b-4df1-8cc6-
 ]
 *)
 
-(* NotebookSignature kvT8in9zxzsNPDgKBZeDDYDH *)
+(* NotebookSignature YvDN221bvqiW9BKKAPdGPrgd *)
