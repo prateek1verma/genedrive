@@ -23,22 +23,22 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[      1088,         20]
-NotebookDataLength[     62272,       1479]
-NotebookOptionsPosition[     61514,       1454]
-NotebookOutlinePosition[     61979,       1471]
-CellTagsIndexPosition[     61936,       1468]
+NotebookDataLength[     63687,       1520]
+NotebookOptionsPosition[     62899,       1494]
+NotebookOutlinePosition[     63393,       1512]
+CellTagsIndexPosition[     63350,       1509]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell["DrMxR  (Drive Mixer)", "Title",
- Editable->False,
+Cell["DrMxR", "Title",
  ShowCellBracket->False,
  CellChangeTimes->{{3.791116520431237*^9, 3.79111656282701*^9}, {
-  3.791117368249481*^9, 3.79111736916218*^9}, {3.791702163321794*^9, 
-  3.7917021698942537`*^9}},ExpressionUUID->"dea076a2-ca19-42a0-91a6-\
+   3.791117368249481*^9, 3.79111736916218*^9}, {3.791702163321794*^9, 
+   3.7917021698942537`*^9}, 3.7918254790216846`*^9, 
+   3.7918255913281918`*^9},ExpressionUUID->"dea076a2-ca19-42a0-91a6-\
 e9053665d30d"],
 
 Cell[TextData[{
@@ -58,63 +58,90 @@ Cell[TextData[{
    SuperscriptBox["Gokhale", "1"], TraditionalForm]],ExpressionUUID->
   "0ea1030b-b526-4cfa-b379-b48608a8a42e"],
  "\n",
- Cell[BoxData[
+ StyleBox[Cell[BoxData[
   FormBox[
-   SuperscriptBox["", "1"], TraditionalForm]],ExpressionUUID->
-  "5c26c8ab-e124-4bf6-83a0-a75dc615293e"],
- "Research Group for Theoretical Models of Eco-evolutionary Dynamics, \
-Department of Evolutionary Theory, Max Planck Institute for Evolutionary \
-Biology, Pl",
- Cell[BoxData[
+   SuperscriptBox["", "1"], TraditionalForm]], "Affiliation",ExpressionUUID->
+  "5c26c8ab-e124-4bf6-83a0-a75dc615293e"], "Affiliation"],
+ StyleBox["Research Group for Theoretical Models of Eco-evolutionary \
+Dynamics, Department of Evolutionary Theory,\n", "Affiliation"],
+ StyleBox[Cell[BoxData[
   FormBox[
-   OverscriptBox[
-    StyleBox["o",
-     FontSlant->"Plain"], ".."], TraditionalForm]],ExpressionUUID->
-  "dde8cbff-01f0-4c79-a1d6-eb5099bd5a7c"],
- "n, Germany\n",
- Cell[BoxData[
-  FormBox[
-   SuperscriptBox["", "2"], TraditionalForm]],ExpressionUUID->
-  "c598b162-b3e7-42d4-98f4-2b1f0396fb2a"],
- "Department of Evolutionary Genetics, Max Planck Institute for Evolutionary \
-Biology, Pl",
- Cell[BoxData[
+   SuperscriptBox["", "2"], TraditionalForm]], "Affiliation",ExpressionUUID->
+  "c598b162-b3e7-42d4-98f4-2b1f0396fb2a"], "Affiliation"],
+ StyleBox["Department of Evolutionary Genetics, \nMax Planck Institute for \
+Evolutionary Biology, Pl", "Affiliation"],
+ StyleBox[Cell[BoxData[
   FormBox[
    OverscriptBox[
     StyleBox["o",
-     FontSlant->"Plain"], ".."], TraditionalForm]],ExpressionUUID->
-  "35389d66-e64a-4d39-96aa-6c8c75ee382e"],
- "n, Germany"
+     FontSlant->"Plain"], ".."], TraditionalForm]], "Affiliation",
+  ExpressionUUID->"35389d66-e64a-4d39-96aa-6c8c75ee382e"], "Affiliation"],
+ StyleBox["n, Germany", "Affiliation"]
 }], "Author",
- Editable->False,
  ShowCellBracket->False,
  CellChangeTimes->{{3.7911167575156918`*^9, 3.791116773962865*^9}, {
   3.79112140839957*^9, 3.791121413003335*^9}, {3.79170221740206*^9, 
   3.7917022578599663`*^9}, {3.7917023777821627`*^9, 3.791702473869383*^9}, {
   3.791702508454357*^9, 3.791702530114419*^9}, {3.791705652015541*^9, 
-  3.791705679374729*^9}},ExpressionUUID->"1c29d2ba-8f74-49d2-b06e-\
+  3.791705679374729*^9}, {3.791825839217434*^9, 
+  3.791825854996125*^9}},ExpressionUUID->"1c29d2ba-8f74-49d2-b06e-\
 f5b232ac5944"],
 
-Cell["\<\
-Drive MixeR is  a tool which is able to mix and match a number of \
+Cell[TextData[{
+ StyleBox["Dr",
+  FontFamily->"Baskerville",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["ive ",
+  FontFamily->"Baskerville",
+  FontSize->18,
+  FontWeight->"Regular"],
+ StyleBox["M",
+  FontFamily->"Baskerville",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["i",
+  FontFamily->"Baskerville",
+  FontSize->18,
+  FontWeight->"Regular"],
+ StyleBox["x",
+  FontFamily->"Baskerville",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox["e",
+  FontFamily->"Baskerville",
+  FontSize->18,
+  FontWeight->"Regular"],
+ StyleBox["R",
+  FontFamily->"Baskerville",
+  FontSize->18,
+  FontWeight->"Bold"],
+ StyleBox[" is  a tool which is able to mix and match a number of \
 single-locus replacement gene drive scenarios. The user can control three \
 different features of the drive - Fertility selection, Distortion and \
-Viability selection. For a range of options, the user can observe the \
-resulting dynamics of the wildtype WW, wildtype-drive heterozygote WD and the \
-drive homozygote DD genotypes. Population consist of single genotype at the \
-vertices of a triangle in de Finetti diagram. A point in the interior \
-corresponds to the population composition where all three of the genotypes \
-potentially exist. Their relative abundance is proportional to the distance \
-from the vertices. The black parabola curve represents Hardy-Weinberg \
-equilibrium. The white open point represent the position of the fixed points. \
-Colours exhibit speed of the dynamics. \
-\>", "Abstract",
- Editable->False,
+Viability selection. Additionally specific drives such as Medea, Semele and \
+Inverse Medea can be implemented, even simultaneously. For a range of \
+options, the user can observe the resulting dynamics of the wildtype WW, \
+wildtype-drive heterozygote WD and the drive homozygote DD genotypes. \
+Population consist of single genotype at the vertices of a triangle in de \
+Finetti diagram. A point in the interior corresponds to the population \
+composition where all three of the genotypes potentially exist. Their \
+relative abundance is proportional to the distance from the vertices. The \
+black parabola curve represents Hardy-Weinberg equilibrium. The white open \
+point represent the position of the fixed points. Colours exhibit speed of \
+the dynamics. ",
+  FontFamily->"Baskerville",
+  FontSize->18,
+  FontWeight->"Regular"]
+}], "Abstract",
  ShowCellBracket->False,
  CellChangeTimes->{{3.791119314384894*^9, 3.79111934912035*^9}, {
    3.791119429761929*^9, 3.791119443901498*^9}, 3.7911209012562723`*^9, 
-   3.791719572422121*^9, {3.7918239057149363`*^9, 3.7918239211564913`*^9}},
- TextJustification->1.,ExpressionUUID->"4cf1338a-504d-4853-b06f-342749e74766"],
+   3.791719572422121*^9, {3.7918239057149363`*^9, 3.7918239211564913`*^9}, 
+   3.791825489065567*^9, {3.791826141642315*^9, 3.791826187233798*^9}},
+ TextJustification->1.,
+ FontWeight->"ExtraLight",
+ FontSlant->"Plain",ExpressionUUID->"4cf1338a-504d-4853-b06f-342749e74766"],
 
 Cell[CellGroupData[{
 
@@ -797,7 +824,6 @@ Cell[BoxData[
     RowBox[{"AppearanceElements", "\[Rule]", "All"}], ",", 
     RowBox[{"ControlPlacement", "\[Rule]", "Left"}]}], "]"}], " "}]], "Input",\
 
- Editable->False,
  ShowCellBracket->False,
  CellChangeTimes->{{3.791701963260668*^9, 3.7917019877191677`*^9}, {
    3.791702047171788*^9, 3.7917020601096363`*^9}, 3.791702286698703*^9, {
@@ -1061,16 +1087,17 @@ $CellContext`g$$] == 0, $CellContext`xcart < 0.999, $CellContext`xcart >
            Blank[]], 
           Pattern[$CellContext`e, 
            
-           Blank[]]] := $CellContext`ffww $CellContext`ffww $CellContext`xww \
-$CellContext`xww + (1 - $CellContext`p) (1 - $CellContext`e/
-           2) $CellContext`ffww $CellContext`ffwd $CellContext`xww \
-$CellContext`xwd[$CellContext`xww, $CellContext`xdd] + (1 - $CellContext`d) (
-           1 - $CellContext`e/2) (
-           1 - $CellContext`p) $CellContext`ffww $CellContext`ffwd \
-$CellContext`xww $CellContext`xwd[$CellContext`xww, $CellContext`xdd] + (
-           1 - $CellContext`d) (
-            1 - $CellContext`p)^2 $CellContext`ffwd $CellContext`ffwd \
-$CellContext`xwd[$CellContext`xww, $CellContext`xdd] \
+           Blank[]]] := (($CellContext`ffww $CellContext`ffww) \
+$CellContext`xww) $CellContext`xww + (((((1 - $CellContext`p) (
+               1 - $CellContext`e/
+               2)) $CellContext`ffww) $CellContext`ffwd) $CellContext`xww) \
+$CellContext`xwd[$CellContext`xww, $CellContext`xdd] + ((((((
+                1 - $CellContext`d) (1 - $CellContext`e/2)) (
+               1 - $CellContext`p)) $CellContext`ffww) $CellContext`ffwd) \
+$CellContext`xww) $CellContext`xwd[$CellContext`xww, $CellContext`xdd] + (((((
+               1 - $CellContext`d) (
+                1 - $CellContext`p)^2) $CellContext`ffwd) $CellContext`ffwd) \
+$CellContext`xwd[$CellContext`xww, $CellContext`xdd]) \
 $CellContext`xwd[$CellContext`xww, $CellContext`xdd]; $CellContext`fdd[
           Pattern[$CellContext`xww$, 
            Blank[]], 
@@ -1086,12 +1113,12 @@ $CellContext`xwd[$CellContext`xww, $CellContext`xdd]; $CellContext`fdd[
            Blank[]], 
           Pattern[$CellContext`s$, 
            
-           Blank[]]] := $CellContext`\[Nu]$$ ($CellContext`ffdd$ \
-$CellContext`ffdd$ $CellContext`xdd$ $CellContext`xdd$ + 
-          2 $CellContext`p$ $CellContext`ffdd$ $CellContext`ffwd$ \
-$CellContext`xdd$ $CellContext`xwd[$CellContext`xww$, $CellContext`xdd$] + \
-$CellContext`p$^2 $CellContext`ffwd$ $CellContext`ffwd$ \
-$CellContext`xwd[$CellContext`xww$, $CellContext`xdd$] \
+           Blank[]]] := $CellContext`\[Nu]$$ ((($CellContext`ffdd$ \
+$CellContext`ffdd$) $CellContext`xdd$) $CellContext`xdd$ + ((((
+               2 $CellContext`p$) $CellContext`ffdd$) $CellContext`ffwd$) \
+$CellContext`xdd$) $CellContext`xwd[$CellContext`xww$, $CellContext`xdd$] + \
+((($CellContext`p$^2 $CellContext`ffwd$) $CellContext`ffwd$) \
+$CellContext`xwd[$CellContext`xww$, $CellContext`xdd$]) \
 $CellContext`xwd[$CellContext`xww$, $CellContext`xdd$]); $CellContext`fwd[
           Pattern[$CellContext`xww, 
            Blank[]], 
@@ -1112,18 +1139,18 @@ $CellContext`xwd[$CellContext`xww$, $CellContext`xdd$]); $CellContext`fwd[
           Pattern[$CellContext`e, 
            Blank[]], 
           Pattern[$CellContext`g, 
-           Blank[]]] := $CellContext`\[Omega] (
-          2 $CellContext`p (
-            1 - $CellContext`p) $CellContext`ffwd $CellContext`ffwd \
-$CellContext`xwd[$CellContext`xww, $CellContext`xdd] \
-$CellContext`xwd[$CellContext`xww, $CellContext`xdd] + 
-          2 (1 - $CellContext`p) $CellContext`ffdd $CellContext`ffwd \
-$CellContext`xdd $CellContext`xwd[$CellContext`xww, $CellContext`xdd] + 
-          2 (1 - $CellContext`e/2) (1 - $CellContext`g/
-            2) $CellContext`p $CellContext`ffww $CellContext`ffwd \
-$CellContext`xww $CellContext`xwd[$CellContext`xww, $CellContext`xdd] + ((
-             2 - $CellContext`e) ((2 - $CellContext`g)/
-             2)) $CellContext`ffdd $CellContext`ffww $CellContext`xdd \
+           
+           Blank[]]] := $CellContext`\[Omega] ((((((2 $CellContext`p) (
+                1 - $CellContext`p)) $CellContext`ffwd) $CellContext`ffwd) \
+$CellContext`xwd[$CellContext`xww, $CellContext`xdd]) \
+$CellContext`xwd[$CellContext`xww, $CellContext`xdd] + ((((
+               2 (1 - $CellContext`p)) $CellContext`ffdd) $CellContext`ffwd) \
+$CellContext`xdd) $CellContext`xwd[$CellContext`xww, $CellContext`xdd] + \
+((((((2 (1 - $CellContext`e/2)) (1 - $CellContext`g/
+                 2)) $CellContext`p) $CellContext`ffww) $CellContext`ffwd) \
+$CellContext`xww) $CellContext`xwd[$CellContext`xww, $CellContext`xdd] + (((((
+                2 - $CellContext`e) ((2 - $CellContext`g)/
+                2)) $CellContext`ffdd) $CellContext`ffww) $CellContext`xdd) \
 $CellContext`xww); $CellContext`ftot[
           Pattern[$CellContext`xww, 
            Blank[]], 
@@ -1318,8 +1345,8 @@ $CellContext`g]; $CellContext`\[ScriptCapitalD] =
         Triangle[{{$CellContext`x1, $CellContext`y1}, {$CellContext`x2, \
 $CellContext`y2}, {$CellContext`x3, $CellContext`y3}}]; \
 $CellContext`HWparabola1 = 
-        Plot[Sqrt[3] $CellContext`x (1 - $CellContext`x), {$CellContext`x, 0, 
-           1}, PlotStyle -> Black]; Null}; Typeset`initDone$$ = True),
+        Plot[(Sqrt[3] $CellContext`x) (1 - $CellContext`x), {$CellContext`x, 
+           0, 1}, PlotStyle -> Black]; Null}; Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
     UnsavedVariables:>{Typeset`initDone$$},
@@ -1327,7 +1354,6 @@ $CellContext`HWparabola1 =
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- Editable->False,
  ShowCellBracket->False,
  CellChangeTimes->{{3.7918086540167913`*^9, 3.791808700256104*^9}, {
    3.791808742979912*^9, 3.791808748639595*^9}, 3.791808884402276*^9, {
@@ -1337,14 +1363,15 @@ $CellContext`HWparabola1 =
    3.7918099717751493`*^9}, 3.791810004469556*^9, 3.791810370411161*^9, {
    3.791810423957789*^9, 3.791810508489669*^9}, 3.791823714038816*^9, 
    3.791824246636745*^9, {3.79182466277283*^9, 3.79182468647563*^9}, {
-   3.791824904275688*^9, 3.791824938009028*^9}},
+   3.791824904275688*^9, 3.791824938009028*^9}, {3.791826110907063*^9, 
+   3.791826116595899*^9}, {3.791826159541953*^9, 3.7918261692241898`*^9}},
  CellLabel->"Out[5]=",ExpressionUUID->"1d702105-2640-44b1-92b2-f4409d3e9259"]
 }, {2}]],
 
 Cell[CellGroupData[{
 
 Cell["Parameter Description", "Section",
- Editable->False,
+ CellFrame->{{0, 0}, {0, 2}},
  ShowCellBracket->False,
  CellChangeTimes->{{3.791706705843924*^9, 
   3.79170674269188*^9}},ExpressionUUID->"0ace0f20-69f4-46df-85d3-\
@@ -1353,7 +1380,6 @@ Cell["Parameter Description", "Section",
 Cell[CellGroupData[{
 
 Cell["Fertility selection", "Subsection",
- Editable->False,
  ShowCellBracket->False,
  CellChangeTimes->{{3.791119190022883*^9, 3.7911191952957573`*^9}, 
    3.791119241438943*^9},ExpressionUUID->"da372b89-21e6-49ba-9573-\
@@ -1363,21 +1389,26 @@ Cell[TextData[{
  " ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["f", "WW"], TraditionalForm]],ExpressionUUID->
+   StyleBox[
+    SubscriptBox["f", "WW"],
+    FontWeight->"Bold"], TraditionalForm]],ExpressionUUID->
   "3bed2aff-5ae9-4bbb-999e-1896be1bc680"],
  ",  ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["f", "WD"], TraditionalForm]],ExpressionUUID->
+   StyleBox[
+    SubscriptBox["f", "WD"],
+    FontWeight->"Bold"], TraditionalForm]],ExpressionUUID->
   "8376ecb0-0a9d-4bce-bae6-e06d4c694328"],
  " and  ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["f", "DD"], TraditionalForm]],ExpressionUUID->
+   StyleBox[
+    SubscriptBox["f", "DD"],
+    FontWeight->"Bold"], TraditionalForm]],ExpressionUUID->
   "d022b168-2394-411f-8dcc-549608da17d5"],
  " are the genotypic fertility of the organism in the adult stage."
 }], "Text",
- Editable->False,
  ShowCellBracket->False,
  CellChangeTimes->{{3.7911214193259363`*^9, 3.791121444307242*^9}, {
    3.791702134025185*^9, 3.791702135335463*^9}, {3.791704643241105*^9, 
@@ -1390,7 +1421,7 @@ Cell[TextData[{
 Cell[CellGroupData[{
 
 Cell["Distortion", "Subsection",
- Editable->False,
+ CellFrame->{{0, 0}, {0, 0.5}},
  ShowCellBracket->False,
  CellChangeTimes->{{3.791119190022883*^9, 3.7911191952957573`*^9}, {
   3.79111924273041*^9, 
@@ -1399,11 +1430,11 @@ Cell["Distortion", "Subsection",
 
 Cell[TextData[{
  StyleBox["p",
+  FontWeight->"Bold",
   FontSlant->"Italic"],
  " is the probability of transmission of drive allele (D) in heterozygous \
 offsprings (WD)."
 }], "Text",
- Editable->False,
  ShowCellBracket->False,
  CellChangeTimes->{{3.791121426547513*^9, 3.791121447820456*^9}, {
   3.791702136359507*^9, 3.791702137616025*^9}, {3.791705937712098*^9, 
@@ -1414,7 +1445,7 @@ offsprings (WD)."
 Cell[CellGroupData[{
 
 Cell["Viability selection", "Subsection",
- Editable->False,
+ CellFrame->{{0, 0}, {0, 0.5}},
  ShowCellBracket->False,
  CellChangeTimes->{{3.791119190022883*^9, 3.7911191952957573`*^9}, {
   3.791119244035676*^9, 
@@ -1422,26 +1453,35 @@ Cell["Viability selection", "Subsection",
 1e075a39a44c"],
 
 Cell[TextData[{
- " \[Omega] and \[Nu] are the genotypic viabilities of drive heterozygote \
-(WD) and homozygotes (DD) respectively.  \n",
+ " ",
+ StyleBox["\[Omega]",
+  FontWeight->"Bold"],
+ " and ",
+ StyleBox["\[Nu]",
+  FontWeight->"Bold"],
+ " are the genotypic viabilities of drive heterozygote (WD) and homozygotes \
+(DD) respectively.  \n",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["d", "m"], TraditionalForm]],ExpressionUUID->
-  "22103bc5-59d9-4ca3-84f7-2a030f82ea61"],
+   SubscriptBox["d", "m"], TraditionalForm]],
+  FontWeight->"Bold",ExpressionUUID->"22103bc5-59d9-4ca3-84f7-2a030f82ea61"],
  ",  ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["d", "im"], TraditionalForm]],ExpressionUUID->
+   StyleBox[
+    SubscriptBox["d", "im"],
+    FontWeight->"Bold"], TraditionalForm]],ExpressionUUID->
   "e609eb4e-f92e-45bc-a0f3-20b6be51506a"],
  " and  ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["d", "S"], TraditionalForm]],ExpressionUUID->
+   StyleBox[
+    SubscriptBox["d", "S"],
+    FontWeight->"Bold"], TraditionalForm]],ExpressionUUID->
   "6d44e86c-7c62-405b-b159-fec94c2a765c"],
  " are the drive efficiency of gene drives Medea, Inverse Medea and Semele \
 respectively. "
 }], "Text",
- Editable->False,
  ShowCellBracket->False,
  CellChangeTimes->{{3.791121431989909*^9, 3.791121448900299*^9}, {
    3.7917021385160723`*^9, 3.7917021399099894`*^9}, {3.7917062572804127`*^9, 
@@ -1454,7 +1494,8 @@ respectively. "
 },
 WindowSize->{1399, 705},
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
-TaggingRules->{"PresenterSettings" -> {"Dialogs" -> {}}},
+TaggingRules->{
+ "PresenterSettings" -> {"Dialogs" -> {}, "UserModifications" -> {}}},
 FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->FrontEnd`FileName[{"PresenterTools"}, "Garnet.nb", 
   CharacterEncoding -> "UTF-8"]
@@ -1471,26 +1512,26 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[1510, 35, 301, 6, 113, "Title",ExpressionUUID->"dea076a2-ca19-42a0-91a6-e9053665d30d"],
-Cell[1814, 43, 1807, 52, 113, "Author",ExpressionUUID->"1c29d2ba-8f74-49d2-b06e-f5b232ac5944"],
-Cell[3624, 97, 1229, 19, 154, "Abstract",ExpressionUUID->"4cf1338a-504d-4853-b06f-342749e74766"],
+Cell[1510, 35, 322, 6, 113, "Title",ExpressionUUID->"dea076a2-ca19-42a0-91a6-e9053665d30d"],
+Cell[1835, 43, 1795, 44, 101, "Author",ExpressionUUID->"1c29d2ba-8f74-49d2-b06e-f5b232ac5944"],
+Cell[3633, 89, 2115, 54, 189, "Abstract",ExpressionUUID->"4cf1338a-504d-4853-b06f-342749e74766"],
 Cell[CellGroupData[{
-Cell[4878, 120, 30637, 730, 1438, "Input",ExpressionUUID->"5a8cfc92-a3e5-4c12-a89c-72f90df28112"],
-Cell[35518, 852, 22347, 488, 479, "Output",ExpressionUUID->"1d702105-2640-44b1-92b2-f4409d3e9259"]
+Cell[5773, 147, 30619, 729, 1438, "Input",ExpressionUUID->"5a8cfc92-a3e5-4c12-a89c-72f90df28112"],
+Cell[36395, 878, 22567, 489, 479, "Output",ExpressionUUID->"1d702105-2640-44b1-92b2-f4409d3e9259"]
 }, {2}]],
 Cell[CellGroupData[{
-Cell[57899, 1345, 208, 5, 59, "Section",ExpressionUUID->"0ace0f20-69f4-46df-85d3-8a7260263411"],
+Cell[58996, 1372, 220, 5, 65, "Section",ExpressionUUID->"0ace0f20-69f4-46df-85d3-8a7260263411"],
 Cell[CellGroupData[{
-Cell[58132, 1354, 235, 5, 43, "Subsection",ExpressionUUID->"da372b89-21e6-49ba-9573-a4ef37bf56bb"],
-Cell[58370, 1361, 967, 25, 38, "Text",ExpressionUUID->"2482534d-1a89-4eae-bfed-c6f8c584eb06"]
+Cell[59241, 1381, 217, 4, 43, "Subsection",ExpressionUUID->"da372b89-21e6-49ba-9573-a4ef37bf56bb"],
+Cell[59461, 1387, 1066, 30, 38, "Text",ExpressionUUID->"2482534d-1a89-4eae-bfed-c6f8c584eb06"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[59374, 1391, 251, 6, 43, "Subsection",ExpressionUUID->"136d52ef-f73e-4f2b-bda0-60e4c6db23d9"],
-Cell[59628, 1399, 485, 11, 36, "Text",ExpressionUUID->"b55c17ba-9420-4c22-8a85-fc6fbe096fe4"]
+Cell[60564, 1422, 265, 6, 52, "Subsection",ExpressionUUID->"136d52ef-f73e-4f2b-bda0-60e4c6db23d9"],
+Cell[60832, 1430, 489, 11, 36, "Text",ExpressionUUID->"b55c17ba-9420-4c22-8a85-fc6fbe096fe4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[60150, 1415, 260, 6, 43, "Subsection",ExpressionUUID->"79acdad1-5113-4a4e-981d-1e075a39a44c"],
-Cell[60413, 1423, 1061, 26, 62, "Text",ExpressionUUID->"18a3dd79-ca9b-4df1-8cc6-3569b467ee77"]
+Cell[61358, 1446, 274, 6, 52, "Subsection",ExpressionUUID->"79acdad1-5113-4a4e-981d-1e075a39a44c"],
+Cell[61635, 1454, 1224, 35, 63, "Text",ExpressionUUID->"18a3dd79-ca9b-4df1-8cc6-3569b467ee77"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -1498,4 +1539,4 @@ Cell[60413, 1423, 1061, 26, 62, "Text",ExpressionUUID->"18a3dd79-ca9b-4df1-8cc6-
 ]
 *)
 
-(* NotebookSignature su0vA0zEggPxnD1c4H6kAXUb *)
+(* NotebookSignature @wTZDe6ZMnBi9A1E9EZ14@49 *)
