@@ -23,10 +23,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[      1088,         20]
-NotebookDataLength[     62858,       1496]
-NotebookOptionsPosition[     62229,       1473]
-NotebookOutlinePosition[     62565,       1488]
-CellTagsIndexPosition[     62522,       1485]
+NotebookDataLength[     62272,       1479]
+NotebookOptionsPosition[     61514,       1454]
+NotebookOutlinePosition[     61979,       1471]
+CellTagsIndexPosition[     61936,       1468]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -34,6 +34,8 @@ Notebook[{
 
 Cell[CellGroupData[{
 Cell["DrMxR  (Drive Mixer)", "Title",
+ Editable->False,
+ ShowCellBracket->False,
  CellChangeTimes->{{3.791116520431237*^9, 3.79111656282701*^9}, {
   3.791117368249481*^9, 3.79111736916218*^9}, {3.791702163321794*^9, 
   3.7917021698942537`*^9}},ExpressionUUID->"dea076a2-ca19-42a0-91a6-\
@@ -84,6 +86,8 @@ Biology, Pl",
   "35389d66-e64a-4d39-96aa-6c8c75ee382e"],
  "n, Germany"
 }], "Author",
+ Editable->False,
+ ShowCellBracket->False,
  CellChangeTimes->{{3.7911167575156918`*^9, 3.791116773962865*^9}, {
   3.79112140839957*^9, 3.791121413003335*^9}, {3.79170221740206*^9, 
   3.7917022578599663`*^9}, {3.7917023777821627`*^9, 3.791702473869383*^9}, {
@@ -103,11 +107,13 @@ corresponds to the population composition where all three of the genotypes \
 potentially exist. Their relative abundance is proportional to the distance \
 from the vertices. The black parabola curve represents Hardy-Weinberg \
 equilibrium. The white open point represent the position of the fixed points. \
-Colours exhibit speed of the dynamics inside de Finetti plots. \
+Colours exhibit speed of the dynamics. \
 \>", "Abstract",
+ Editable->False,
+ ShowCellBracket->False,
  CellChangeTimes->{{3.791119314384894*^9, 3.79111934912035*^9}, {
    3.791119429761929*^9, 3.791119443901498*^9}, 3.7911209012562723`*^9, 
-   3.791719572422121*^9},
+   3.791719572422121*^9, {3.7918239057149363`*^9, 3.7918239211564913`*^9}},
  TextJustification->1.,ExpressionUUID->"4cf1338a-504d-4853-b06f-342749e74766"],
 
 Cell[CellGroupData[{
@@ -165,7 +171,7 @@ Cell[BoxData[
           RowBox[{"Frame", "\[Rule]", "None"}], ",", 
           RowBox[{"PlotLabel", "\[Rule]", 
            RowBox[{"Style", "[", 
-            RowBox[{"\"\<Gene Drive Dynamics\>\"", ",", "\"\<Subtitle\>\""}], 
+            RowBox[{"\"\<Gene Drive Dynamics\>\"", ",", "\"\<Section\>\""}], 
             "]"}]}]}], "]"}], ",", "leftri", ",", "\[IndentingNewLine]", 
         "rightri", ",", "\[IndentingNewLine]", "downl", ",", "Tri", ",", 
         "HWparabola1", ",", 
@@ -240,50 +246,7 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{"10", ",", 
          RowBox[{"FontFamily", "\[Rule]", "\"\<Palatino-Roman\>\""}]}], 
-        "}"}]}]}], "]"}], ",", 
-    RowBox[{"(*", 
-     RowBox[{
-      RowBox[{"OpenerView", "[", 
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"Style", "[", 
-          RowBox[{"\"\<Fertility Selection\>\"", ",", "16", ",", "Bold"}], 
-          "]"}], ",", 
-         RowBox[{"Column", "[", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"Control", "[", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"ffww", ",", "1", ",", 
-                  RowBox[{"Style", "[", 
-                   RowBox[{
-                   "\"\<Fertility of WW, \!\(\*SubscriptBox[\(f\), \
-\(WW\)]\)\>\"", ",", "11"}], "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], 
-              "]"}], ",", 
-             RowBox[{"Control", "[", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"ffwd", ",", "1", ",", 
-                  RowBox[{"Style", "[", 
-                   RowBox[{
-                   "\"\<Fertility of WW, \!\(\*SubscriptBox[\(f\), \
-\(WD\)]\)\>\"", ",", "11"}], "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], 
-              "]"}], ",", 
-             RowBox[{"Control", "[", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"ffdd", ",", "1", ",", 
-                  RowBox[{"Style", "[", 
-                   RowBox[{
-                   "\"\<Fertility of WW, \!\(\*SubscriptBox[\(f\), \
-\(DD\)]\)\>\"", ",", "11"}], "]"}]}], "}"}], ",", "0", ",", "1"}], "}"}], 
-              "]"}]}], "}"}], ",", "Left"}], "]"}]}], "}"}], "]"}], ","}], 
-     "*)"}], 
+        "}"}]}]}], "]"}], ",", "\[IndentingNewLine]", 
     RowBox[{"Style", "[", 
      RowBox[{"\"\<Fertility Selection\>\"", ",", "16", ",", "Bold"}], "]"}], 
     ",", "\[IndentingNewLine]", 
@@ -398,12 +361,7 @@ Cell[BoxData[
       RowBox[{"Background", "\[Rule]", 
        RowBox[{"Lighter", "[", 
         RowBox[{"Gray", ",", " ", "0.7"}], "]"}]}], ",", 
-      RowBox[{"Appearance", "\[Rule]", "\"\<FramedPalette\>\""}]}], 
-     RowBox[{"(*", 
-      RowBox[{",", 
-       RowBox[{"ImageSize", "\[Rule]", 
-        RowBox[{"{", 
-         RowBox[{"Automatic", ",", "Automatic"}], "}"}]}]}], "*)"}], "]"}], 
+      RowBox[{"Appearance", "\[Rule]", "\"\<FramedPalette\>\""}]}], "]"}], 
     ",", 
     RowBox[{"Initialization", "\[RuleDelayed]", 
      RowBox[{"{", "\[IndentingNewLine]", 
@@ -836,9 +794,11 @@ Cell[BoxData[
            RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
           RowBox[{"PlotStyle", "\[Rule]", "Black"}]}], "]"}]}], ";"}], 
       "\[IndentingNewLine]", "}"}]}], ",", 
-    RowBox[{"AppearanceElements", "\[Rule]", "\"\<ResetButton\>\""}], ",", 
+    RowBox[{"AppearanceElements", "\[Rule]", "All"}], ",", 
     RowBox[{"ControlPlacement", "\[Rule]", "Left"}]}], "]"}], " "}]], "Input",\
 
+ Editable->False,
+ ShowCellBracket->False,
  CellChangeTimes->{{3.791701963260668*^9, 3.7917019877191677`*^9}, {
    3.791702047171788*^9, 3.7917020601096363`*^9}, 3.791702286698703*^9, {
    3.7917028805765333`*^9, 3.791702926363833*^9}, {3.791702973357819*^9, 
@@ -883,8 +843,12 @@ Cell[BoxData[
    3.791809724512261*^9, 3.7918097370292*^9}, {3.791809801726115*^9, 
    3.791809970734372*^9}, {3.791810306325233*^9, 3.791810314050682*^9}, {
    3.791810346642734*^9, 3.791810353927853*^9}, {3.7918103860589437`*^9, 
-   3.791810388510518*^9}, {3.7918104207696953`*^9, 3.791810423105525*^9}},
- CellLabel->"In[2]:=",ExpressionUUID->"5a8cfc92-a3e5-4c12-a89c-72f90df28112"],
+   3.791810388510518*^9}, {3.7918104207696953`*^9, 3.791810423105525*^9}, {
+   3.791823710846674*^9, 3.791823712688641*^9}, {3.791823814503106*^9, 
+   3.791823817132635*^9}, {3.7918245812687073`*^9, 3.7918246035125227`*^9}, {
+   3.791824645754705*^9, 3.791824685564025*^9}, {3.791824916172976*^9, 
+   3.791824936413406*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"5a8cfc92-a3e5-4c12-a89c-72f90df28112"],
 
 Cell[BoxData[
  TagBox[
@@ -942,12 +906,12 @@ Cell[BoxData[
          1, $CellContext`e$$ = 0, $CellContext`g$$ = 0}, Background -> 
         RGBColor[0.85, 0.85, 0.85], Appearance -> "FramedPalette"]], 
       Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = {
-    600., {296., 304.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = False, $CellContext`ffww$8803$$ = 
-    0, $CellContext`ffwd$8804$$ = 0, $CellContext`ffdd$8805$$ = 
-    0, $CellContext`p$8806$$ = 0, $CellContext`\[Omega]$8807$$ = 
-    0, $CellContext`\[Nu]$8808$$ = 0, $CellContext`d$8809$$ = 
-    0, $CellContext`e$8810$$ = 0, $CellContext`g$8811$$ = 0}, 
+    400., {198., 202.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`ffww$107796$$ = 
+    0, $CellContext`ffwd$107797$$ = 0, $CellContext`ffdd$107798$$ = 
+    0, $CellContext`p$107799$$ = 0, $CellContext`\[Omega]$107800$$ = 
+    0, $CellContext`\[Nu]$107801$$ = 0, $CellContext`d$107802$$ = 
+    0, $CellContext`e$107803$$ = 0, $CellContext`g$107804$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      2, StandardForm, 
       "Variables" :> {$CellContext`d$$ = 0, $CellContext`e$$ = 
@@ -955,15 +919,15 @@ Cell[BoxData[
         1, $CellContext`ffww$$ = 1, $CellContext`g$$ = 0, $CellContext`p$$ = 
         0.5, $CellContext`\[Nu]$$ = 1, $CellContext`\[Omega]$$ = 1}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`ffww$$, $CellContext`ffww$8803$$, 0], 
-        Hold[$CellContext`ffwd$$, $CellContext`ffwd$8804$$, 0], 
-        Hold[$CellContext`ffdd$$, $CellContext`ffdd$8805$$, 0], 
-        Hold[$CellContext`p$$, $CellContext`p$8806$$, 0], 
-        Hold[$CellContext`\[Omega]$$, $CellContext`\[Omega]$8807$$, 0], 
-        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$8808$$, 0], 
-        Hold[$CellContext`d$$, $CellContext`d$8809$$, 0], 
-        Hold[$CellContext`e$$, $CellContext`e$8810$$, 0], 
-        Hold[$CellContext`g$$, $CellContext`g$8811$$, 0]}, 
+        Hold[$CellContext`ffww$$, $CellContext`ffww$107796$$, 0], 
+        Hold[$CellContext`ffwd$$, $CellContext`ffwd$107797$$, 0], 
+        Hold[$CellContext`ffdd$$, $CellContext`ffdd$107798$$, 0], 
+        Hold[$CellContext`p$$, $CellContext`p$107799$$, 0], 
+        Hold[$CellContext`\[Omega]$$, $CellContext`\[Omega]$107800$$, 0], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$107801$$, 0], 
+        Hold[$CellContext`d$$, $CellContext`d$107802$$, 0], 
+        Hold[$CellContext`e$$, $CellContext`e$107803$$, 0], 
+        Hold[$CellContext`g$$, $CellContext`g$107804$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -990,7 +954,7 @@ $CellContext`p$$, $CellContext`d$$, $CellContext`\[Omega]$$, $CellContext`\
              LegendLabel -> "Relative speed"], {0.85, 0.7}], Mesh -> None, 
           Frame -> None, PlotLabel -> 
           Style["Gene Drive Dynamics", 
-            "Subtitle"]], $CellContext`leftri, $CellContext`rightri, \
+            "Section"]], $CellContext`leftri, $CellContext`rightri, \
 $CellContext`downl, $CellContext`Tri, $CellContext`HWparabola1, \
 $CellContext`sol1 = ReplaceAll[{$CellContext`xcart, $CellContext`ycart}, 
             Chop[
@@ -1052,10 +1016,9 @@ $CellContext`g$$] == 0, $CellContext`xcart < 0.999, $CellContext`xcart >
           1, $CellContext`\[Nu]$$ = 1, $CellContext`e$$ = 0, $CellContext`g$$ = 
           0}, Background -> RGBColor[0.85, 0.85, 0.85], Appearance -> 
          "FramedPalette"]}, 
-      "Options" :> {
-       AppearanceElements -> "ResetButton", ControlPlacement -> Left}, 
+      "Options" :> {AppearanceElements -> All, ControlPlacement -> Left}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{1148., {340., 348.}},
+     ImageSizeCache->{770., {227., 233.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1364,19 +1327,25 @@ $CellContext`HWparabola1 =
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
+ Editable->False,
+ ShowCellBracket->False,
  CellChangeTimes->{{3.7918086540167913`*^9, 3.791808700256104*^9}, {
    3.791808742979912*^9, 3.791808748639595*^9}, 3.791808884402276*^9, {
    3.79180904420018*^9, 3.791809177166486*^9}, {3.791809420500556*^9, 
    3.791809494246031*^9}, 3.791809565721982*^9, {3.791809725946665*^9, 
    3.7918097380096703`*^9}, 3.791809818302402*^9, {3.791809852745428*^9, 
    3.7918099717751493`*^9}, 3.791810004469556*^9, 3.791810370411161*^9, {
-   3.791810423957789*^9, 3.791810508489669*^9}},
- CellLabel->"Out[2]=",ExpressionUUID->"86bc4eb5-b52b-4b81-a6a5-b4bc819b9e2d"]
+   3.791810423957789*^9, 3.791810508489669*^9}, 3.791823714038816*^9, 
+   3.791824246636745*^9, {3.79182466277283*^9, 3.79182468647563*^9}, {
+   3.791824904275688*^9, 3.791824938009028*^9}},
+ CellLabel->"Out[5]=",ExpressionUUID->"1d702105-2640-44b1-92b2-f4409d3e9259"]
 }, {2}]],
 
 Cell[CellGroupData[{
 
 Cell["Parameter Description", "Section",
+ Editable->False,
+ ShowCellBracket->False,
  CellChangeTimes->{{3.791706705843924*^9, 
   3.79170674269188*^9}},ExpressionUUID->"0ace0f20-69f4-46df-85d3-\
 8a7260263411"],
@@ -1384,6 +1353,8 @@ Cell["Parameter Description", "Section",
 Cell[CellGroupData[{
 
 Cell["Fertility selection", "Subsection",
+ Editable->False,
+ ShowCellBracket->False,
  CellChangeTimes->{{3.791119190022883*^9, 3.7911191952957573`*^9}, 
    3.791119241438943*^9},ExpressionUUID->"da372b89-21e6-49ba-9573-\
 a4ef37bf56bb"],
@@ -1404,19 +1375,23 @@ Cell[TextData[{
   FormBox[
    SubscriptBox["f", "DD"], TraditionalForm]],ExpressionUUID->
   "d022b168-2394-411f-8dcc-549608da17d5"],
- "are the genotypic fertility of the organism in the adult stage."
+ " are the genotypic fertility of the organism in the adult stage."
 }], "Text",
+ Editable->False,
+ ShowCellBracket->False,
  CellChangeTimes->{{3.7911214193259363`*^9, 3.791121444307242*^9}, {
-  3.791702134025185*^9, 3.791702135335463*^9}, {3.791704643241105*^9, 
-  3.791704643633683*^9}, {3.791705451689536*^9, 3.791705452331023*^9}, {
-  3.791705614737611*^9, 3.7917056436852503`*^9}, {3.791705712446883*^9, 
-  3.791705932065412*^9}},ExpressionUUID->"2482534d-1a89-4eae-bfed-\
-c6f8c584eb06"]
+   3.791702134025185*^9, 3.791702135335463*^9}, {3.791704643241105*^9, 
+   3.791704643633683*^9}, {3.791705451689536*^9, 3.791705452331023*^9}, {
+   3.791705614737611*^9, 3.7917056436852503`*^9}, {3.791705712446883*^9, 
+   3.791705932065412*^9}, 3.791824104805306*^9},
+ FontSize->18,ExpressionUUID->"2482534d-1a89-4eae-bfed-c6f8c584eb06"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell["Distortion", "Subsection",
+ Editable->False,
+ ShowCellBracket->False,
  CellChangeTimes->{{3.791119190022883*^9, 3.7911191952957573`*^9}, {
   3.79111924273041*^9, 
   3.791119247983468*^9}},ExpressionUUID->"136d52ef-f73e-4f2b-bda0-\
@@ -1428,16 +1403,19 @@ Cell[TextData[{
  " is the probability of transmission of drive allele (D) in heterozygous \
 offsprings (WD)."
 }], "Text",
+ Editable->False,
+ ShowCellBracket->False,
  CellChangeTimes->{{3.791121426547513*^9, 3.791121447820456*^9}, {
   3.791702136359507*^9, 3.791702137616025*^9}, {3.791705937712098*^9, 
-  3.7917059478741817`*^9}, {3.791706336160866*^9, 
-  3.791706414242702*^9}},ExpressionUUID->"b55c17ba-9420-4c22-8a85-\
-fc6fbe096fe4"]
+  3.7917059478741817`*^9}, {3.791706336160866*^9, 3.791706414242702*^9}},
+ FontSize->18,ExpressionUUID->"b55c17ba-9420-4c22-8a85-fc6fbe096fe4"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell["Viability selection", "Subsection",
+ Editable->False,
+ ShowCellBracket->False,
  CellChangeTimes->{{3.791119190022883*^9, 3.7911191952957573`*^9}, {
   3.791119244035676*^9, 
   3.79111925353544*^9}},ExpressionUUID->"79acdad1-5113-4a4e-981d-\
@@ -1445,7 +1423,7 @@ Cell["Viability selection", "Subsection",
 
 Cell[TextData[{
  " \[Omega] and \[Nu] are the genotypic viabilities of drive heterozygote \
-(WD) and homozygotes (DD) respectively.  ",
+(WD) and homozygotes (DD) respectively.  \n",
  Cell[BoxData[
   FormBox[
    SubscriptBox["d", "m"], TraditionalForm]],ExpressionUUID->
@@ -1460,21 +1438,26 @@ Cell[TextData[{
   FormBox[
    SubscriptBox["d", "S"], TraditionalForm]],ExpressionUUID->
   "6d44e86c-7c62-405b-b159-fec94c2a765c"],
- " are the drive efficiency of gene drives Medea, Inverse Medea and Semele. "
+ " are the drive efficiency of gene drives Medea, Inverse Medea and Semele \
+respectively. "
 }], "Text",
+ Editable->False,
+ ShowCellBracket->False,
  CellChangeTimes->{{3.791121431989909*^9, 3.791121448900299*^9}, {
    3.7917021385160723`*^9, 3.7917021399099894`*^9}, {3.7917062572804127`*^9, 
    3.791706259606389*^9}, {3.7917064434816093`*^9, 3.7917066022467327`*^9}, 
-   3.791706758230846*^9},ExpressionUUID->"18a3dd79-ca9b-4df1-8cc6-\
-3569b467ee77"]
+   3.791706758230846*^9, {3.79182407139571*^9, 3.791824081185252*^9}},
+ FontSize->18,ExpressionUUID->"18a3dd79-ca9b-4df1-8cc6-3569b467ee77"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1399, 705},
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+TaggingRules->{"PresenterSettings" -> {"Dialogs" -> {}}},
 FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
-StyleDefinitions->"Default.nb"
+StyleDefinitions->FrontEnd`FileName[{"PresenterTools"}, "Garnet.nb", 
+  CharacterEncoding -> "UTF-8"]
 ]
 (* End of Notebook Content *)
 
@@ -1488,26 +1471,26 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[1510, 35, 258, 4, 146, "Title",ExpressionUUID->"dea076a2-ca19-42a0-91a6-e9053665d30d"],
-Cell[1771, 41, 1764, 50, 205, "Author",ExpressionUUID->"1c29d2ba-8f74-49d2-b06e-f5b232ac5944"],
-Cell[3538, 93, 1160, 17, 336, "Abstract",ExpressionUUID->"4cf1338a-504d-4853-b06f-342749e74766"],
+Cell[1510, 35, 301, 6, 113, "Title",ExpressionUUID->"dea076a2-ca19-42a0-91a6-e9053665d30d"],
+Cell[1814, 43, 1807, 52, 113, "Author",ExpressionUUID->"1c29d2ba-8f74-49d2-b06e-f5b232ac5944"],
+Cell[3624, 97, 1229, 19, 154, "Abstract",ExpressionUUID->"4cf1338a-504d-4853-b06f-342749e74766"],
 Cell[CellGroupData[{
-Cell[4723, 114, 32134, 772, 3034, "Input",ExpressionUUID->"5a8cfc92-a3e5-4c12-a89c-72f90df28112"],
-Cell[36860, 888, 22146, 485, 716, "Output",ExpressionUUID->"86bc4eb5-b52b-4b81-a6a5-b4bc819b9e2d"]
+Cell[4878, 120, 30637, 730, 1438, "Input",ExpressionUUID->"5a8cfc92-a3e5-4c12-a89c-72f90df28112"],
+Cell[35518, 852, 22347, 488, 479, "Output",ExpressionUUID->"1d702105-2640-44b1-92b2-f4409d3e9259"]
 }, {2}]],
 Cell[CellGroupData[{
-Cell[59040, 1378, 165, 3, 101, "Section",ExpressionUUID->"0ace0f20-69f4-46df-85d3-8a7260263411"],
+Cell[57899, 1345, 208, 5, 59, "Section",ExpressionUUID->"0ace0f20-69f4-46df-85d3-8a7260263411"],
 Cell[CellGroupData[{
-Cell[59230, 1385, 192, 3, 81, "Subsection",ExpressionUUID->"da372b89-21e6-49ba-9573-a4ef37bf56bb"],
-Cell[59425, 1390, 884, 23, 54, "Text",ExpressionUUID->"2482534d-1a89-4eae-bfed-c6f8c584eb06"]
+Cell[58132, 1354, 235, 5, 43, "Subsection",ExpressionUUID->"da372b89-21e6-49ba-9573-a4ef37bf56bb"],
+Cell[58370, 1361, 967, 25, 38, "Text",ExpressionUUID->"2482534d-1a89-4eae-bfed-c6f8c584eb06"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[60346, 1418, 208, 4, 81, "Subsection",ExpressionUUID->"136d52ef-f73e-4f2b-bda0-60e4c6db23d9"],
-Cell[60557, 1424, 432, 10, 53, "Text",ExpressionUUID->"b55c17ba-9420-4c22-8a85-fc6fbe096fe4"]
+Cell[59374, 1391, 251, 6, 43, "Subsection",ExpressionUUID->"136d52ef-f73e-4f2b-bda0-60e4c6db23d9"],
+Cell[59628, 1399, 485, 11, 36, "Text",ExpressionUUID->"b55c17ba-9420-4c22-8a85-fc6fbe096fe4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[61026, 1439, 217, 4, 81, "Subsection",ExpressionUUID->"79acdad1-5113-4a4e-981d-1e075a39a44c"],
-Cell[61246, 1445, 943, 23, 89, "Text",ExpressionUUID->"18a3dd79-ca9b-4df1-8cc6-3569b467ee77"]
+Cell[60150, 1415, 260, 6, 43, "Subsection",ExpressionUUID->"79acdad1-5113-4a4e-981d-1e075a39a44c"],
+Cell[60413, 1423, 1061, 26, 62, "Text",ExpressionUUID->"18a3dd79-ca9b-4df1-8cc6-3569b467ee77"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -1515,4 +1498,4 @@ Cell[61246, 1445, 943, 23, 89, "Text",ExpressionUUID->"18a3dd79-ca9b-4df1-8cc6-3
 ]
 *)
 
-(* NotebookSignature fvTAr2FW0XIoXC1Gh7mOA8BR *)
+(* NotebookSignature su0vA0zEggPxnD1c4H6kAXUb *)
