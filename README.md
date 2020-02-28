@@ -26,8 +26,7 @@ Mathematica or the Wolfram Mathematica Player for Notebooks is required to run t
 
 ### Downloading Wolfram Player for Notebooks
 
-Wolfram Player for Notebooks is a free player from Wolfram and can be downloaded [here](here 
-https://www.wolfram.com/player/)
+Wolfram Player for Notebooks is a free player from Wolfram and can be downloaded [here](https://www.wolfram.com/player/)
 ***
 
 #### Further details to follow
