@@ -21,16 +21,14 @@ All the above files can be cloned or downloaded.
 
 ### Downloading the cdf file
 
+The actual DRMxR tool is the cdf file which can be downloaded from above.
+Mathematica or the Wolfram Mathematica Player for Notebooks is required to run the tool.
+
 ### Downloading Wolfram Player for Notebooks
 
-https://www.wolfram.com/player/
-
-
- * Download the DrMxR.cdf file form the [Github]: https://github.com/tecoevo/genedrive
- * Open the DrMxR.cdf file with the Wolfram Player.
+Wolfram Player for Notebooks is a free player from Wolfram and can be downloaded [here](here 
+https://www.wolfram.com/player/)
 ***
 
-## Usage
-* 
-
-## Case Studies
+#### Further details to follow
+	* Case studies
