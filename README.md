@@ -3,7 +3,21 @@
 This repository hosts the codes of the synthetic gene drive project in collaboration with R. Guy Reeves and spearheaded by Prateek Verma
 ***
 
-## Download
+The project contains the codes pertianing to various figures in the submitted paper in the directory 
+VGR_manuscript/
+
+The literature database is available in the folder
+literature_database
+
+The main tool *DrMxR* is the file
+
+DrMxR.cdf
+
+All the above files can be cloned or downloaded.
+
+
+
+## DrMxR manual
 
 ### Downloading the cdf file
 
