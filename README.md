@@ -23,9 +23,9 @@ Given the current interest in synthetic gene drive (ones engineered in labs) we 
 
 ## Synthetic gene drive
 
-Synthetic gene drive has been proposed as a way to push genes in to wild populations ([10.1093/oxfordjournals.bmb.a011690](10.1093/oxfordjournals.bmb.a011690)). This occurs after individuals carrying the gene drive are released  in to wild populations or arrive from adjacent populations where the gene drive has already become established. Currently no gene drive elements have been released into wild populations.
+Synthetic gene drive has been proposed as a way to push genes in to wild populations ([10.1093/oxfordjournals.bmb.a011690](https://doi.org/10.1093/oxfordjournals.bmb.a011690)). This occurs after individuals carrying the gene drive are released  in to wild populations or arrive from adjacent populations where the gene drive has already become established. Currently no gene drive elements have been released into wild populations.
 
-Despite there being a large number of proposed gene drive systems they all have one of two distinct aims - 
+Despite there being a large number of proposed gene drive systems, they all have one of two distinct aims - 
 
 - To drive a synthetic gene into a target wild population (without the aim of changing the population size). Such a gene could reduce the capacity of mosquitoes to spread diseases like malaria.
 
@@ -56,7 +56,7 @@ Wolfram Player for Notebooks is a free player from Wolfram and can be downloaded
 
 *Only if you want to use ``DrMxR`` on a mobile phone or tablet you will need to register for a free Wolfram Cloud account to “activate interactivity”*
 
-The triangle is the key to DrMxR is the triangle diagram and being able to interpret it (its correct name is a [de Finetti diagram](https://en.wikipedia.org/wiki/De_Finetti_diagram)). It is not as complicated as it first looks and provides an overview of what is likely to happen to a single population starting from all possible staring points if you wait enough generations.
+The key to DrMxR is the triangle diagram and being able to interpret it (its correct name is a [de Finetti diagram](https://en.wikipedia.org/wiki/De_Finetti_diagram)). It is not as complicated as it first looks and provides an overview of what is likely to happen to a single population starting from all possible staring points if you wait enough generations.
 
 The triangle represents all conceivable populations frequencies where you have a drive allele (D) and a corresponding wildtype allele (W).
 
@@ -106,12 +106,12 @@ While ``DrMxR`` allows you to seamlessly mix parameters that may have previously
 
 <!--Parameter Description-->
 
-Technical notes this is probably a bit technical for most users but currently ``DrMxR`` is focused on a particular class of gene drive systems 
+**Technical notes** this is probably a bit technical for most users but currently ``DrMxR`` is focused on a particular class of gene drive systems 
 
-* It does not incorporate the impact of random events (it assumes a large population)
+* It does not incorporate the impact of random events (it assumes a large population).
 * It assumes that both sexes are equivalent in all ways and that the sex ratio is equal.
-* Only a single drive construct is modelled (this is the case even when you mix different drive systems)
+* Only a single drive construct is modelled (this is the case even when you mix different drive systems).
 * The drive construct is on an autosome (i.e. it is not on chromosomes that are specific to a particular sex)
-* Diploid chromosomes (no endosymbionts)
-* The organism in question can only reproduce sexually 
-* The model allows for overlapping generations 
+* Diploid chromosomes (no endosymbionts).
+* The organism in question can only reproduce sexually. 
+* The model allows for overlapping generations.
