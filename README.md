@@ -115,3 +115,6 @@ While ``DrMxR`` allows you to seamlessly mix parameters that may have previously
 * Diploid chromosomes (no endosymbionts).
 * The organism in question can only reproduce sexually. 
 * The model allows for overlapping generations.
+
+## Acknowledgment
+The model is part of the R&D project “Risk assessment of synthetic gene-drive applications” (FKZ 3518 84 0500) commissioned by the Federal Agency for Nature Conservation (BfN) with funds from the German Federal Ministry for the Environment, Nature Conservation and Nuclear Safety. The work also has been supported by funds of the Max Planck Society.
