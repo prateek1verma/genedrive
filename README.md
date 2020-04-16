@@ -5,13 +5,13 @@ This repository hosts the codes of the synthetic gene drive project in collabora
 The model is part of the R&D project “Risk assessment of synthetic gene-drive applications” (FKZ 3518 84 0500) commissioned by the Federal Agency for Nature Conservation (BfN) with funds from the German Federal Ministry for the Environment, Nature Conservation and Nuclear Safety. The work also has been supported by funds of the Max Planck Society.
 ***
 
-The project contains the codes pertianing to various figures in the submitted paper in the directory 
+The project contains the codes pertaining to various figures in the submitted paper in the directory 
 VGR_manuscript/
 
 The literature database is available in the folder
 literature_database
 
-The main tool *DrMxR* is the file
+The main tool *DrMxR* is the file.
 
 DrMxR.cdf
 
@@ -20,12 +20,12 @@ All the above files can be cloned or downloaded.
 
 # Gene Drive
 
-Gene drive is a natural phenomena described in a variety of species including mice, flies and beetles (see [article](https://www.genetics.org/content/13/6/488.article-info)). Where it occurs the frequency of a driving gene in a natural population cannot be predicted solely from its Darwinian natural selection parameters, as can be for most other genes. Additional factors not generally considered in most population genetic models also need to be incorporated [PMC1213827](PMC1213827). This can make predicting the expected dynamics of gene drives very complicated, even for experts. 
-Given the current interest in synthetic gene drive (ones engineered in labs) we wrote ``DrMxR`` (pronounced drive mixer) to provide an intuitive tool to learn about and evaluate the properties of a very wide range of conceivable drive approaches.
+Gene drive is a natural phenomenon described in a variety of species including mice, flies and beetles (see [article](https://www.genetics.org/content/13/6/488.article-info)). Where it occurs the frequency of a driving gene in a natural population cannot be predicted solely from its Darwinian natural selection parameters, as can be for most other genes. Additional factors not generally considered in most population genetic models also need to be incorporated [PMC1213827](PMC1213827). This can make predicting the expected dynamics of gene drives very complicated, even for experts. 
+Given the current interest in synthetic gene drive (ones engineered in labs) we wrote ``DrMxR`` (pronounced drive mixer) to provide an intuitive tool to learn about and evaluate the properties of a vast range of conceivable drive approaches.
 
 ## Synthetic gene drive
 
-Synthetic gene drive has been proposed as a way to push genes in to wild populations ([10.1093/oxfordjournals.bmb.a011690](https://doi.org/10.1093/oxfordjournals.bmb.a011690)). This occurs after individuals carrying the gene drive are released  in to wild populations or arrive from adjacent populations where the gene drive has already become established. Currently no gene drive elements have been released into wild populations.
+Synthetic gene drive has been proposed as a way to push genes into wild populations ([10.1093/oxfordjournals.bmb.a011690](https://doi.org/10.1093/oxfordjournals.bmb.a011690)). This occurs after individuals carrying the gene drive are released  in to wild populations or arrive from adjacent populations where the gene drive has already become established. Currently, no gene drive elements have been released into wild populations.
 
 Despite there being a large number of proposed gene drive systems, they all have one of two distinct aims - 
 
@@ -96,15 +96,15 @@ Triangle 3 If you start from a point on the triangle where WW individuals are mo
 <!--{same three triangles as above but with colours }-->
 
 
-**The sliders** to make it easier to explore different scenarios ``DrMxR`` has been set up with sliders through which users can mix gene drive parameters. You can move them around and see how the how the triangle diagram changes (one some machines you may need to wait a few seconds for display to update, so be patient if necessary).
+**The sliders** to make it easier to explore different scenarios ``DrMxR`` has been set up with sliders through which users can mix gene drive parameters. You can move them around and see how the triangle diagram changes (one some machines you may need to wait a few seconds for display to update, so be patient if necessary).
 If you want more options press the plus symbol on the right of each slider. This includes the capacity to type in numerical values. Hold the mouse over other options to see a description popup.
 The big reset button at the bottom of the panel returns all the sliders to their default position of *no-drive*.
 Note that the default position of some slider is on the left and some is on the right. Also that while 
 all other sliders range from 0-1, *Drive efficiency, p* has a theoretical minimum value of 0.5 (equal segregation) and a max of 1.
 
 
-**The parameters**, the key insight of the ``DrMxR`` approach is that fact that drive parameters perviously in earlier works, using a variety of names and approaches can be considered as representing one of three factors (as described in the full paper). These are the section headings in the ``DrMxR`` window : distortion, viability and fertility selection  
-While ``DrMxR`` allows you to seamlessly mix parameters that may have previously have been viewed as coming from distinct drive systems it is important to note ``DrMxR`` always presents the results for a single combination drive construct.
+**The parameters**, the key insight of the ``DrMxR`` approach is that fact that drive parameters previously in earlier works, using a variety of names and approaches can be considered as representing one of three factors (as described in the full paper). These are the section headings in the ``DrMxR`` window : distortion, viability and fertility selection  
+While ``DrMxR`` allows you to seamlessly mix parameters that may have previously have been viewed as coming from distinct drive systems, it is important to note ``DrMxR`` always presents the results for a single combination drive construct.
 
 <!--Parameter Description-->
 
@@ -113,7 +113,7 @@ While ``DrMxR`` allows you to seamlessly mix parameters that may have previously
 * It does not incorporate the impact of random events (it assumes a large population).
 * It assumes that both sexes are equivalent in all ways and that the sex ratio is equal.
 * Only a single drive construct is modelled (this is the case even when you mix different drive systems).
-* The drive construct is on an autosome (i.e. it is not on chromosomes that are specific to a particular sex)
+* The drive construct is on an autosome (i.e. it is not on chromosomes that are specific to particular sex)
 * Diploid chromosomes (no endosymbionts).
 * The organism in question can only reproduce sexually. 
 * The model allows for overlapping generations.
