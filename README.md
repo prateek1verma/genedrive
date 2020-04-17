@@ -11,9 +11,7 @@ VGR_manuscript/
 The literature database is available in the folder
 literature_database
 
-The main tool *DrMxR* is the file.
-
-DrMxR.cdf
+The main tool *DrMxR* is the file: DrMxR.cdf
 
 All the above files can be cloned or downloaded.
 
@@ -96,7 +94,7 @@ Triangle 3 If you start from a point on the triangle where WW individuals are mo
 <!--{same three triangles as above but with colours }-->
 
 
-**The sliders** to make it easier to explore different scenarios ``DrMxR`` has been set up with sliders through which users can mix gene drive parameters. You can move them around and see how the triangle diagram changes (one some machines you may need to wait a few seconds for display to update, so be patient if necessary).
+**The sliders** to make it easier to explore different scenarios ``DrMxR`` has been set up with sliders through which users can mix gene drive parameters. You can move them around and see how the triangle diagram changes (for some machines you may need to wait a few seconds for display to update, so be patient if necessary).
 If you want more options press the plus symbol on the right of each slider. This includes the capacity to type in numerical values. Hold the mouse over other options to see a description popup.
 The big reset button at the bottom of the panel returns all the sliders to their default position of *no-drive*.
 Note that the default position of some slider is on the left and some is on the right. Also that while 
