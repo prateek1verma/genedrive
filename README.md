@@ -134,7 +134,7 @@ While ``DrMxR`` allows you to seamlessly mix parameters that may have previously
 
 <table class="tg">
   <tr>
-    <th class="tg-umgj">Parameter</th>
+    <th class="tg-umgj">Parameters</th>
     <th class="tg-umgj">Description</th>
   </tr>
   <tr>
@@ -142,11 +142,11 @@ While ``DrMxR`` allows you to seamlessly mix parameters that may have previously
   </tr>
   <tr>
     <td class="tg-zd5i"><i>&omega;</i></td>
-    <td class="tg-zd5i">probability of survival of the zygotes up-to-the adult stage of genotype WD.</td>
+    <td class="tg-zd5i">Probability of survival of the zygotes up-to-the adult stage of genotype WD.</td>
   </tr>
   <tr>
     <td class="tg-zd5i"><i>&nu;</i></td>
-    <td class="tg-zd5i">probability of survival of the zygotes up-to-the adult stage of genotype DD.</td>
+    <td class="tg-zd5i">Probability of survival of the zygotes up-to-the adult stage of genotype DD.</td>
   </tr>
   <tr>
     <td class="tg-zd5i"><i>d<sub>m</sub></i></td>
@@ -161,7 +161,7 @@ While ``DrMxR`` allows you to seamlessly mix parameters that may have previously
     <td class="tg-zd5i">Efficiency of Inverse Semele gene drive.</td>
   </tr>
   <tr>
-    <td class="tg-7z5x" colspan="2">Fertility Selection</i></td>
+    <td class="tg-7z5x" colspan="2"><i>Fertility Selection</i></td>
   </tr>
   <tr>
     <td class="tg-zd5i"><i>f<sub>WW</sub></i></td>
@@ -169,7 +169,7 @@ While ``DrMxR`` allows you to seamlessly mix parameters that may have previously
   </tr>
   <tr>
     <td class="tg-zd5i"><i>f<sub>WD</sub></i></td>
-    <td class="tg-zd5i"><i>Fertility fitness component of genotype WD.</td>
+    <td class="tg-zd5i">Fertility fitness component of genotype WD.</td>
   </tr>
   <tr>
     <td class="tg-0lax"><i>f<sub>DD</sub></i></td>
