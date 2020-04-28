@@ -2,7 +2,7 @@
 
 This repository hosts the codes of the synthetic gene drive project in collaboration with R. Guy Reeves and spearheaded by Prateek Verma. 
 
-The model is part of the R&D project “Risk assessment of synthetic gene-drive applications” (FKZ 3518 84 0500) commissioned by the Federal Agency for Nature Conservation (BfN) with funds from the German Federal Ministry for the Environment, Nature Conservation and Nuclear Safety. The work also has been supported by funds of the Max Planck Society.
+The model is part of the R&D project “Risk assessment of synthetic gene-drive applications” (FKZ 3518 84 0500) supported by the Federal Agency for Nature Conservation (BfN) with funds from the German Federal Ministry for the Environment, Nature Conservation and Nuclear Safety. The work also has been supported by funds of the Max Planck Society.
 ***
 
 The project contains the codes pertaining to various figures in the submitted paper in the directory 
@@ -130,7 +130,70 @@ all other sliders range from 0-1, *Drive efficiency, p* has a theoretical minimu
 **The parameters**, the key insight of the ``DrMxR`` approach is that fact that drive parameters previously in earlier works, using a variety of names and approaches can be considered as representing one of three factors ([as described in the full paper](https://www.biorxiv.org/content/10.1101/2020.02.28.970103v1.full)). These are the section headings in the ``DrMxR`` window : distortion, viability and fertility selection  
 While ``DrMxR`` allows you to seamlessly mix parameters that may have previously have been viewed as coming from distinct drive systems, it is important to note ``DrMxR`` always presents the results for a single combination drive construct.
 
-<!--Parameter Description-->
+**Parameter Description**
+<style type="text/css">
+.tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
+.tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-umgj{border-color:inherit;font-size:14px;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-7z5x{border-color:inherit;font-size:14px;font-style:italic;text-align:left;vertical-align:top}
+.tg .tg-zd5i{border-color:inherit;font-size:14px;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-8zwo{font-style:italic;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-umgj">Parameter</th>
+    <th class="tg-umgj">Description</th>
+  </tr>
+  <tr>
+    <td class="tg-7z5x" colspan="2">Viability Selection</td>
+  </tr>
+  <tr>
+    <td class="tg-zd5i">*&omega;*</td>
+    <td class="tg-zd5i">probability of survival of the zygotes up-to-the adult stage of genotype WD.</td>
+  </tr>
+  <tr>
+    <td class="tg-zd5i">*&nu;*</td>
+    <td class="tg-zd5i">probability of survival of the zygotes up-to-the adult stage of genotype DD.</td>
+  </tr>
+  <tr>
+    <td class="tg-zd5i">*d<sub>m</sub>*</td>
+    <td class="tg-zd5i">Efficiency of Medea gene drive.</td>
+  </tr>
+  <tr>
+    <td class="tg-zd5i">*d<sub>im</sub>*</td>
+    <td class="tg-zd5i">Efficiency of Inverse Medea gene drive.</td>
+  </tr>
+  <tr>
+    <td class="tg-zd5i">*d<sub>s</sub>*</td>
+    <td class="tg-zd5i">Efficiency of Inverse Semele gene drive.</td>
+  </tr>
+  <tr>
+    <td class="tg-7z5x" colspan="2">Fertility Selection</td>
+  </tr>
+  <tr>
+    <td class="tg-zd5i">*f<sub>WW</sub>*</td>
+    <td class="tg-zd5i">Fertility fitness component arising from mating success for genotype WW.</td>
+  </tr>
+  <tr>
+    <td class="tg-zd5i">*f<sub>WD</sub>*</td>
+    <td class="tg-zd5i">Fertility fitness component of genotype WD.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">*f<sub>DD</sub>*</td>
+    <td class="tg-0lax">Fertility fitness component of genotype DD.</td>
+  </tr>
+  <tr>
+    <td class="tg-8zwo" colspan="2">Distorsion</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">*p*</td>
+    <td class="tg-0lax">The probability of transmission of a drive allele from heterozygous parents to offsprings</td>
+  </tr>
+</table>
 
 **Technical notes** this is probably a bit technical for most users but currently ``DrMxR`` is focused on a particular class of gene drive systems 
 
