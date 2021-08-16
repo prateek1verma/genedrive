@@ -39,7 +39,7 @@ It is important to understand that gene drive works through mating and inheritan
 
 ## DrMxR manual
 
-For a more complete description of ``DrMxR`` please go to [A unifying approach to gene drive](https://www.biorxiv.org/content/10.1101/2020.02.28.970103v1.full).
+For a more complete description of ``DrMxR`` please go to [A common gene drive language eases regulatory process and eco-evolutionary extensions](https://doi.org/10.1186/s12862-021-01881-y).
 
 
 ``DrMxR`` works on Mac Linux and Windows on computers, tablets or phones. 
