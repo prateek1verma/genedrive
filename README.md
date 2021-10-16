@@ -4,7 +4,7 @@ This repository hosts the codes of the synthetic gene drive project in collabora
 
 The model is part of the R&D project “Risk assessment of synthetic gene-drive applications” (FKZ 3518 84 0500) supported by the Federal Agency for Nature Conservation (BfN) with funds from the German Federal Ministry for the Environment, Nature Conservation and Nuclear Safety. The work also has been supported by funds of the Max Planck Society.
 
-For a more complete description of ``DrMxR`` please go to [A common gene drive language eases regulatory process and eco-evolutionary extensions](https://doi.org/10.1186/s12862-021-01881-y).
+For a more complete description of ``DrMxR`` please refer our paper: [A common gene drive language eases regulatory process and eco-evolutionary extensions](https://doi.org/10.1186/s12862-021-01881-y).
 ***
 
 The project contains the codes pertaining to various figures in the submitted paper in the directory 
