@@ -3,6 +3,9 @@
 This repository hosts the codes of the synthetic gene drive project in collaboration with R. Guy Reeves and spearheaded by Prateek Verma. 
 
 The model is part of the R&D project “Risk assessment of synthetic gene-drive applications” (FKZ 3518 84 0500) supported by the Federal Agency for Nature Conservation (BfN) with funds from the German Federal Ministry for the Environment, Nature Conservation and Nuclear Safety. The work also has been supported by funds of the Max Planck Society.
+
+For a more complete description of ``DrMxR`` please go to our published paper titled [A common gene drive language eases regulatory process and eco-evolutionary extensions](https://bmcecolevol.biomedcentral.com/articles/10.1186/s12862-021-01881-y).
+
 ***
 
 The project contains the codes pertaining to various figures in the submitted paper in the directory 
@@ -39,7 +42,7 @@ It is important to understand that gene drive works through mating and inheritan
 
 ## DrMxR manual
 
-For a more complete description of ``DrMxR`` please go to [A unifying approach to gene drive](https://www.biorxiv.org/content/10.1101/2020.02.28.970103v1.full).
+For a more complete description of ``DrMxR`` please go to our published paper titled [A common gene drive language eases regulatory process and eco-evolutionary extensions](https://bmcecolevol.biomedcentral.com/articles/10.1186/s12862-021-01881-y).
 
 
 ``DrMxR`` works on Mac Linux and Windows on computers, tablets or phones. 
