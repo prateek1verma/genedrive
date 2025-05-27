@@ -56,11 +56,6 @@ Basically anything that you can install WOLFRAM PLAYER on.
 ![](Figure_md/fig1.png)
 
 
-```{r  out.width = "20%"}
-knitr::include_graphics("Figure_md/fig2.png")
-```
-
-
 ### Downloading the cdf file
 
 The actual `DRMxR` tool is the cdf file which can be downloaded from above.
