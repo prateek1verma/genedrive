@@ -3,7 +3,7 @@ title: "About"
 output: html_notebook
 ---
 
-Rscripts used to make this R Shiny web application are available on [Github](https://github.com/alsnhll/SEIR_COVID19).
+Rscripts used to make this R Shiny web application are available on [Github](https://github.com/tecoevo/genedrive/tree/master/DrMxR_R_shinny).
 
 # About
 
@@ -46,7 +46,8 @@ It is important to understand that gene drive works through mating and inheritan
 
 ## DrMxR manual
 
-For a more complete description of ``DrMxR`` please go to [A unifying approach to gene drive](https://www.biorxiv.org/content/10.1101/2020.02.28.970103v1.full).
+For a more complete description of ``DrMxR`` please go to our published paper titled [A common gene drive language eases regulatory process and eco-evolutionary extensions](https://bmcecolevol.biomedcentral.com/articles/10.1186/s12862-021-01881-y).
+
 
 
 ``DrMxR`` works on Mac Linux and Windows on computers, tablets or phones. 
@@ -139,7 +140,7 @@ Note that the default position of some slider is on the left and some is on the 
 all other sliders range from 0-1, *Drive efficiency, p* has a theoretical minimum value of 0.5 (equal segregation) and a max of 1.
 
 
-**The parameters**, the key insight of the ``DrMxR`` approach is that fact that drive parameters previously in earlier works, using a variety of names and approaches can be considered as representing one of three factors ([as described in the full paper](https://www.biorxiv.org/content/10.1101/2020.02.28.970103v1.full)). These are the section headings in the ``DrMxR`` window : distortion, viability and fertility selection (
+**The parameters**, the key insight of the ``DrMxR`` approach is that fact that drive parameters previously in earlier works, using a variety of names and approaches can be considered as representing one of three factors ([as described in the full paper](https://bmcecolevol.biomedcentral.com/articles/10.1186/s12862-021-01881-y)). These are the section headings in the ``DrMxR`` window : distortion, viability and fertility selection (
 While ``DrMxR`` allows you to seamlessly mix parameters that may have previously have been viewed as coming from distinct drive systems, it is important to note ``DrMxR`` always presents the results for a single combination drive construct.
 
 **Parameter Description**
