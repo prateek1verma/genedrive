@@ -96,25 +96,15 @@ ui <- page_fluid(  # replaces fluidPage
                        tabPanel("DrMxR",
                                 fluidPage(
                                     fluidRow(
-                                        
-                                        h3("Gene Drive Dynamics"),
-                                        p(HTML("The graph shows the frequency dynamics different genotypes in a single population")),
-                                        wellPanel(
-                                          style = "background-color: #f9f9f9; padding: 10px; border-radius: 10px;",
-                                          # h4("The graph shows the frequency dynamics different genotypes in a single population"),
-                                          plotOutput("distPlot", height = "520px",width = "520px")
-                                        ),
-                                        # card(
-                                        #   full_screen = FALSE,
-                                        #   class = "mb-4",  # margin-bottom
-                                        #   style = "padding: 20px; border-radius: 12px; background-color: #f9f9f9;",
-                                        #   plotOutput("distPlot", height = "600px")
-                                        # ),
+                                      div(style = "padding-left: 15px; padding-right: 15px;",
+                                          h3("Gene Drive Dynamics"),
+                                          p("The graph shows the frequency dynamics of different genotypes in a single population"),
+                                          wellPanel(
+                                            style = "background-color: #f9f9f9; padding: 10px; border-radius: 10px;",
+                                            plotOutput("distPlot", height = "520px", width = "520px")
+                                          )
+                                      )
                                       
-                                        
-                                        # plotOutput("distPlot"),
-                                        br(),
-                                        br(),
                                         # p(HTML("<b>User instructions:</b> The graph shows the frequency different genotypes over time"))
                                     )
                                 )
