@@ -7,23 +7,53 @@
 # #    http://shiny.rstudio.com/
 # #
 
+library(grid)
+library(gridExtra)
 library(deSolve)
 library(shiny)
+library(nleqslv)
+library(rootSolve)
 #library(plotly)
 library(RColorBrewer)
-#library(pracma)
+library(bslib)
+library(shinyjs)
+library(thematic)
 library(raster)
 library(rasterVis)
 #library(knitr)
 
 # Define UI for application that draws a histogram
-ui <- fluidPage(
-    
-    # Application title
-    titlePanel("DrMxR (Drive Mixer)"),
+ui <- page_fluid(  # replaces fluidPage
+  # theme = bs_theme(version = 4, bootswatch = "flatly"),  # default light theme
+  # theme = bs_theme(version = 4, bootswatch = "cosmo"),
+  # theme = bs_theme(version = 4, bootswatch = "lumen"), 
+  theme = bs_theme(version = 4, bootswatch = "flatly"), 
+  # useShinyjs(),
+  # tags$head(
+  #   tags$link(rel = "stylesheet", type = "text/css", href = "style.css")
+  # ),
+  tags$head(
+    tags$style(HTML("
+    h4 { font-size: 16px; }
+    .form-group label { font-size: 14px; }
+    .irs .irs-min, .irs .irs-max, .irs .irs-single, .irs .irs-bar, .irs-grid-text { font-size: 10px !important; }
+  "))
+  ),
+  titlePanel(
+    div(style = "display: flex; justify-content: space-between; align-items: center;",
+        # Left side: logo + title
+        div(style = "display: flex; align-items: center;",
+            # img(src = "logo.png", height = "60px", style = "margin-right: 15px;"),
+            span("DrMxR (Drive Mixer)", 
+                 style = "font-size: 36px; font-weight: 500; color: #005B96;")
+        ))),
     hr(),
-    p(div(HTML("Disclaimer: This simulation is for research and educational purposes only and is not intended to be a tool for decision-making. There are many uncertainties and debates about the details of Gene drive dynamics and there are many limitations to this simple model. This work is licensed under a <a href=https://creativecommons.org/licenses/by-sa/4.0/> Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License </a>"))),
-    
+  p(
+    div(
+      HTML("Disclaimer: This simulation is for research and educational purposes only and is not intended to be a tool for decision-making. There are many uncertainties about the details of Gene drive dynamics and there are many limitations to this simple model. This work is licensed under a <a href='https://creativecommons.org/licenses/by-sa/4.0/'> Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License </a>."),
+      style = "font-size: 11px;"  # or try "small", "10pt", etc.
+    )
+  ),
     # Sidebar with a slider input for number of bins 
     sidebarLayout(
         sidebarPanel(
@@ -43,8 +73,19 @@ ui <- fluidPage(
                        h4(div(HTML("<em>Fertility Selection...</em>"))),
                        sliderInput(inputId = "fww", label ="Fertility of WW", value = 1.0, min = 0, max = 1, step = 0.05),
                        sliderInput(inputId = "fwd", label ="Fertility of WD", value = 1.0, min = 0, max = 1, step = 0.05),
-                       sliderInput(inputId = "fdd", label ="Fertility of DD", value = 1.0, min = 0, max = 1, step = 0.05)
-                )
+                       sliderInput(inputId = "fdd", label ="Fertility of DD", value = 1.0, min = 0, max = 1, step = 0.05),
+                       div(style = "margin-top: 10px;", 
+                           actionButton(
+                             inputId = "reset_btn", 
+                             label = "Reset", 
+                             icon = icon("rotate-left"), 
+                             style = "padding:4px 8px; font-size:12px; background-color:#f0f0f0; color:#333; border:1px solid #ccc; border-radius:4px;",
+                             title = "Reset to default values"
+                           )
+                       )
+                       
+                ),
+                
             )
         ),
         
@@ -55,14 +96,25 @@ ui <- fluidPage(
                                 fluidPage(
                                     fluidRow(
                                         
-                                        h3("Gene Drive Population dynamics"),
-                                        p(HTML("Simulate the population dynamics of in a single population.")),
+                                        h3("Gene Drive Dynamics"),
+                                        p(HTML("The graph shows the frequency dynamics different genotypes in a single population")),
+                                        wellPanel(
+                                          style = "background-color: #f9f9f9; padding: 10px; border-radius: 10px;",
+                                          # h4("The graph shows the frequency dynamics different genotypes in a single population"),
+                                          plotOutput("distPlot", height = "520px",width = "520px")
+                                        ),
+                                        # card(
+                                        #   full_screen = FALSE,
+                                        #   class = "mb-4",  # margin-bottom
+                                        #   style = "padding: 20px; border-radius: 12px; background-color: #f9f9f9;",
+                                        #   plotOutput("distPlot", height = "600px")
+                                        # ),
+                                      
                                         
-                                        plotOutput("distPlot"),
+                                        # plotOutput("distPlot"),
                                         br(),
                                         br(),
-                                        br(),br(),br(),
-                                        p(HTML("<b>User instructions:</b> The graph shows the frequency different genotypes over time"))
+                                        # p(HTML("<b>User instructions:</b> The graph shows the frequency different genotypes over time"))
                                     )
                                 )
                        ),       
@@ -97,8 +149,24 @@ ui <- fluidPage(
 )
 
 # Define server logic required to draw a histogram
-server <- function(input, output) {
+server <- function(input, output,session) {
     
+  observeEvent(input$reset_btn, {
+  updateSliderInput(session, "p", value = 0.5)
+  updateSliderInput(session, "dm", value = 0)
+  updateSliderInput(session, "dim", value = 0)
+  updateSliderInput(session, "ds", value = 0)
+  updateSliderInput(session, "omega", value = 1.0)
+  updateSliderInput(session, "nu", value = 1.0)
+  updateSliderInput(session, "fww", value = 1.0)
+  updateSliderInput(session, "fwd", value = 1.0)
+  updateSliderInput(session, "fdd", value = 1.0)
+  
+  updateNumericInput(session, "xww0", value = 0.99)
+  updateNumericInput(session, "xdd0", value = 0.01)
+  updateSliderInput(session, "time_values", value = c(0, 20))
+})
+
     output$distPlot <- renderPlot({
         # generate bins based on input$bins from ui.R
         u <- v <- raster(xmn=0, xmx=1, ymn=0, ymx=1, ncol=5e2, nrow=5e2)
@@ -114,12 +182,6 @@ server <- function(input, output) {
         fww <- input$fww 
         fwd <- input$fwd 
         fdd <- input$fdd
-        
-        #Fxww <- fww * fww * x * x + (1-p)*(1-0.5*ds)*fww*fwd*x*(1-x-y) + (1-p)*(1-0.5*ds)*(1-dm)*fww*fwd*x*(1-x-y) + (1-p)*(1-p)*(1-dm)*fwd*fwd*(1-x-y)*(1-x-y)
-        #Fxwd <- omega*(2* p*(1-0.5*ds)*(1-0.5*dim)*fww*fwd*x*(1-x-y) + 2*(1-p)*fwd*fdd*(1-x-y)*y + 0.5*(2-ds)*(2-dim)*fww*fdd*x*y + 2*p*(1-p)*fwd*fwd*(1-x-y)*(1-x-y))
-        #Fxdd <- nu*( fdd*fdd*y*y + 2*p*fwd*fdd*(1-x-y)*y + p*p*fwd*fwd*(1-x-y)*(1-x-y) )
-        
-        #Favg <- Fxww + Fxwd + Fxdd
         
         x1 = 0
         y1 = 0
@@ -151,32 +213,125 @@ server <- function(input, output) {
         field <- stack(u, v)
         names(field) <- c('u', 'v')
         
-        # draw the vectorfield with the given set of parameters
-        # col.regions = jet
-        # jet <- colorRampPalette(c('#00007F', 'blue', '#007FFF', 'cyan','#7FFF7F', 'yellow', '#FF7F00', 'red', '#7F0000'))
-        # range = seq(0, 0.5, 0.05)
+        p_vals <- seq(0, 1, length.out = 200)
+        q_vals <- 1 - p_vals
         
-        vectorplot(field, 
-                   ylab = deparse(substitute('Frequency of WD')), 
-                   xlab = deparse(substitute('Frequency of WW - DD')),
-                   lwd.arrows=1.0, col.arrows='black',
-                   interpolate = TRUE,
-                   length=0.08,
-                   maxpixels=1e5,
-                   key.arrow = NULL,
-                   isField='dXY', 
-                   narrows=3e2,  # defines total number of arrows in the vector-plot
-                   par.settings=PuOrTheme(), 
-                   scales=list(alternating=0),  # removes the x-y axes numbers
-                   scaleSlope=TRUE,aspX=0.2,aspY=0.2,alpha=0.6)
-        #segments(x0 = 0, y0 = 0, x1 = 0.5, y1 = sqrt(3)/2, lwd = 5)               # Draw one line
-        #segments(x0 = 0.5, y0 = sqrt(3)/2, x1 = 1, y1 = 0, lwd = 5)               # Draw one line
-        #segments(x0 = 0, y0 = 0.15, x1 = 1, y1 = 0.15, lwd = 5)               # Draw one line
-        #par(new=TRUE)
-        #abline(1,-1, col="red")
-    },width = 500, height = 500)
+        # Hardy-Weinberg genotype frequencies
+        WW <- p_vals^2
+        WD <- 2 * p_vals * q_vals
+        DD <- q_vals^2
+        
+        x_hw <- WW + 0.5 * WD
+        y_hw <- sqrt(3)/2 * WD
+        
+        # Choose a ColorBrewer palette
+        my_colors <- colorRampPalette(rev(brewer.pal(9, "RdYlBu")))(100)
+        # my_colors <- matlab.like(100) # colorRampPalette(rev(brewer.pal(9, "Spectral")))(100)
+        color_breaks <- seq(0, 1, length.out = 100)
+        
+        # Normalize magnitude
+        mag <- sqrt(values(field[[1]])^2 + values(field[[2]])^2)
+        field_norm <- field
+        values(field_norm[[1]]) <- values(field[[1]]) / max(mag, na.rm = TRUE)
+        values(field_norm[[2]]) <- values(field[[2]]) / max(mag, na.rm = TRUE)
+        
+        
+        # Create vectorplot without colorbar
+        p <- vectorplot(field_norm,
+                        ylab = NULL, xlab = NULL,
+                        isField = 'dXY',
+                        lwd.arrows = 1.5,
+                        scaleSlope = FALSE, # <- Fix arrow length
+                        arrow.length = 0.1,     # fixed size for arrows
+                        col.arrows = '#404040',
+                        interpolate = FALSE,
+                        # length = 0.08,
+                        maxpixels = 1e5,
+                        key.arrow = NULL,
+                        narrows = 4e2,
+                        col.regions = my_colors,
+                        at = color_breaks,
+                        colorkey = FALSE,  # suppress default colorbar
+                        par.settings = modifyList(PuOrTheme(), list(
+                          axis.line = list(col = "transparent")
+                        )),
+                        scales = list(alternating = 0),
+                        xlim = c(-0.1, 1.1),
+                        ylim = c(-0.1, 1.1),
+                        aspX = 0.2,
+                        aspY = 0.2,
+                        alpha = 0.6
+        )
+        
+        # Save original panel
+        original_panel <- p$panel
+        
+        # Custom panel
+        p$panel <- function(...) {
+          original_panel(...)  # draw background + arrows (vectorplot logic)
+          
+          # Triangle borders
+          panel.lines(x = c(0, 0.5, 1, 0), 
+                      y = c(0, sqrt(3)/2, 0, 0), 
+                      col = "black", 
+                      lwd = 3)
+          
+          grid.lines(x = unit(x_hw, "native"),
+                     y = unit(y_hw, "native"),
+                     gp = gpar(col = "#010240", lwd = 2))
+          
+          # Corner labels: use grid.text to guarantee visibility
+          grid.text("WW", x = unit(0, "native"), y = unit(-0.05, "native"),
+                    just = c("center", "top"), gp = gpar(cex = 1.2))
+          grid.text("WD", x = unit(0.5, "native"), y = unit(sqrt(3)/2 + 0.04, "native"),
+                    just = c("center", "bottom"), gp = gpar(cex = 1.2))
+          grid.text("DD", x = unit(1, "native"), y = unit(-0.05, "native"),
+                    just = c("center", "top"), gp = gpar(cex = 1.2))
+        }
+        
+        grid.newpage()
+        
+        # Convert lattice plot to a grob
+        p_grob <- grid.grabExpr(print(p))
+        
+        # Create colorbar and title grobs
+        ckey <- draw.colorkey(
+          key = list(
+            col = my_colors,
+            at = color_breaks,
+            labels = list(cex = 0.8),
+            height = 0.3,
+            width = 1,
+            space = "right"
+          ),
+          draw = FALSE
+        )
+        
+        title_grob <- textGrob("Relative speed", rot = 90, gp = gpar(cex = 0.9))
+        
+        # Combine title + colorbar
+        legend_grob <- arrangeGrob(title_grob, ckey, ncol = 2, widths = unit(c(1.5, 5), "lines"))
+        
+        # Final layout: left = plot, right = legend
+        grid.newpage()
+        
+        grid.arrange(p_grob, legend_grob,
+                     ncol = 2,
+                     widths = unit.c(unit(1, "null"), unit(6, "lines")))
+        
+    },width = 520, height =520)
+    
     
     output$distPlot1 <- renderPlot({
+      p <- input$p 
+      dm <- input$dm 
+      dim <- input$dim 
+      ds <- input$ds 
+      omega <- input$omega 
+      nu <- input$nu 
+      fww <- input$fww 
+      fwd <- input$fwd 
+      fdd <- input$fdd
         popdyn_equations <- function(time, variables, parameters) {
             with(as.list(c(variables, parameters)), {
                 Fxww <- fww * fww * xww * xww + (1-p)*(1-0.5*ds)*fww*fwd*xww*(1-xww-xdd) + (1-p)*(1-0.5*ds)*(1-dm)*fww*fwd*xww*(1-xww-xdd) + (1-p)*(1-p)*(1-dm)*fwd*fwd*(1-xww-xdd)*(1-xww-xdd)
@@ -207,10 +362,17 @@ server <- function(input, output) {
                  xlab = "Time", ylab = "Frequency of genotype",ylim = c(0,1),lwd=3)
             lines(time, xdd, col = cols[2],lwd=3)
             lines(time, 1-xww-xdd, col = cols[3],lwd=3)
+            # Add gridlines
+            grid(nx = NULL, ny = NULL, col = "lightgray", lty = "dotted", lwd = 1)
         })
         
-        legend("right", c("Frequency of WW","Frequency of DD","Frequency of WD"),cex=1.5, pt.cex = 2,
-               col = c(cols[1], cols[2], cols[3]), lty = 1, bty = "n")
+        # legend("right", c("Frequency of WW","Frequency of DD","Frequency of WD"),cex=1.5, pt.cex = 2,
+        #       col = c(cols[1], cols[2], cols[3]), lty = 1, bty = "n")
+        # Legend
+        legend("right",
+               legend = c("WW", "DD", "WD"),
+               col = cols, lty = 1, lwd = 3,
+               bty = "n", cex = 1.3, inset = 0.02)
         
         
     },width = 600,height = 500)
