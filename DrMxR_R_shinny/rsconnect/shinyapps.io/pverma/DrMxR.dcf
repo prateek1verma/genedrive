@@ -5,6 +5,6 @@ account: pverma
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3114070
-bundleId: 10353514
+bundleId: 10359165
 url: https://pverma.shinyapps.io/DrMxR/
 version: 1

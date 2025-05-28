@@ -133,7 +133,7 @@ ui <- page_fluid(  # replaces fluidPage
                        tabPanel("Manual",
                                 fluidPage(
                                     br(),
-                                    includeMarkdown("About.Rmd")
+                                    includeMarkdown("About.md")
                                 ))
                        
             )
