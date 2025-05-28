@@ -3,20 +3,7 @@
 This repository hosts the codes of the synthetic gene drive project in collaboration with R. Guy Reeves and spearheaded by Prateek Verma. 
 
 The model is part of the R&D project “Risk assessment of synthetic gene-drive applications” (FKZ 3518 84 0500) supported by the Federal Agency for Nature Conservation (BfN) with funds from the German Federal Ministry for the Environment, Nature Conservation and Nuclear Safety. The work also has been supported by funds of the Max Planck Society.
-
-For a more complete description of ``DrMxR`` please go to our published paper titled [A common gene drive language eases regulatory process and eco-evolutionary extensions](https://bmcecolevol.biomedcentral.com/articles/10.1186/s12862-021-01881-y).
-
 ***
-
-The project contains the codes pertaining to various figures in the submitted paper in the directory 
-VGR_manuscript/
-
-The literature database is available in the folder
-literature_database
-
-The main tool *DrMxR* is the file: DrMxR.cdf
-
-All the above files can be cloned or downloaded.
 
 
 # Introduction to framework and vocabulary 
@@ -42,25 +29,10 @@ It is important to understand that gene drive works through mating and inheritan
 
 ## DrMxR manual
 
-For a more complete description of ``DrMxR`` please go to our published paper titled [A common gene drive language eases regulatory process and eco-evolutionary extensions](https://bmcecolevol.biomedcentral.com/articles/10.1186/s12862-021-01881-y).
+For a more complete description of ``DrMxR`` please go to our published paper [here](https://bmcecolevol.biomedcentral.com/articles/10.1186/s12862-021-01881-y).
 
+<img src="Figure_md/fig1.png" width="500px" />
 
-``DrMxR`` works on Mac Linux and Windows on computers, tablets or phones. 
-Basically anything that you can install WOLFRAM PLAYER on.
-
-![](Figure_md/fig1.png)
-
-
-### Downloading the cdf file
-
-The actual `DRMxR` tool is the cdf file which can be downloaded from above.
-Mathematica or the Wolfram Mathematica Player for Notebooks is required to run the tool.
-
-### Downloading Wolfram Player for Notebooks
-
-Wolfram Player for Notebooks is a free player from Wolfram and can be downloaded [here](https://www.wolfram.com/player/)
-
-*Only if you want to use ``DrMxR`` on a mobile phone or tablet you will need to register for a free Wolfram Cloud account to “activate interactivity”*
 
 The key to DrMxR is the **triangle diagram** and being able to interpret it (its correct name is a [**de Finetti diagram**](https://en.wikipedia.org/wiki/De_Finetti_diagram)). It provides an overview of what is likely to happen to a single population starting from all possible staring points if you wait enough generations.
 
@@ -76,25 +48,52 @@ The triangle represents all conceivable populations frequencies where you have a
 
 The corners represent populations  with 100% one of the three genotypes. All other space represents mixtures of more than one of the three genotypes.
 
-Thee positions representing 4 hypothetical populations are  shown below.
+The positions representing the four hypothetical populations are shown in the figure below.
 
-![](Figure_md/fig2.png)
+<img src="Figure_md/fig2.png" width="500px" />
 
-<!--![alt text](figure_toolbar.png)-->
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Population A</th>
+      <th>Population B</th>
+      <th>Population C</th>
+      <th>Population D</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>WW</strong></td>
+      <td>100%</td>
+      <td>0%</td>
+      <td>15%</td>
+      <td>70%</td>
+    </tr>
+    <tr>
+      <td><strong>WD</strong></td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>50%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td><strong>DD</strong></td>
+      <td>0%</td>
+      <td>100%</td>
+      <td>35%</td>
+      <td>30%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><em>All wildtype; no drive present</em></td>
+      <td><em>All drive homozygotes; WW extinct</em></td>
+      <td><em>All three genotypes coexist</em></td>
+      <td><em>Mix of wildtype and drive homozygotes; early spread</em></td>
+    </tr>
+  </tbody>
+</table>
 
-Genotype  | Population A | Population B | Population C | Population D
---- | --- | --- | --- | ---
-WW | 100% | 0% | 15% | 70%
-WD | 0% | 0% | 50% | 0%
-DD | 0% | 100% | 35% | 30%
- | all wildtype, wild population without any drive elements  | all drive homozygotes, gene drive has replaced any WW individuals that once existed  | A population where all three genotypes are present | A population that is a mix of wildtype and drive homozygotes, such as might occur immediately after the release or arrival of the latter.
-<!--
-| Genotype | Population A | Population B | Population C | Population D |
-|:--------:|:-------------------------------------------------------:|:--------------------------------------------------------------------------------------------:|:--------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------:|
-| WW | 100% | 0% | 15% | 70% |
-| WD | 0% | 0% | 50% | 0% |
-| DD | 0% | 100% | 35% | 30% |
-|  | all wildtype, wild population without any drive alleles | all drive homozygotes, gene drive has replaced any WW individuals that may have once existed | A population where all three genotypes are present | A population that is a mix of wildtype and drive homozygotes, such as might occur immediately after the release or arrival of the latter. | -->
 
 ### How to read the figure
 
@@ -104,7 +103,7 @@ DD | 0% | 100% | 35% | 30%
 
 **The arrows** you see inside the triangle indicate the probable direction of any genotype frequency change if you wait enough generations. So start at any location(s) in the triangle and follow the arrows to see  the where you probably end up. For example, in these three diagrams.
 
-![](Figure_md/fig3.png)
+<img src="Figure_md/fig3.png" width="700px" />
 
 *Triangle 1*  regardless of what population frequency you start at the DD genotype will tend to increase and if you wait for enough generations all WD and WW genotypes will be eliminated - this can be thought of successful gene drive / population replacement.
 
@@ -116,21 +115,20 @@ DD | 0% | 100% | 35% | 30%
 
 **The colours** inside the triangle indicate the relative speed of frequency change over generations in the directions indicated by the arrows. We have included them as they can be helpful to some users. While the direction of the arrows can be meaningfully compared between all triangle diagrams generated, this is not the case for the colours.
 
-![](Figure_md/fig4.png)
-
 
 **The sliders** To make it easier to explore different scenarios ``DrMxR`` has been set up with sliders through which users can mix gene drive parameters.
 
-![](Figure_md/fig5.png)
+<img src="Figure_md/fig4.png" width="700px" />
 
-You can move them around and see how the triangle diagram changes (for some machines you may need to wait a few seconds for display to update, so be patient if necessary).
+You can move them around and see how the triangle diagram changes.
 If you want more options press the plus symbol on the right of each slider. This includes the capacity to type in numerical values. Hold the mouse over other options to see a description popup.
 The big reset button at the bottom of the panel returns all the sliders to their default position of *no-drive*.
 Note that the default position of some slider is on the left and some is on the right. Also that while 
 all other sliders range from 0-1, *Drive efficiency, p* has a theoretical minimum value of 0.5 (equal segregation) and a max of 1.
 
 
-**The parameters**, the key insight of the ``DrMxR`` approach is that fact that drive parameters previously in earlier works, using a variety of names and approaches can be considered as representing one of three factors ([as described in the full paper](https://www.biorxiv.org/content/10.1101/2020.02.28.970103v1.full)). These are the section headings in the ``DrMxR`` window : distortion, viability and fertility selection  
+**The parameters**, the key insight of the ``DrMxR`` approach is that fact that drive parameters previously in earlier works, using a variety of names and approaches can be considered as representing one of three factors ([as described in the full paper](https://bmcecolevol.biomedcentral.com/articles/10.1186/s12862-021-01881-y)). These are the section headings in the ``DrMxR`` window : distortion, viability and fertility selection 
+
 While ``DrMxR`` allows you to seamlessly mix parameters that may have previously have been viewed as coming from distinct drive systems, it is important to note ``DrMxR`` always presents the results for a single combination drive construct.
 
 **Parameter Description**
@@ -196,3 +194,19 @@ While ``DrMxR`` allows you to seamlessly mix parameters that may have previously
 * Diploid chromosomes (no endosymbionts).
 * The organism in question can only reproduce sexually. 
 * The model allows for overlapping generations.
+
+### Frequency vs. Time Plot
+
+<img src="Figure_md/fig5.png" width="600px" />
+
+In addition to the triangle (de Finetti) diagram that visualizes long-term gene drive outcomes for all starting conditions, **DrMxR** also provides a traditional plot to examine the dynamics of a single user-defined starting population over time.
+
+This **Frequency vs. Time** plot shows how the frequencies of the three genotypes — **WW** (wildtype), **WD** (heterozygote), and **DD** (drive homozygote) — change over generations, given a specific initial composition and the gene drive parameters selected using the sliders.
+
+- Users can specify the **initial frequency** of WW and DD. The frequency of WD is automatically calculated as `1 - freq_WW - freq_DD`.
+- The **time interval** (number of generations to simulate) can be adjusted using a slider.
+- The plot provides a temporal view of the gene drive’s trajectory, offering complementary insight to the triangle diagram, which summarizes asymptotic outcomes.
+
+This feature is especially helpful for simulating outcomes from particular starting conditions, such as the expected genotype trajectory after a release or migration event.
+
+---
