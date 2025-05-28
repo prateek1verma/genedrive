@@ -34,6 +34,8 @@ ui <- page_fluid(  # replaces fluidPage
   #   tags$link(rel = "stylesheet", type = "text/css", href = "style.css")
   # ),
   tags$head(
+    tags$title("DrMxR | Drive Mixer"),
+    tags$link(rel = "icon", type = "image/png", href = "favicon.png"),  # or favicon.ico
     tags$style(HTML("
     h4 { font-size: 16px; }
     .form-group label { font-size: 14px; }
@@ -75,13 +77,14 @@ ui <- page_fluid(  # replaces fluidPage
                        sliderInput(inputId = "fww", label ="Fertility of WW", value = 1.0, min = 0, max = 1, step = 0.05),
                        sliderInput(inputId = "fwd", label ="Fertility of WD", value = 1.0, min = 0, max = 1, step = 0.05),
                        sliderInput(inputId = "fdd", label ="Fertility of DD", value = 1.0, min = 0, max = 1, step = 0.05),
+                       tags$hr(),
                        div(style = "margin-top: 10px;", 
                            actionButton(
                              inputId = "reset_btn", 
                              label = "Reset", 
                              icon = icon("rotate-left"), 
                              style = "padding:4px 8px; font-size:12px; background-color:#f0f0f0; color:#333; border:1px solid #ccc; border-radius:4px;",
-                             title = "Reset to default values"
+                             title = "Reset to default parameter values"
                            )
                        )
                        
